@@ -208,6 +208,7 @@
   <div class="section" id="random">
 <h1>Random<a class="headerlink" href="#random" title="Permalink to this headline">¶</a></h1>
 <p>Random related methods</p>
+<hr class="docutils" />
 <div class="section" id="srl-gaussrand">
 <h2>srl.GaussRand<a class="headerlink" href="#srl-gaussrand" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="k">function</span> <span class="nc">TSRL</span><span class="o">.</span><span class="nf">GaussRand</span><span class="p">(</span><span class="nb">mean</span><span class="o">,</span> <span class="n">dev</span><span class="o">:</span> <span class="kt">Double</span><span class="p">)</span><span class="o">:</span> <span class="kt">Double</span><span class="o">;</span>
@@ -215,6 +216,7 @@
 </div>
 <p>Generates a random gaussian/normal number.</p>
 </div>
+<hr class="docutils" />
 <div class="section" id="srl-truncatedgauss">
 <h2>srl.TruncatedGauss<a class="headerlink" href="#srl-truncatedgauss" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="k">function</span> <span class="nc">TSRL</span><span class="o">.</span><span class="nf">TruncatedGauss</span><span class="p">(</span><span class="n">Left</span><span class="o">:</span><span class="kt">Double</span><span class="o">=</span><span class="mi">0</span><span class="o">;</span> <span class="n">Right</span><span class="o">:</span><span class="kt">Double</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">:</span> <span class="kt">Double</span><span class="o">;</span>
@@ -223,6 +225,7 @@
 <p>Generates a random gaussian/normal number which is truncated and mapped within then
 given range <code class="docutils literal notranslate"><span class="pre">[left..right]</span></code> weighted towards <code class="docutils literal notranslate"><span class="pre">left</span></code></p>
 </div>
+<hr class="docutils" />
 <div class="section" id="srl-skewedrand">
 <h2>srl.SkewedRand<a class="headerlink" href="#srl-skewedrand" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="k">function</span> <span class="nc">TSRL</span><span class="o">.</span><span class="nf">SkewedRand</span><span class="p">(</span><span class="n">Mode</span><span class="o">,</span> <span class="nb">Lo</span><span class="o">,</span> <span class="nb">Hi</span><span class="o">:</span> <span class="kt">Double</span><span class="p">)</span><span class="o">:</span> <span class="kt">Double</span><span class="o">;</span> <span class="n">static</span><span class="o">;</span>
@@ -231,6 +234,7 @@ given range <code class="docutils literal notranslate"><span class="pre">[left..
 <p>Random skewed distribution generation. <cite>Mode</cite> is a number between <cite>Lo</cite> and <cite>Hi</cite> which is
 where the most of the generated numbers will land.</p>
 </div>
+<hr class="docutils" />
 <div class="section" id="srl-normalrange">
 <h2>srl.NormalRange<a class="headerlink" href="#srl-normalrange" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="k">function</span> <span class="nc">TSRL</span><span class="o">.</span><span class="nf">NormalRange</span><span class="p">(</span><span class="nb">min</span><span class="o">,</span> <span class="nb">max</span><span class="o">:</span> <span class="kt">Int64</span><span class="p">)</span><span class="o">:</span> <span class="kt">Int64</span><span class="o">;</span>
@@ -238,6 +242,7 @@ where the most of the generated numbers will land.</p>
 </div>
 <p>Generates a random integer in the given range, weighted towards the mean.</p>
 </div>
+<hr class="docutils" />
 <div class="section" id="id1">
 <h2>srl.NormalRange<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="k">function</span> <span class="nc">TSRL</span><span class="o">.</span><span class="nf">NormalRange</span><span class="p">(</span><span class="nb">min</span><span class="o">,</span> <span class="nb">max</span><span class="o">:</span> <span class="kt">Double</span><span class="p">)</span><span class="o">:</span> <span class="kt">Double</span><span class="o">;</span>
@@ -245,6 +250,7 @@ where the most of the generated numbers will land.</p>
 </div>
 <p>Generates a random float in the given range, weighted towards the mean.</p>
 </div>
+<hr class="docutils" />
 <div class="section" id="srl-randompoint">
 <h2>srl.RandomPoint<a class="headerlink" href="#srl-randompoint" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="k">function</span> <span class="nc">TSRL</span><span class="o">.</span><span class="nf">RandomPoint</span><span class="p">(</span><span class="nb">mean</span><span class="o">:</span> <span class="n">TPoint</span><span class="o">;</span> <span class="n">maxRad</span><span class="o">:</span> <span class="n">Int32</span><span class="p">)</span><span class="o">:</span> <span class="n">TPoint</span><span class="o">;</span>
@@ -253,6 +259,7 @@ where the most of the generated numbers will land.</p>
 <p>Generates a random TPoint which weights around <code class="docutils literal notranslate"><span class="pre">mean</span></code>, with a max distance
 from mean defined by <code class="docutils literal notranslate"><span class="pre">maxRad</span></code>.</p>
 </div>
+<hr class="docutils" />
 <div class="section" id="srl-randompoint-overload">
 <h2>srl.RandomPoint (overload)<a class="headerlink" href="#srl-randompoint-overload" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="k">function</span> <span class="nc">TSRL</span><span class="o">.</span><span class="nf">RandomPoint</span><span class="p">(</span><span class="n">bounds</span><span class="o">:</span><span class="n">TBox</span><span class="p">)</span><span class="o">:</span> <span class="n">TPoint</span><span class="o">;</span> <span class="n">overload</span><span class="o">;</span>
@@ -261,6 +268,7 @@ from mean defined by <code class="docutils literal notranslate"><span class="pre
 <p>Generates a random TPoint in the bounds of the given box <cite>bounds</cite>,
 the point weights towards the middle of the box.</p>
 </div>
+<hr class="docutils" />
 <div class="section" id="id2">
 <h2>srl.RandomPoint (overload)<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="k">function</span> <span class="nc">TSRL</span><span class="o">.</span><span class="nf">RandomPoint</span><span class="p">(</span><span class="nb">rect</span><span class="o">:</span> <span class="n">TRectangle</span><span class="p">)</span><span class="o">:</span> <span class="n">TPoint</span><span class="o">;</span> <span class="n">overload</span><span class="o">;</span>
@@ -269,6 +277,7 @@ the point weights towards the middle of the box.</p>
 <p>Generates a random TPoint in the given rectangle <cite>rect</cite>,
 The point weights towards the middle of the rectangle.</p>
 </div>
+<hr class="docutils" />
 <div class="section" id="srl-randonpointex">
 <h2>srl.RandonPointEx<a class="headerlink" href="#srl-randonpointex" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="k">function</span> <span class="nc">TSRL</span><span class="o">.</span><span class="nf">RandonPointEx</span><span class="p">(</span><span class="n">From</span><span class="o">:</span><span class="n">TPoint</span><span class="o">;</span> <span class="n">B</span><span class="o">:</span> <span class="n">TBox</span><span class="o">;</span> <span class="n">Force</span><span class="o">:</span><span class="kt">Double</span><span class="o">=</span><span class="mf">0.35</span><span class="p">)</span><span class="o">:</span> <span class="n">TPoint</span><span class="o">;</span> <span class="n">constref</span><span class="o">;</span>
@@ -282,6 +291,7 @@ The last parameter <cite>Force</cite> defines how much the generated point is to
 <li>Force = 2: Result weighs heavily towrads the edge furthest away from <cite>From</cite></li>
 </ul>
 </div>
+<hr class="docutils" />
 <div class="section" id="wait-overload">
 <h2>Wait (overload)<a class="headerlink" href="#wait-overload" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="k">procedure</span> <span class="nf">Wait</span><span class="p">(</span><span class="nb">min</span><span class="o">,</span> <span class="nb">max</span><span class="o">:</span><span class="kt">Double</span><span class="o">;</span> <span class="n">weight</span><span class="o">:</span><span class="n">EWaitDir</span><span class="o">=</span><span class="n">wdMean</span><span class="p">)</span><span class="o">;</span> <span class="n">overload</span><span class="o">;</span>
@@ -289,6 +299,7 @@ The last parameter <cite>Force</cite> defines how much the generated point is to
 </div>
 <p>Waits … Weighted towards the mean of <cite>min</cite> and <cite>max</cite></p>
 </div>
+<hr class="docutils" />
 <div class="section" id="waitex">
 <h2>WaitEx<a class="headerlink" href="#waitex" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="k">procedure</span> <span class="nf">WaitEx</span><span class="p">(</span><span class="nb">mean</span><span class="o">,</span> <span class="n">dev</span><span class="o">:</span><span class="kt">Double</span><span class="p">)</span><span class="o">;</span>
@@ -296,6 +307,7 @@ The last parameter <cite>Force</cite> defines how much the generated point is to
 </div>
 <p>Waits … Regular gauss random</p>
 </div>
+<hr class="docutils" />
 <div class="section" id="srl-rowp">
 <h2>srl.rowp<a class="headerlink" href="#srl-rowp" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="k">function</span> <span class="nc">TSRL</span><span class="o">.</span><span class="nf">rowp</span><span class="p">(</span><span class="n">From</span><span class="o">:</span> <span class="n">TPoint</span><span class="o">;</span> <span class="nb">Rect</span><span class="o">:</span> <span class="n">TRectangle</span><span class="o">;</span> <span class="n">Force</span><span class="o">:</span> <span class="kt">Double</span><span class="o">=-</span><span class="mf">0.9</span><span class="o">;</span> <span class="n">Smoothness</span><span class="o">:</span> <span class="kt">Double</span><span class="o">=</span><span class="nb">PI</span><span class="o">/</span><span class="mi">12</span><span class="p">)</span><span class="o">:</span> <span class="n">TPoint</span><span class="o">;</span>
@@ -306,6 +318,7 @@ The last parameter <cite>Force</cite> defines how much the generated point is to
 a rough formula that Olly came up with for weighting points towards “From” point.
 Final implementation and math done by slacky.</p>
 <p>Force ranges from -1 (close to) to 1 (away from), where 0 is mean, but with a bit of a skewiness…</p>
+<hr class="docutils" />
 </div>
 </div>
 

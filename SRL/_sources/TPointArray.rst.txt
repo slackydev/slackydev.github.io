@@ -4,6 +4,7 @@ TPointArray
 TPointArray related methods
 
 
+------------
 
 TPointArray.Mean
 ~~~~~~~~~~~~~~~~~~~
@@ -14,6 +15,7 @@ TPointArray.Mean
 Wraps Simba's TPAMiddle
 
 
+------------
 
 TPointArray.MeanEx
 ~~~~~~~~~~~~~~~~~~~
@@ -24,6 +26,7 @@ TPointArray.MeanEx
 Middle as a Vector.
 
 
+------------
 
 TPointArray.Sort
 ~~~~~~~~~~~~~~~~~~~
@@ -34,6 +37,7 @@ TPointArray.Sort
 Wraps Simba's `SortTPAFrom`
 
 
+------------
 
 TPointArray.Sorted
 ~~~~~~~~~~~~~~~~~~~
@@ -44,6 +48,7 @@ TPointArray.Sorted
 Wraps Simba's `SortTPAFrom`, produces a sorted copy.
 
 
+------------
 
 TPointArray.SortByX
 ~~~~~~~~~~~~~~~~~~~
@@ -54,6 +59,7 @@ TPointArray.SortByX
 Wraps Simba's `SortTPAByX`
 
 
+------------
 
 TPointArray.SortByY
 ~~~~~~~~~~~~~~~~~~~
@@ -64,6 +70,7 @@ TPointArray.SortByY
 Wraps Simba's `SortTPAByY`
 
 
+------------
 
 TPointArray.SortByRow
 ~~~~~~~~~~~~~~~~~~~~~
@@ -74,6 +81,7 @@ TPointArray.SortByRow
 Sorts a given TPointArray TPA row-by-row, starting from the smallest Y coordinate to the largest Y coordinate, and for every row from the smallest X coordinate to the largest X coordinate.
 
 
+------------
 
 TPointArray.SortByColumn
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -84,6 +92,7 @@ TPointArray.SortByColumn
 much like SortByRow, but the order of the column comes first
 
 
+------------
 
 TPointArray.SortFromLine
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -94,6 +103,7 @@ TPointArray.SortFromLine
 The name tells the story
 
 
+------------
 
 TPointArray.Bounds
 ~~~~~~~~~~~~~~~~~~~
@@ -104,6 +114,7 @@ TPointArray.Bounds
 Wraps Simba's GetTPABounds
 
 
+------------
 
 TPointArray.Density
 ~~~~~~~~~~~~~~~~~~~
@@ -114,6 +125,7 @@ TPointArray.Density
 Returns the TPA's density (Length(TPA)/(width*height))
 
 
+------------
 
 TPointArray.Edges
 ~~~~~~~~~~~~~~~~~~~
@@ -126,6 +138,7 @@ Edge-points are points that are on the edge of the TPA, not completely surrounde
 Same as Simba's `FindTPAEdges`
 
 
+------------
 
 TPointArray.Cluster
 ~~~~~~~~~~~~~~~~~~~
@@ -137,6 +150,7 @@ TPointArray.Cluster
 Smart wrapper of Simba's `ClusterTPA` and `ClusterTPAEx` (fall backs to `SplitTPA` when it's better suited)
 
 
+------------
 
 TPointArray.Split
 ~~~~~~~~~~~~~~~~~~~
@@ -148,6 +162,7 @@ TPointArray.Split
 Wraps Simba's `SplitTPA` and `SplitTPAEx`
 
 
+------------
 
 TPointArray.ToATPA
 ~~~~~~~~~~~~~~~~~~~
@@ -159,6 +174,7 @@ TPointArray.ToATPA
 Wraps Simba's `TPAToATPA` and `TPAToATPAEx`
 
 
+------------
 
 TPointArray.Offset
 ~~~~~~~~~~~~~~~~~~~
@@ -169,6 +185,7 @@ TPointArray.Offset
 Wraps Simba's `OffsetTPA`
 
 
+------------
 
 TPointArray.OffsetFunc
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -179,6 +196,7 @@ TPointArray.OffsetFunc
 Wraps Simba's `OffsetTPA`, but offsets a copy, and returns it.
 
 
+------------
 
 TPointArray.Invert
 ~~~~~~~~~~~~~~~~~~~
@@ -190,6 +208,7 @@ Inverts the shape based on the area covered, alternatively the given area.
 Same as `ReturnPointsNotInTPA` in Simba.
 
 
+------------
 
 TPointArray.FilterBox
 ~~~~~~~~~~~~~~~~~~~~~
@@ -201,6 +220,7 @@ Returns a filtered version of the TPA.
 Same as Simba's `FilterPointsBox`
 
 
+------------
 
 TPointArray.FilterBox
 ~~~~~~~~~~~~~~~~~~~~~
@@ -212,6 +232,7 @@ Returns a filtered version of the TPA.
 Same as Simba's `FilterPointsDist`
 
 
+------------
 
 TPointArray.FilterDuplicates
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -222,6 +243,7 @@ TPointArray.FilterDuplicates
 Returns a copy where all duplicate points are removed.
 
 
+------------
 
 TPointArray.ClearDuplicates
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -232,6 +254,7 @@ TPointArray.ClearDuplicates
 Removes all the duplicate points from self.
 
 
+------------
 
 TPointArray.Rotate
 ~~~~~~~~~~~~~~~~~~
@@ -243,6 +266,7 @@ Returns a copy where all points are rotated around MidX, MidY.
 Same as Simba's `RotatePoints`.
 
 
+------------
 
 TPointArray.SplitRows
 ~~~~~~~~~~~~~~~~~~~~~
@@ -263,6 +287,7 @@ Example:
     ATPA := TPA.SplitRows(5);
 
 
+------------
 
 TPointArray.Connect
 ~~~~~~~~~~~~~~~~~~~
@@ -282,6 +307,7 @@ Example:
     edges := TPA.ConvexHull().Connect();
 
 
+------------
 
 TPointArray.ConvexHull
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -303,6 +329,7 @@ Example:
     Smart.Image.DrawTPA(TPA.ConvexHull());
 
 
+------------
 
 TPointArray.MinAreaRect
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -324,6 +351,7 @@ Example:
     WriteLn('The four box corners are: ', TPA.MinAreaRect());
 
 
+------------
 
 TPointArray.MinAreaCircle
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -338,6 +366,7 @@ See: https://en.wikipedia.org/wiki/Smallest-circle_problem for more information.
 Implementation is a mixture of a few implementations I've seen.
 
 
+------------
 
 ExpandPolygon
 ~~~~~~~~~~~~~~
@@ -351,3 +380,4 @@ A method for increasing the size of any convex polygon.
 .. note:: by slacky
 
 
+------------

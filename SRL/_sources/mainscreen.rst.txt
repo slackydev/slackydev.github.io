@@ -11,6 +11,7 @@ This file holds functions and procedures that are used for the mainscreen.
     srl.Writeln(MainScreen.GetUpText());
 
 
+------------
 
 MainScreen.GetUpText
 ~~~~~~~~~~~~~~~~~~~~
@@ -28,6 +29,7 @@ Example:
     srl.Writeln(MainScreen.GetUpText());
 
 
+------------
 
 MainScreen.IsUpText
 ~~~~~~~~~~~~~~~~~~~
@@ -47,6 +49,7 @@ Example:
       Mouse.Click(mouse_Left);
 
 
+------------
 
 MainScreen.IsUpText; overload
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -66,6 +69,7 @@ Example:
       Mouse.Click(mouse_Left);
 
 
+------------
 
 MainScreen.GetPlayerBox
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -83,6 +87,7 @@ Example:
     Writeln(MainScreen.GetPlayerBox());
 
 
+------------
 
 MainScreen.FilterPlayerBox
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -100,6 +105,7 @@ Example:
     MainScreen.FilterPlayerBox(TPA);
 
 
+------------
 
 MainScreen.FindHPBars
 ~~~~~~~~~~~~~~~~~~~~~
@@ -119,3 +125,4 @@ Example:
     Bars := MainScreen.FindHPBars(MainScreen.GetBounds());
 
 
+------------

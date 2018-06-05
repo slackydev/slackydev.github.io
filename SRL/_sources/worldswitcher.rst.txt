@@ -4,6 +4,7 @@ WorldSwitcher
 Methods that relates to swithing world.
 
 
+------------
 
 WorldSwitcher.GetWorld
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -19,3 +20,4 @@ Example:
   World := WorldSwitcher.GetWorld([[WORLD_FREE], [302]]);
 
 
+------------

@@ -4,6 +4,7 @@ Text
 Text related methods
 
 
+------------
 
 type TRSChooseOption
 ~~~~~~~~~~~~~~~~~~~~
@@ -19,3 +20,4 @@ Two modes are defined, one for RS and one using the SI prefix.
 The RS prefix is default, since SRL mainly focuses on RS.
 
 
+------------

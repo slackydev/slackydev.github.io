@@ -4,6 +4,7 @@ Time
 Time related methods
 
 
+------------
 
 TTimeMarker
 ~~~~~~~~~~~
@@ -22,6 +23,7 @@ Timer type which is useful for loops, timing and writing progress reports.
     - by Bart de Boer
 
 
+------------
 
 TTimeMarker.Start
 ~~~~~~~~~~~~~~~~~
@@ -43,6 +45,7 @@ Example:
     myTimer.Start();
 
 
+------------
 
 TTimeMarker.Reset
 ~~~~~~~~~~~~~~~~~
@@ -64,6 +67,7 @@ Example:
     myTimer.Reset();
 
 
+------------
 
 TTimeMarker.Pause
 ~~~~~~~~~~~~~~~~~
@@ -87,6 +91,7 @@ Example:
     myTimer.Start();
 
 
+------------
 
 TTimeMarker.GetTime
 ~~~~~~~~~~~~~~~~~~~
@@ -112,6 +117,7 @@ Example:
 
 
 
+------------
 
 TTimeMarker.GetTotalTime
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -135,6 +141,7 @@ Example:
 
 
 
+------------
 
 TCountDown
 ~~~~~~~~~~~~~~~~~~~
@@ -153,3 +160,4 @@ Example:
     {do something};
 
 
+------------

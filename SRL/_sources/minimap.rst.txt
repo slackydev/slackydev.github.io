@@ -3,6 +3,7 @@ BankScreen
 ==========
 
 
+------------
 
 Minimap.GetMiddle
 ~~~~~~~~~~~~~~~~~~
@@ -13,6 +14,7 @@ Minimap.GetMiddle
 Returns the center of the minimap
 
 
+------------
 
 Minimap.GetPrayerLevel
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -23,6 +25,7 @@ Minimap.GetPrayerLevel
 Returns your current prayer level
 
 
+------------
 
 Minimap.GetHPLevel
 ~~~~~~~~~~~~~~~~~~~
@@ -33,6 +36,7 @@ Minimap.GetHPLevel
 Returns your current HP level
 
 
+------------
 
 Minimap.GetHPPercent
 ~~~~~~~~~~~~~~~~~~~~~
@@ -43,6 +47,7 @@ Minimap.GetHPPercent
 Returns your current HP level as a percentage `0..100`
 
 
+------------
 
 Minimap.GetSpecialAttack
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -53,6 +58,7 @@ Minimap.GetSpecialAttack
 Returns your special attack.
 
 
+------------
 
 Minimap.IsPoisoned
 ~~~~~~~~~~~~~~~~~~
@@ -63,6 +69,7 @@ Minimap.IsPoisoned
 Returns true if you're poisoned by checking the minimap orb.
 
 
+------------
 
 Minimap.CurePoison
 ~~~~~~~~~~~~~~~~~~
@@ -73,6 +80,7 @@ Minimap.CurePoison
 Clicks the hitpoints orb if currently poisoned.
 
 
+------------
 
 Minimap.GetRunEnergy
 ~~~~~~~~~~~~~~~~~~~~~
@@ -83,6 +91,7 @@ Minimap.GetRunEnergy
 Returns your current energy level 
 
 
+------------
 
 Minimap.isPrayerEnabled
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -93,6 +102,7 @@ Minimap.isPrayerEnabled
 Returns `True` if you have enabled it otherwise `False`.
 
 
+------------
 
 Minimap.isRunEnabled
 ~~~~~~~~~~~~~~~~~~~~~
@@ -103,6 +113,7 @@ Minimap.isRunEnabled
 Returns `True` if you have enabled it otherwise `False`.
 
 
+------------
 
 Minimap.TogglePrayer
 ~~~~~~~~~~~~~~~~~~~~~
@@ -113,6 +124,7 @@ Minimap.TogglePrayer
 A toggle to enable or disable prayer.
 
 
+------------
 
 Minimap.ToggleRun
 ~~~~~~~~~~~~~~~~~~
@@ -123,6 +135,7 @@ Minimap.ToggleRun
 A toggle to enable or disable running.
 
 
+------------
 
 Minimap.isPlayerMoving
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -133,6 +146,7 @@ Minimap.isPlayerMoving
 Returns `True` if your character is moving.
 
 
+------------
 
 Minimap.FindFlag
 ~~~~~~~~~~~~~~~~
@@ -143,6 +157,7 @@ Minimap.FindFlag
 Searches for the flag on a bitmap.
 
 
+------------
 
 Minimap.isFlagPresent
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -153,6 +168,7 @@ Minimap.isFlagPresent
 Returns True if the flag can be found on the minimap.. otherwise False.
 
 
+------------
 
 Minimap.WaitFlag
 ~~~~~~~~~~~~~~~~~
@@ -164,6 +180,7 @@ Waits while the flag distance is greater than `dist`. Timeout is ~20 seconds whi
 is reset when flag distance has changed.
 
 
+------------
 
 Minimap.WaitPlayerMoving
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -174,6 +191,7 @@ Minimap.WaitPlayerMoving
 Waits till your character is no longer moving.
 
 
+------------
 
 Minimap.WaitFlagEx
 ~~~~~~~~~~~~~~~~~~
@@ -198,6 +216,7 @@ Example:
       srl.Writeln('We have finished walking, but the flag moved alot so we didnt hit our target pos');
 
 
+------------
 
 Minimap.GetCompassAngle
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -208,6 +227,7 @@ Minimap.GetCompassAngle
 Returns the current compass angle, default as degrees.
 
 
+------------
 
 Minimap.MouseSetCompassAngle
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -218,3 +238,4 @@ Minimap.MouseSetCompassAngle
 Some long code that does stuff.
 
 
+------------

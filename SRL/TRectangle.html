@@ -210,6 +210,7 @@
 <h1>TRectangle<a class="headerlink" href="#trectangle" title="Permalink to this headline">¶</a></h1>
 <p>TRectangle related methods</p>
 <p>Type definition is found in shared/globals.simba</p>
+<hr class="docutils" />
 <div class="section" id="trectangle-totpa">
 <h2>TRectangle.ToTPA<a class="headerlink" href="#trectangle-totpa" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="k">function</span> <span class="nc">TRectangle</span><span class="o">.</span><span class="nf">ToTPA</span><span class="p">()</span><span class="o">:</span> <span class="n">TPointArray</span><span class="o">;</span> <span class="n">constref</span><span class="o">;</span>
@@ -217,6 +218,7 @@
 </div>
 <p>TPA from the rectangle.</p>
 </div>
+<hr class="docutils" />
 <div class="section" id="trectangle-bounds">
 <h2>TRectangle.Bounds<a class="headerlink" href="#trectangle-bounds" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="k">function</span> <span class="nc">TRectangle</span><span class="o">.</span><span class="nf">Bounds</span><span class="p">()</span><span class="o">:</span> <span class="n">TBox</span><span class="o">;</span> <span class="n">constref</span><span class="o">;</span>
@@ -224,6 +226,7 @@
 </div>
 <p>Returns the minimum bounding box covering the rectangle</p>
 </div>
+<hr class="docutils" />
 <div class="section" id="trectangle-radius">
 <h2>TRectangle.Radius<a class="headerlink" href="#trectangle-radius" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="k">function</span> <span class="nc">TRectangle</span><span class="o">.</span><span class="nf">Radius</span><span class="p">()</span><span class="o">:</span> <span class="kt">Double</span><span class="o">;</span> <span class="n">constref</span><span class="o">;</span>
@@ -231,6 +234,7 @@
 </div>
 <p>Returns the radius of the shortest side, for the maximum see MaxRadius</p>
 </div>
+<hr class="docutils" />
 <div class="section" id="trectangle-maxradius">
 <h2>TRectangle.MaxRadius<a class="headerlink" href="#trectangle-maxradius" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="k">function</span> <span class="nc">TRectangle</span><span class="o">.</span><span class="nf">MaxRadius</span><span class="p">()</span><span class="o">:</span> <span class="kt">Double</span><span class="o">;</span> <span class="n">constref</span><span class="o">;</span>
@@ -238,6 +242,7 @@
 </div>
 <p>Returns the radius of the longest side, for minimum see Radius</p>
 </div>
+<hr class="docutils" />
 <div class="section" id="trectangle-mean">
 <h2>TRectangle.Mean<a class="headerlink" href="#trectangle-mean" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="k">function</span> <span class="nc">TRectangle</span><span class="o">.</span><span class="nf">Mean</span><span class="p">()</span><span class="o">:</span> <span class="n">TPoint</span><span class="o">;</span> <span class="n">constref</span><span class="o">;</span>
@@ -249,6 +254,7 @@
 <p class="last">by slacky</p>
 </div>
 </div>
+<hr class="docutils" />
 <div class="section" id="trectangle-rotate">
 <h2>TRectangle.Rotate<a class="headerlink" href="#trectangle-rotate" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="k">function</span> <span class="nc">TRectangle</span><span class="o">.</span><span class="nf">Rotate</span><span class="p">(</span><span class="n">Angle</span><span class="o">:</span> <span class="kt">Double</span><span class="p">)</span><span class="o">:</span> <span class="n">TRectangle</span><span class="o">;</span> <span class="n">constref</span><span class="o">;</span>
@@ -256,6 +262,7 @@
 </div>
 <p>Returns a rotated copy of the rectangle</p>
 </div>
+<hr class="docutils" />
 <div class="section" id="trectangle-contains">
 <h2>TRectangle.Contains<a class="headerlink" href="#trectangle-contains" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="k">function</span> <span class="nc">TRectangle</span><span class="o">.</span><span class="nf">Contains</span><span class="p">(</span><span class="n">Pt</span><span class="o">:</span> <span class="n">TPoint</span><span class="p">)</span><span class="o">:</span> <span class="kt">Boolean</span><span class="o">;</span> <span class="n">constref</span><span class="o">;</span>
@@ -264,6 +271,7 @@
 <p>Returns true if the point <cite>Pt</cite> is inside the rectangle.
 .. note:: by slacky</p>
 </div>
+<hr class="docutils" />
 <div class="section" id="trectangle-dirbylen">
 <h2>TRectangle.DirByLen<a class="headerlink" href="#trectangle-dirbylen" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="k">function</span> <span class="nc">TRectangle</span><span class="o">.</span><span class="nf">DirByLen</span><span class="p">(</span><span class="n">Longest</span><span class="o">:</span> <span class="kt">Boolean</span><span class="o">=</span><span class="k">True</span><span class="p">)</span><span class="o">:</span> <span class="n">ESplitDirection</span><span class="o">;</span> <span class="n">constref</span><span class="o">;</span>
@@ -275,6 +283,7 @@
 <p class="last">by slacky</p>
 </div>
 </div>
+<hr class="docutils" />
 <div class="section" id="trectangle-partition">
 <h2>TRectangle.Partition<a class="headerlink" href="#trectangle-partition" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="k">function</span> <span class="nc">TRectangle</span><span class="o">.</span><span class="nf">Partition</span><span class="p">(</span><span class="n">m</span><span class="o">,</span><span class="n">n</span><span class="o">:</span><span class="n">Int32</span><span class="o">;</span> <span class="n">dir</span><span class="o">:</span><span class="n">ESplitDirection</span><span class="o">=</span><span class="n">rpTopLeft</span><span class="p">)</span><span class="o">:</span> <span class="n">TRectArray</span><span class="o">;</span> <span class="n">constref</span><span class="o">;</span>
@@ -286,6 +295,7 @@
 <p class="last">by slacky</p>
 </div>
 </div>
+<hr class="docutils" />
 <div class="section" id="trectangle-offsetfunc">
 <h2>TRectangle.OffsetFunc<a class="headerlink" href="#trectangle-offsetfunc" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="k">function</span> <span class="nc">TRectangle</span><span class="o">.</span><span class="nf">OffsetFunc</span><span class="p">(</span><span class="n">pt</span><span class="o">:</span> <span class="n">TPoint</span><span class="p">)</span><span class="o">:</span> <span class="n">TRectangle</span><span class="o">;</span> <span class="n">constref</span><span class="o">;</span>
@@ -293,6 +303,7 @@
 </div>
 <p>Offset the rectangle</p>
 </div>
+<hr class="docutils" />
 <div class="section" id="trectangle-filter">
 <h2>TRectangle.Filter<a class="headerlink" href="#trectangle-filter" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="k">function</span> <span class="nc">TRectangle</span><span class="o">.</span><span class="nf">Filter</span><span class="p">(</span><span class="n">TestSet</span><span class="o">:</span> <span class="n">TPointArray</span><span class="p">)</span><span class="o">:</span> <span class="n">TPointArray</span><span class="o">;</span> <span class="n">constref</span><span class="o">;</span>
@@ -304,6 +315,7 @@
 <p class="last">by slacky</p>
 </div>
 </div>
+<hr class="docutils" />
 <div class="section" id="trectangle-expand">
 <h2>TRectangle.Expand<a class="headerlink" href="#trectangle-expand" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="k">function</span> <span class="nc">TRectangle</span><span class="o">.</span><span class="nf">Expand</span><span class="p">(</span><span class="nb">Inc</span><span class="o">:</span> <span class="n">Int32</span><span class="p">)</span><span class="o">:</span> <span class="n">TRectangle</span><span class="o">;</span> <span class="n">constref</span><span class="o">;</span>
@@ -315,6 +327,7 @@
 <p class="last">by slacky</p>
 </div>
 </div>
+<hr class="docutils" />
 <div class="section" id="trectangle-nearestedge">
 <h2>TRectangle.NearestEdge<a class="headerlink" href="#trectangle-nearestedge" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="k">function</span> <span class="nc">TRectangle</span><span class="o">.</span><span class="nf">NearestEdge</span><span class="p">(</span><span class="n">P</span><span class="o">:</span> <span class="n">TPoint</span><span class="p">)</span><span class="o">:</span> <span class="n">TPoint</span><span class="o">;</span> <span class="n">constref</span><span class="o">;</span>
@@ -325,6 +338,7 @@
 <p class="first admonition-title">Note</p>
 <p class="last">by slacky</p>
 </div>
+<hr class="docutils" />
 </div>
 </div>
 

@@ -4,3 +4,4 @@ TBoolArray
 TBoolArray related methods
 
 
+------------

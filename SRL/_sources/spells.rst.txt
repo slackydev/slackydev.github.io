@@ -4,6 +4,7 @@ Spells
 The file holds functions and procedures that are related to the spells gametab
 
 
+------------
 
 var Spells
 ~~~~~~~~~~~
@@ -21,6 +22,7 @@ Spells follow the same name as they do ingame, only prefixed with ``CAST_``
     CAST_ENCHANT_CROSSBOW_BOLT
 
 
+------------
 
 Spells.Open
 ~~~~~~~~~~~
@@ -31,6 +33,7 @@ Spells.Open
 Opens the interface
 
 
+------------
 
 Spells.IsOpen
 ~~~~~~~~~~~~~
@@ -41,6 +44,7 @@ Spells.IsOpen
 Checks if the interface is already open.
 
 
+------------
 
 Spells.GetSpellBox
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -53,6 +57,7 @@ Returns the bounding box covering the given spell.
 .. note:: by slacky
 
 
+------------
 
 Spells.PointToSlot
 ~~~~~~~~~~~~~~~~~~
@@ -63,6 +68,7 @@ Spells.PointToSlot
 Returns the index of the slot under `PT`
 
 
+------------
 
 Spells.MouseOver
 ~~~~~~~~~~~~~~~~
@@ -73,6 +79,7 @@ Spells.MouseOver
 Moves the mouse over the given spell.
 
 
+------------
 
 Spells.CanActivate
 ~~~~~~~~~~~~~~~~~~~
@@ -83,6 +90,7 @@ Spells.CanActivate
 Returns True if you can use the spell..
 
 
+------------
 
 Spells.Selected
 ~~~~~~~~~~~~~~~
@@ -93,6 +101,7 @@ Spells.Selected
 Returns True if the spell is currently selected
 
 
+------------
 
 Spells.Cast
 ~~~~~~~~~~~
@@ -103,3 +112,4 @@ Spells.Cast
 Casts the spell
 
 
+------------

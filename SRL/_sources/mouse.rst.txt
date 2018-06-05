@@ -4,6 +4,7 @@ Mouse
 The Mouse file holds functions and procedures that are related to mouse-stuffz.
 
 
+------------
 
 Moving the mouse
 ~~~~~~~~~~~~~~~~
@@ -42,3 +43,4 @@ Move and click the mouse to a random (gauss) point in a circle.
 ``Mouse.Click(Point(100, 100), 50, mouse_Right);``
 
 
+------------

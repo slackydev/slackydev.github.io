@@ -4,18 +4,21 @@ Combat
 The combat file holds functions and procedures that are used for configuring combat.
 
 
+------------
 
 type TRSCombat
 ~~~~~~~~~~~~~~~
 The type that holds functions and properties of the Runescape combat interface.
 
 
+------------
 
 var Combat
 ~~~~~~~~~~~
 Variable that stores functions and properties of the Runescape combat interface.
 
 
+------------
 
 type ECombatStyle
 ~~~~~~~~~~~~~~~~~~
@@ -26,6 +29,7 @@ type ECombatStyle
 identifiers that is used for pressing the different buttons in the combat interface
 
 
+------------
 
 Combat.Open
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -36,6 +40,7 @@ Combat.Open
 Opens the interface
 
 
+------------
 
 Combat.IsOpen
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -46,6 +51,7 @@ Combat.IsOpen
 Checks if the interface is already open.
 
 
+------------
 
 Combat.ToggleButton
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -56,6 +62,7 @@ Combat.ToggleButton
 Changes the state of the given button ``btn`` (if needed) to the given state ``enable``.
 
 
+------------
 
 Combat.GetCombatLevel
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -66,6 +73,7 @@ Combat.GetCombatLevel
 Returns your combat-level.
 
 
+------------
 
 Combat.GetWeapon
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -76,6 +84,7 @@ Combat.GetWeapon
 Returns the currently equipped weapon.
 
 
+------------
 
 Combat.GetSpecialAttack
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -86,6 +95,7 @@ Combat.GetSpecialAttack
 Returns the specual attack level
 
 
+------------
 
 Combat.SpecialAttackEnabled
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -96,6 +106,7 @@ Combat.SpecialAttackEnabled
 Returns ``True`` if special attack has been activated
 
 
+------------
 
 Combat.UseSpecialAttack
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -106,3 +117,4 @@ Combat.UseSpecialAttack
 Attempts to enabled special attack, returns ``True`` if it managed to, or if it was already enabled.
 
 
+------------

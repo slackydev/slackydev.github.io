@@ -30,12 +30,14 @@ This is also the file that includes every tab's code.
    end;
 
 
+------------
 
 var Gametabs
 ~~~~~~~~~~~~
 Variable that stores functions and properties relating to gametabs.
 
 
+------------
 
 Gametab.ToggleFKeys
 ~~~~~~~~~~~~~~~~~~~
@@ -46,6 +48,7 @@ Gametab.ToggleFKeys
 Enables support for FKeys to open tabs.
 
 
+------------
 
 Gametab.GetBounds
 ~~~~~~~~~~~~~~~~~~~
@@ -56,6 +59,7 @@ Gametab.GetBounds
 Returns the bounds of the tab-button
 
 
+------------
 
 Gametab.PointToSlot
 ~~~~~~~~~~~~~~~~~~~
@@ -68,6 +72,7 @@ an integer, as it will return ``-1`` if it fails. To convert it to a
 gametab is just a matter of casting it like ``EGameTab(theValue)``
 
 
+------------
 
 Gametab.IsOpen
 ~~~~~~~~~~~~~~~
@@ -78,6 +83,7 @@ Gametab.IsOpen
 Checks if the given tab is open or now. By default it wont wait (expecting it to open).
 
 
+------------
 
 Gametab.Open
 ~~~~~~~~~~~~~~~
@@ -88,6 +94,7 @@ Gametab.Open
 Opens the given gametab, by default it retries twice.
 
 
+------------
 
 Gametab.Open
 ~~~~~~~~~~~~~~~
@@ -98,6 +105,7 @@ Gametab.Open
 Only moves the mouse over the given tab.
 
 
+------------
 
 Gametab.GetCurrent
 ~~~~~~~~~~~~~~~~~~~
@@ -108,3 +116,4 @@ Gametab.GetCurrent
 Returns the current open tab.
 
 
+------------

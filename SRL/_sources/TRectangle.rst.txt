@@ -6,6 +6,7 @@ TRectangle related methods
 Type definition is found in shared/globals.simba
 
 
+------------
 
 TRectangle.ToTPA
 ~~~~~~~~~~~~~~~~~
@@ -16,6 +17,7 @@ TRectangle.ToTPA
 TPA from the rectangle.
 
 
+------------
 
 TRectangle.Bounds
 ~~~~~~~~~~~~~~~~~
@@ -26,6 +28,7 @@ TRectangle.Bounds
 Returns the minimum bounding box covering the rectangle
 
 
+------------
 
 TRectangle.Radius
 ~~~~~~~~~~~~~~~~~
@@ -36,6 +39,7 @@ TRectangle.Radius
 Returns the radius of the shortest side, for the maximum see MaxRadius
 
 
+------------
 
 TRectangle.MaxRadius
 ~~~~~~~~~~~~~~~~~~~~
@@ -46,6 +50,7 @@ TRectangle.MaxRadius
 Returns the radius of the longest side, for minimum see Radius
 
 
+------------
 
 TRectangle.Mean
 ~~~~~~~~~~~~~~~~
@@ -58,6 +63,7 @@ Middle of the rectangle
 .. note:: by slacky
 
 
+------------
 
 TRectangle.Rotate
 ~~~~~~~~~~~~~~~~~~~~
@@ -68,6 +74,7 @@ TRectangle.Rotate
 Returns a rotated copy of the rectangle
 
 
+------------
 
 TRectangle.Contains
 ~~~~~~~~~~~~~~~~~~~~
@@ -79,6 +86,7 @@ Returns true if the point `Pt` is inside the rectangle.
 .. note:: by slacky
 
 
+------------
 
 TRectangle.DirByLen
 ~~~~~~~~~~~~~~~~~~~~
@@ -91,6 +99,7 @@ Returns the direction which is the longest or shortest.
 .. note:: by slacky
 
 
+------------
 
 TRectangle.Partition
 ~~~~~~~~~~~~~~~~~~~~~
@@ -103,6 +112,7 @@ Break the rectangle into smaller rectangles. Goes well along with `DirByLen`
 .. note:: by slacky
 
 
+------------
 
 TRectangle.OffsetFunc
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -113,6 +123,7 @@ TRectangle.OffsetFunc
 Offset the rectangle
 
 
+------------
 
 TRectangle.Filter
 ~~~~~~~~~~~~~~~~~~~
@@ -125,6 +136,7 @@ Extract all the points from `TestSet` that fits within this rectangle.
 .. note:: by slacky
 
 
+------------
 
 TRectangle.Expand
 ~~~~~~~~~~~~~~~~~~
@@ -137,6 +149,7 @@ Increase or decrease the dimensions of the rectangle.
 .. note:: by slacky
 
 
+------------
 
 TRectangle.NearestEdge
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -149,3 +162,4 @@ Returns the closest edge point (think Rect.ToTPA.Connect) to the TPoint `P`.
 .. note:: by slacky
 
 
+------------

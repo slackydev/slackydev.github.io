@@ -91,9 +91,13 @@
 <li class="toctree-l2"><a class="reference internal" href="#bankscreen-close">BankScreen.Close</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#bankscreen-clickbutton">BankScreen.ClickButton</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#bankscreen-istoggled">BankScreen.IsToggled</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#bankscreen-fixslots">Bankscreen.FixSlots</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#bankscreen-getslotbox">Bankscreen.GetSlotBox</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#bankscreen-pointtoslot">Bankscreen.PointToSlot</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#bankscreen-itemin">BankScreen.ItemIn</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#bankscreen-depositall">BankScreen.DepositAll</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#bankscreen-deposititem">BankScreen.DepositItem</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#bankscreen-deposit">BankScreen.Deposit</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#bankscreen-rearrangemode">BankScreen.RearrangeMode</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#bankscreen-withdrawas">BankScreen.WithdrawAs</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#bankscreen-search">BankScreen.Search</a></li>
@@ -214,6 +218,7 @@ All methods here are called with the bankscreen <code class="docutils literal no
 <div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="nb">Writeln</span><span class="p">(</span><span class="n">BankScreen</span><span class="o">.</span><span class="n">IsOpen</span><span class="p">())</span><span class="o">;</span>
 </pre></div>
 </div>
+<hr class="docutils" />
 <div class="section" id="bankscreen-isopen">
 <h2>BankScreen.IsOpen<a class="headerlink" href="#bankscreen-isopen" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="k">function</span> <span class="nc">TRSBankScreen</span><span class="o">.</span><span class="nf">IsOpen</span><span class="p">()</span><span class="o">:</span> <span class="kt">Boolean</span><span class="o">;</span>
@@ -221,13 +226,15 @@ All methods here are called with the bankscreen <code class="docutils literal no
 </div>
 <p>returns True if the bankscreen is open</p>
 </div>
+<hr class="docutils" />
 <div class="section" id="bankscreen-openat">
 <h2>BankScreen.OpenAt<a class="headerlink" href="#bankscreen-openat" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="k">function</span> <span class="nc">TRSBankScreen</span><span class="o">.</span><span class="nf">OpenAt</span><span class="p">(</span><span class="n">P</span><span class="o">:</span> <span class="n">TPoint</span><span class="p">)</span><span class="o">:</span> <span class="kt">Boolean</span><span class="o">;</span>
 </pre></div>
 </div>
-<p>returns True if the bankscreen could be open’d at given location <cite>P</cite></p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">True</span></code> if the bankscreen could be open’d at given location <code class="docutils literal notranslate"><span class="pre">P</span></code></p>
 </div>
+<hr class="docutils" />
 <div class="section" id="bankscreen-magicalbankerfinder">
 <h2>BankScreen._MagicalBankerFinder<a class="headerlink" href="#bankscreen-magicalbankerfinder" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="k">function</span> <span class="nc">TRSBankScreen</span><span class="o">.</span><span class="nf">_MagicalBankerFinder</span><span class="p">(</span><span class="n">BoothTopColor</span><span class="o">:</span> <span class="n">TCTS2Color</span><span class="o">;</span> <span class="n">BankerColor</span><span class="o">:</span> <span class="n">EBankerColor</span><span class="o">;</span> <span class="n">Offset</span><span class="o">:</span> <span class="n">TPoint</span><span class="p">)</span><span class="o">:</span> <span class="kt">Boolean</span><span class="o">;</span>
@@ -235,6 +242,7 @@ All methods here are called with the bankscreen <code class="docutils literal no
 </div>
 <p>Calculates and finds where a bank NPC should be based from the bank booth.</p>
 </div>
+<hr class="docutils" />
 <div class="section" id="bankscreen-open">
 <h2>BankScreen.Open<a class="headerlink" href="#bankscreen-open" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="k">function</span> <span class="nc">TRSBankScreen</span><span class="o">.</span><span class="nf">Open</span><span class="p">(</span><span class="n">Loc</span><span class="o">:</span> <span class="n">EBankLocation</span><span class="o">;</span> <span class="n">Tries</span><span class="o">:</span> <span class="n">Int32</span> <span class="o">=</span> <span class="mi">3</span><span class="p">)</span><span class="o">:</span> <span class="kt">Boolean</span><span class="o">;</span>
@@ -242,6 +250,7 @@ All methods here are called with the bankscreen <code class="docutils literal no
 </div>
 <p>Opens the bankscreen at the selected bank location.</p>
 </div>
+<hr class="docutils" />
 <div class="section" id="bankscreen-close">
 <h2>BankScreen.Close<a class="headerlink" href="#bankscreen-close" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="k">function</span> <span class="nc">TRSBankScreen</span><span class="o">.</span><span class="nf">Close</span><span class="p">()</span><span class="o">:</span> <span class="kt">Boolean</span><span class="o">;</span>
@@ -249,6 +258,7 @@ All methods here are called with the bankscreen <code class="docutils literal no
 </div>
 <p>Closes the bankscreen, returns True on success</p>
 </div>
+<hr class="docutils" />
 <div class="section" id="bankscreen-clickbutton">
 <h2>BankScreen.ClickButton<a class="headerlink" href="#bankscreen-clickbutton" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="k">function</span> <span class="nc">TRSBankScreen</span><span class="o">.</span><span class="nf">ClickButton</span><span class="p">(</span><span class="n">btn</span><span class="o">:</span> <span class="n">EBankButton</span><span class="o">;</span> <span class="n">clickType</span><span class="o">:</span> <span class="kt">Integer</span> <span class="o">=</span> <span class="n">mouse_Left</span><span class="p">)</span><span class="o">:</span> <span class="kt">Boolean</span><span class="o">;</span>
@@ -256,6 +266,7 @@ All methods here are called with the bankscreen <code class="docutils literal no
 </div>
 <p>Toggles the button</p>
 </div>
+<hr class="docutils" />
 <div class="section" id="bankscreen-istoggled">
 <h2>BankScreen.IsToggled<a class="headerlink" href="#bankscreen-istoggled" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="k">function</span> <span class="nc">TRSBankScreen</span><span class="o">.</span><span class="nf">IsToggled</span><span class="p">(</span><span class="n">btn</span><span class="o">:</span> <span class="n">EBankButton</span><span class="o">;</span> <span class="n">minMatch</span><span class="o">:</span><span class="n">Int32</span><span class="o">=</span><span class="mi">50</span><span class="p">)</span><span class="o">:</span> <span class="kt">Boolean</span><span class="o">;</span>
@@ -263,6 +274,23 @@ All methods here are called with the bankscreen <code class="docutils literal no
 </div>
 <p>Checks if the given button is red/toggled</p>
 </div>
+<hr class="docutils" />
+<div class="section" id="bankscreen-fixslots">
+<h2>Bankscreen.FixSlots<a class="headerlink" href="#bankscreen-fixslots" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="k">procedure</span> <span class="nc">TRSBankScreen</span><span class="o">.</span><span class="nf">FixSlots</span><span class="p">()</span><span class="o">;</span>
+</pre></div>
+</div>
+<p>Scrolls up to the top of the bank, so slots are aligned.</p>
+</div>
+<hr class="docutils" />
+<div class="section" id="bankscreen-getslotbox">
+<h2>Bankscreen.GetSlotBox<a class="headerlink" href="#bankscreen-getslotbox" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="k">function</span> <span class="nc">TRSBankScreen</span><span class="o">.</span><span class="nf">GetSlotBox</span><span class="p">(</span><span class="n">Slot</span><span class="o">:</span> <span class="n">UInt32</span><span class="p">)</span><span class="o">:</span> <span class="n">TBox</span><span class="o">;</span>
+</pre></div>
+</div>
+<p>Returns the bounds of the given slot id.</p>
+</div>
+<hr class="docutils" />
 <div class="section" id="bankscreen-pointtoslot">
 <h2>Bankscreen.PointToSlot<a class="headerlink" href="#bankscreen-pointtoslot" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="k">function</span> <span class="nc">TRSBankScreen</span><span class="o">.</span><span class="nf">PointToSlot</span><span class="p">(</span><span class="n">pt</span><span class="o">:</span><span class="n">TPoint</span><span class="p">)</span><span class="o">:</span> <span class="n">Int32</span><span class="o">;</span>
@@ -271,6 +299,7 @@ All methods here are called with the bankscreen <code class="docutils literal no
 <p>Returns the slot-index under the given TPoint.
 If it’s not over a slot then -1 is returned</p>
 </div>
+<hr class="docutils" />
 <div class="section" id="bankscreen-itemin">
 <h2>BankScreen.ItemIn<a class="headerlink" href="#bankscreen-itemin" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="k">function</span> <span class="nc">TRSBankScreen</span><span class="o">.</span><span class="nf">ItemIn</span><span class="p">(</span><span class="n">Slot</span><span class="o">:</span> <span class="n">UInt32</span><span class="p">)</span><span class="o">:</span> <span class="kt">Boolean</span><span class="o">;</span>
@@ -280,17 +309,31 @@ If it’s not over a slot then -1 is returned</p>
 <p>Returns True if there’s an item in the given slot.
 Alias <cite>IsSlotUsed</cite> exists for naming compatiblity with Inventory.</p>
 </div>
+<hr class="docutils" />
 <div class="section" id="bankscreen-depositall">
 <h2>BankScreen.DepositAll<a class="headerlink" href="#bankscreen-depositall" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="k">function</span> <span class="nc">TRSBankScreen</span><span class="o">.</span><span class="nf">DepositAll</span><span class="p">()</span><span class="o">:</span> <span class="kt">Boolean</span><span class="o">;</span>
 </pre></div>
 </div>
 <p>Depositis your inventory by clicking the deposit inventory button</p>
-<blockquote>
-<div><p>Depeosit a single item, or all of it’s kind from inventory.</p>
-<p>Deposit all your items, retries two times.</p>
-</div></blockquote>
 </div>
+<hr class="docutils" />
+<div class="section" id="bankscreen-deposititem">
+<h2>BankScreen.DepositItem<a class="headerlink" href="#bankscreen-deposititem" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="k">function</span> <span class="nc">TRSBankScreen</span><span class="o">.</span><span class="nf">DepositItem</span><span class="p">(</span><span class="n">Slot</span><span class="o">:</span><span class="n">Int32</span><span class="o">;</span> <span class="n">DepositAll</span><span class="o">:</span><span class="kt">Boolean</span><span class="p">)</span><span class="o">:</span> <span class="kt">Boolean</span><span class="o">;</span>
+</pre></div>
+</div>
+<p>Depeosit a single item, or all of it’s kind from inventory.</p>
+</div>
+<hr class="docutils" />
+<div class="section" id="bankscreen-deposit">
+<h2>BankScreen.Deposit<a class="headerlink" href="#bankscreen-deposit" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="k">function</span> <span class="nc">TRSBankScreen</span><span class="o">.</span><span class="nf">Deposit</span><span class="p">(</span><span class="n">SlotArr</span><span class="o">:</span> <span class="n">TIntegerArray</span><span class="p">)</span><span class="o">:</span> <span class="kt">Boolean</span><span class="o">;</span>
+</pre></div>
+</div>
+<p>Depeosits all the given items / slots</p>
+</div>
+<hr class="docutils" />
 <div class="section" id="bankscreen-rearrangemode">
 <h2>BankScreen.RearrangeMode<a class="headerlink" href="#bankscreen-rearrangemode" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="k">function</span> <span class="nc">TRSBankScreen</span><span class="o">.</span><span class="nf">RearrangeMode</span><span class="p">(</span><span class="n">mode</span><span class="o">:</span><span class="n">EBankButton</span><span class="p">)</span><span class="o">:</span> <span class="kt">Boolean</span><span class="o">;</span>
@@ -298,6 +341,7 @@ Alias <cite>IsSlotUsed</cite> exists for naming compatiblity with Inventory.</p>
 </div>
 <p>Changes the way items are moved around, valid options are <code class="docutils literal notranslate"><span class="pre">bbSwap</span></code> and <code class="docutils literal notranslate"><span class="pre">bbInsert</span></code>.</p>
 </div>
+<hr class="docutils" />
 <div class="section" id="bankscreen-withdrawas">
 <h2>BankScreen.WithdrawAs<a class="headerlink" href="#bankscreen-withdrawas" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="k">function</span> <span class="nc">TRSBankScreen</span><span class="o">.</span><span class="nf">WithdrawAs</span><span class="p">(</span><span class="n">mode</span><span class="o">:</span><span class="n">EBankButton</span><span class="p">)</span><span class="o">:</span> <span class="kt">Boolean</span><span class="o">;</span>
@@ -305,6 +349,7 @@ Alias <cite>IsSlotUsed</cite> exists for naming compatiblity with Inventory.</p>
 </div>
 <p>Changes the way items are withdrawn. Valid options are <code class="docutils literal notranslate"><span class="pre">bbItem</span></code> and <code class="docutils literal notranslate"><span class="pre">bbNote</span></code></p>
 </div>
+<hr class="docutils" />
 <div class="section" id="bankscreen-search">
 <h2>BankScreen.Search<a class="headerlink" href="#bankscreen-search" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="k">function</span> <span class="nc">TRSBankScreen</span><span class="o">.</span><span class="nf">Search</span><span class="p">(</span><span class="n">item</span><span class="o">:</span><span class="k">String</span><span class="p">)</span><span class="o">:</span> <span class="kt">Boolean</span><span class="o">;</span>
@@ -312,6 +357,7 @@ Alias <cite>IsSlotUsed</cite> exists for naming compatiblity with Inventory.</p>
 </div>
 <p>Search for an item using the search option in the bank.</p>
 </div>
+<hr class="docutils" />
 <div class="section" id="bankscreen-withdraw">
 <h2>BankScreen.Withdraw<a class="headerlink" href="#bankscreen-withdraw" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="k">function</span> <span class="nc">TRSBankScreen</span><span class="o">.</span><span class="nf">Withdraw</span><span class="p">(</span><span class="n">slot</span><span class="o">,</span> <span class="n">amount</span><span class="o">:</span><span class="n">Int32</span><span class="o">;</span> <span class="n">upText</span><span class="o">:</span><span class="n">TStringArray</span><span class="o">=</span><span class="p">[]</span><span class="o">;</span> <span class="n">withdrawMode</span><span class="o">:</span><span class="n">EBankButton</span><span class="o">=</span><span class="n">bbItem</span><span class="p">)</span><span class="o">:</span> <span class="kt">Boolean</span><span class="o">;</span>
@@ -325,11 +371,7 @@ Alias <cite>IsSlotUsed</cite> exists for naming compatiblity with Inventory.</p>
 <li><code class="docutils literal notranslate"><span class="pre">WITHDRAW_ALL_BUT_ONE</span> <span class="pre">=</span> <span class="pre">-2;</span></code></li>
 </ul>
 </div></blockquote>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">by slacky</p>
-</div>
-<p>Example:</p>
+<p><strong>Example:</strong></p>
 <div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="c1">// withdraw 28 items from slot 1 if uptext matches</span>
 <span class="n">bankscreen</span><span class="o">.</span><span class="n">Withdraw</span><span class="p">(</span><span class="mi">1</span><span class="o">,</span> <span class="mi">28</span><span class="o">,</span> <span class="p">[</span><span class="s">&#39;Iron&#39;</span><span class="p">])</span><span class="o">;</span>
 
@@ -343,8 +385,13 @@ Alias <cite>IsSlotUsed</cite> exists for naming compatiblity with Inventory.</p>
 <span class="n">bankscreen</span><span class="o">.</span><span class="n">Withdraw</span><span class="p">(</span><span class="mi">1</span><span class="o">,</span> <span class="mi">28</span><span class="p">)</span><span class="o">;</span>
 </pre></div>
 </div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">by slacky</p>
 </div>
 </div>
+</div>
+<hr class="docutils" />
 <div class="section" id="pinscreen">
 <h1>PinScreen<a class="headerlink" href="#pinscreen" title="Permalink to this headline">¶</a></h1>
 <p>This file also stores all methods that are used in the pinscreen-iterface.</p>
@@ -355,6 +402,7 @@ looking at the code this will be a bit troublesome now? - slacky</p>
 <div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="nb">WriteLn</span><span class="p">(</span><span class="n">PinScreen</span><span class="o">.</span><span class="n">EnterPin</span><span class="p">())</span><span class="o">;</span> <span class="c1">// returns True if we got to the bank</span>
 </pre></div>
 </div>
+<hr class="docutils" />
 </div>
 
 

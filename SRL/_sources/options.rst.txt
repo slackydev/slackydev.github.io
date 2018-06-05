@@ -7,24 +7,28 @@ Keep in mind that the option-tab changes qute frequently in OSRS, so over time i
 to get outdated.
 
 
+------------
 
 type TRSOptions
 ~~~~~~~~~~~~~~~
 The type that holds functions and properties of the Runescape options interface.
 
 
+------------
 
 var Options
 ~~~~~~~~~~~
 Variable that stores functions and properties of the Runescape options interface.
 
 
+------------
 
 type EOptionsTab
 ~~~~~~~~~~~~~~~~
 A type that covers the internal tabs in TRSOptions: ``EOptionsTab = (optDisplay, optAudio, optChat, optControls)``
 
 
+------------
 
 Options.Open
 ~~~~~~~~~~~~~
@@ -35,6 +39,7 @@ Options.Open
 Opens the interface
 
 
+------------
 
 Options.IsOpen
 ~~~~~~~~~~~~~~~
@@ -45,6 +50,7 @@ Options.IsOpen
 Checks if the interface is already open.
 
 
+------------
 
 Options.GetCurrentTab
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -55,6 +61,7 @@ Options.GetCurrentTab
 Returns which tab is currently active.
 
 
+------------
 
 Options.SetCurrentTab
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -65,6 +72,7 @@ Options.SetCurrentTab
 Sets the current tab to the given ``Tab``
 
 
+------------
 
 Options.GetBrightness
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -75,6 +83,7 @@ Options.GetBrightness
 Returns the mainscreen brightness
 
 
+------------
 
 Options.SetBrightness
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -85,6 +94,7 @@ Options.SetBrightness
 Sets the mainscreen brightness
 
 
+------------
 
 Options.GetZoom
 ~~~~~~~~~~~~~~~~
@@ -95,6 +105,7 @@ Options.GetZoom
 Returns the mainscreen zoom
 
 
+------------
 
 Options.SetZoom
 ~~~~~~~~~~~~~~~~
@@ -105,6 +116,7 @@ Options.SetZoom
 Sets the zoom of the mainscreen. 0 = Zoomed out, 100 = Zoomed in.
 
 
+------------
 
 Options.ToggleAcceptAid
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -115,6 +127,7 @@ Options.ToggleAcceptAid
 Changes the state of the button to the given state.
 
 
+------------
 
 Options.ToggleRun
 ~~~~~~~~~~~~~~~~~~
@@ -125,6 +138,7 @@ Options.ToggleRun
 Changes the state of the button to the given state.
 
 
+------------
 
 Options.ToggleChatEffects
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -135,6 +149,7 @@ Options.ToggleChatEffects
 Changes the state of the button to the given state.
 
 
+------------
 
 Options.ToggleSplitPrivChat
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -145,6 +160,7 @@ Options.ToggleSplitPrivChat
 Changes the state of the button to the given state.
 
 
+------------
 
 Options.ToggleProfanityFilter
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -155,6 +171,7 @@ Options.ToggleProfanityFilter
 Changes the state of the button to the given state.
 
 
+------------
 
 Options.ToggleTimeoutNotice
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -165,6 +182,7 @@ Options.ToggleTimeoutNotice
 Changes the state of the button for "Login/Logout notification timeout" to the given state.
 
 
+------------
 
 Options.ToggleShiftDrop
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -175,3 +193,4 @@ Options.ToggleShiftDrop
 Changes the state of the button for "Shift Drop" to the given state.
 
 
+------------

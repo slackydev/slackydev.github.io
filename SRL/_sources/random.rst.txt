@@ -4,6 +4,7 @@ Random
 Random related methods
 
 
+------------
 
 srl.GaussRand
 ~~~~~~~~~~~~~~~
@@ -14,6 +15,7 @@ srl.GaussRand
 Generates a random gaussian/normal number.
 
 
+------------
 
 srl.TruncatedGauss
 ~~~~~~~~~~~~~~~~~~
@@ -25,6 +27,7 @@ Generates a random gaussian/normal number which is truncated and mapped within t
 given range ``[left..right]`` weighted towards ``left``
 
 
+------------
 
 srl.SkewedRand
 ~~~~~~~~~~~~~~~
@@ -36,6 +39,7 @@ Random skewed distribution generation. `Mode` is a number between `Lo` and `Hi` 
 where the most of the generated numbers will land.
 
 
+------------
 
 srl.NormalRange
 ~~~~~~~~~~~~~~~
@@ -46,6 +50,7 @@ srl.NormalRange
 Generates a random integer in the given range, weighted towards the mean.
 
 
+------------
 
 srl.NormalRange
 ~~~~~~~~~~~~~~~
@@ -56,6 +61,7 @@ srl.NormalRange
 Generates a random float in the given range, weighted towards the mean.
 
 
+------------
 
 srl.RandomPoint
 ~~~~~~~~~~~~~~~
@@ -67,6 +73,7 @@ Generates a random TPoint which weights around ``mean``, with a max distance
 from mean defined by ``maxRad``.
 
 
+------------
 
 srl.RandomPoint (overload)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -78,6 +85,7 @@ Generates a random TPoint in the bounds of the given box `bounds`,
 the point weights towards the middle of the box.
 
 
+------------
 
 srl.RandomPoint (overload)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -89,6 +97,7 @@ Generates a random TPoint in the given rectangle `rect`,
 The point weights towards the middle of the rectangle.
 
 
+------------
 
 srl.RandonPointEx
 ~~~~~~~~~~~~~~~~~~
@@ -104,6 +113,7 @@ The last parameter `Force` defines how much the generated point is to be skewed 
 * Force = 2: Result weighs heavily towrads the edge furthest away from `From`
 
 
+------------
 
 Wait (overload)
 ~~~~~~~~~~~~~~~~~
@@ -114,6 +124,7 @@ Wait (overload)
 Waits ... Weighted towards the mean of `min` and `max`
 
 
+------------
 
 WaitEx
 ~~~~~~~
@@ -124,6 +135,7 @@ WaitEx
 Waits ... Regular gauss random
 
 
+------------
 
 srl.rowp
 ~~~~~~~~~
@@ -139,3 +151,4 @@ Final implementation and math done by slacky.
 Force ranges from -1 (close to) to 1 (away from), where 0 is mean, but with a bit of a skewiness...
 
 
+------------

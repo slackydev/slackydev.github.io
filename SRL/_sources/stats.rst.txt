@@ -4,12 +4,14 @@ Stats
 The file holds functions and procedures that are related to the stats gametab
 
 
+------------
 
 var Stats
 ~~~~~~~~~~
 Variable that stores functions and properties of the Runescape stats gametab.
 
 
+------------
 
 Stats.Open
 ~~~~~~~~~~~
@@ -20,6 +22,7 @@ Stats.Open
 Opens the interface
 
 
+------------
 
 Stats.IsOpen
 ~~~~~~~~~~~~~
@@ -30,6 +33,7 @@ Stats.IsOpen
 Checks if the interface is already open.
 
 
+------------
 
 stats.SkillIsVaild
 ~~~~~~~~~~~~~~~~~~~
@@ -38,6 +42,7 @@ stats.SkillIsVaild
   function TRSStats.IsSkillVaild(Skill:Int32): Boolean;
 
 
+------------
 
 Stats.GetSkillBox
 ~~~~~~~~~~~~~~~~~~
@@ -48,6 +53,7 @@ Stats.GetSkillBox
 Returns the bounding box covering the given skill-index.
 
 
+------------
 
 Stats.MouseOver
 ~~~~~~~~~~~~~~~~
@@ -58,6 +64,7 @@ Stats.MouseOver
 Moves the mouse over the given skill-index.
 
 
+------------
 
 Stats.GetCurrentLevel
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -70,6 +77,7 @@ Returns the current level of a skill, handy for task that require prayer.
 Returns `-1` on failure.
 
 
+------------
 
 Stats.GetSkillInfo
 ~~~~~~~~~~~~~~~~~~~
@@ -80,6 +88,7 @@ Stats.GetSkillInfo
 Returns the level info: "Level", "xp", "next level at" and "remainder"
 
 
+------------
 
 Stats.HoverSkill
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -90,3 +99,4 @@ Stats.HoverSkill
 Holds the mouse over the given skill. Returns skill info, in case you care about it.
 
 
+------------

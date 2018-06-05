@@ -4,6 +4,7 @@ Loginscreen
 Loginscreen related methods
 
 
+------------
 
 TRSLoginScreen.OpenWorldSwitcher
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -26,6 +27,7 @@ Example:
   LoginScreen.OpenWorldSwitcher();
 
 
+------------
 
 TRSLoginScreen.GetResponse
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -43,6 +45,7 @@ Example:
   Writeln(LoginScreen.GetResponse);
 
 
+------------
 
 TRSLoginScreen.WaitResponse
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -61,3 +64,4 @@ Example:
   LoginScreen.OpenWorldSwitcher();
 
 
+------------

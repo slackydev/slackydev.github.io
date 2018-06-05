@@ -4,6 +4,7 @@ XPBar
 XPBar related methods
 
 
+------------
 
 XPBar.Read
 ~~~~~~~~~~
@@ -14,3 +15,4 @@ XPBar.Read
 Opens the XPBar if needed and returns the current total.
 
 
+------------

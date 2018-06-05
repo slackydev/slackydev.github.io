@@ -219,14 +219,17 @@
   <div class="section" id="inventory">
 <h1>Inventory<a class="headerlink" href="#inventory" title="Permalink to this headline">¶</a></h1>
 <p>The inventory file holds functions and procedures that are related to the runescape inventory</p>
+<hr class="docutils" />
 <div class="section" id="type-trsinventory">
 <h2>type TRSInventory<a class="headerlink" href="#type-trsinventory" title="Permalink to this headline">¶</a></h2>
 <p>The type that holds functions and properties of the Runescape inventory gametab.</p>
 </div>
+<hr class="docutils" />
 <div class="section" id="var-inventory">
 <h2>var Inventory<a class="headerlink" href="#var-inventory" title="Permalink to this headline">¶</a></h2>
 <p>Variable that stores functions and properties of the Runescape inventory gametab.</p>
 </div>
+<hr class="docutils" />
 <div class="section" id="drop-patterns">
 <h2>Drop patterns<a class="headerlink" href="#drop-patterns" title="Permalink to this headline">¶</a></h2>
 <p>Column wise  and “reversed” column wise (S-style):</p>
@@ -236,6 +239,7 @@
 <p>By row, from to-left, down to bottom right, it’s reverse starts in top-right down to bottom right.</p>
 <p><code class="docutils literal notranslate"><span class="pre">DROP_PATTERN_TOPDOWN</span></code>, <code class="docutils literal notranslate"><span class="pre">DROP_PATTERN_TOPDOWN_R</span></code></p>
 </div>
+<hr class="docutils" />
 <div class="section" id="inventory-errorpattern">
 <h2>Inventory.ErrorPattern<a class="headerlink" href="#inventory-errorpattern" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="k">function</span> <span class="nc">TRSInventory</span><span class="o">.</span><span class="nf">ErrorPattern</span><span class="p">(</span><span class="n">Pattern</span><span class="o">:</span> <span class="n">TIntArray</span><span class="o">=</span><span class="n">DROP_PATTERN_REGULAR</span><span class="o">;</span> <span class="n">ErrorChance</span><span class="o">:</span><span class="n">Int32</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span><span class="o">:</span> <span class="n">TIntegerArray</span><span class="o">;</span>
@@ -247,6 +251,7 @@
 </pre></div>
 </div>
 </div>
+<hr class="docutils" />
 <div class="section" id="inventory-open">
 <h2>Inventory.Open<a class="headerlink" href="#inventory-open" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="k">function</span> <span class="nc">TRSInventory</span><span class="o">.</span><span class="nf">Open</span><span class="p">()</span><span class="o">:</span> <span class="kt">Boolean</span><span class="o">;</span>
@@ -254,6 +259,7 @@
 </div>
 <p>Opens the interface</p>
 </div>
+<hr class="docutils" />
 <div class="section" id="inventory-isopen">
 <h2>Inventory.IsOpen<a class="headerlink" href="#inventory-isopen" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="k">function</span> <span class="nc">TRSInventory</span><span class="o">.</span><span class="nf">IsOpen</span><span class="p">(</span><span class="n">maxWait</span><span class="o">:</span><span class="n">Int32</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span><span class="o">:</span> <span class="kt">Boolean</span><span class="o">;</span>
@@ -261,6 +267,7 @@
 </div>
 <p>Checks if the interface is already open.</p>
 </div>
+<hr class="docutils" />
 <div class="section" id="inventory-isslotvalid">
 <h2>Inventory.IsSlotValid<a class="headerlink" href="#inventory-isslotvalid" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="k">function</span> <span class="nc">TRSInventory</span><span class="o">.</span><span class="nf">IsSlotValid</span><span class="p">(</span><span class="n">idx</span><span class="o">:</span> <span class="n">Int32</span><span class="p">)</span><span class="o">:</span> <span class="kt">Boolean</span><span class="o">;</span>
@@ -272,6 +279,7 @@
 <p class="last">by slacky</p>
 </div>
 </div>
+<hr class="docutils" />
 <div class="section" id="inventory-pointtoslot">
 <h2>Inventory.PointToSlot<a class="headerlink" href="#inventory-pointtoslot" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="k">function</span> <span class="nc">TRSInventory</span><span class="o">.</span><span class="nf">PointToSlot</span><span class="p">(</span><span class="n">pt</span><span class="o">:</span><span class="n">TPoint</span><span class="p">)</span><span class="o">:</span> <span class="n">Int32</span><span class="o">;</span>
@@ -284,6 +292,7 @@ If it’s not over a slot then -1 is returned</p>
 <p class="last">by slacky</p>
 </div>
 </div>
+<hr class="docutils" />
 <div class="section" id="inventory-mouseslot">
 <h2>Inventory.MouseSlot<a class="headerlink" href="#inventory-mouseslot" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="k">procedure</span> <span class="nc">TRSInventory</span><span class="o">.</span><span class="nf">MouseSlot</span><span class="p">(</span><span class="n">idx</span><span class="o">:</span><span class="n">Int32</span><span class="o">;</span> <span class="n">btn</span><span class="o">:</span> <span class="kt">Integer</span> <span class="o">=</span> <span class="n">mouse_Move</span><span class="p">)</span><span class="o">;</span>
@@ -295,6 +304,7 @@ If it’s not over a slot then -1 is returned</p>
 <p class="last">by slacky</p>
 </div>
 </div>
+<hr class="docutils" />
 <div class="section" id="inventory-isfull">
 <h2>Inventory.IsFull<a class="headerlink" href="#inventory-isfull" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="k">function</span> <span class="nc">TRSInventory</span><span class="o">.</span><span class="nf">IsFull</span><span class="p">()</span><span class="o">:</span> <span class="kt">Boolean</span><span class="o">;</span>
@@ -306,6 +316,7 @@ If it’s not over a slot then -1 is returned</p>
 <p class="last">by slacky</p>
 </div>
 </div>
+<hr class="docutils" />
 <div class="section" id="inventory-getslotbox">
 <h2>Inventory.GetSlotBox<a class="headerlink" href="#inventory-getslotbox" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="k">function</span> <span class="nc">TRSInventory</span><span class="o">.</span><span class="nf">GetSlotBox</span><span class="p">(</span><span class="n">idx</span><span class="o">:</span><span class="n">Int32</span><span class="p">)</span><span class="o">:</span> <span class="n">TBox</span><span class="o">;</span>
@@ -317,6 +328,7 @@ If it’s not over a slot then -1 is returned</p>
 <p class="last">by slacky</p>
 </div>
 </div>
+<hr class="docutils" />
 <div class="section" id="inventory-isslotused">
 <h2>Inventory.IsSlotUsed<a class="headerlink" href="#inventory-isslotused" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="k">function</span> <span class="nc">TRSInventory</span><span class="o">.</span><span class="nf">IsSlotUsed</span><span class="p">(</span><span class="n">idx</span><span class="o">:</span><span class="n">Int32</span><span class="p">)</span><span class="o">:</span> <span class="kt">Boolean</span><span class="o">;</span>
@@ -328,6 +340,7 @@ If it’s not over a slot then -1 is returned</p>
 <p class="last">by slacky</p>
 </div>
 </div>
+<hr class="docutils" />
 <div class="section" id="inventory-getusedslots">
 <h2>Inventory.GetUsedSlots<a class="headerlink" href="#inventory-getusedslots" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="k">function</span> <span class="nc">TRSInventory</span><span class="o">.</span><span class="nf">GetUsedSlots</span><span class="p">(</span><span class="n">idx</span><span class="o">:</span><span class="n">Int32</span><span class="p">)</span><span class="o">:</span> <span class="n">TIntegerArray</span><span class="o">;</span>
@@ -339,6 +352,7 @@ If it’s not over a slot then -1 is returned</p>
 <p class="last">by slacky</p>
 </div>
 </div>
+<hr class="docutils" />
 <div class="section" id="inventory-count">
 <h2>Inventory.Count<a class="headerlink" href="#inventory-count" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="k">function</span> <span class="nc">TRSInventory</span><span class="o">.</span><span class="nf">Count</span><span class="o">:</span> <span class="n">Int32</span><span class="o">;</span>
@@ -346,6 +360,7 @@ If it’s not over a slot then -1 is returned</p>
 </div>
 <p>Returns the number of used slots</p>
 </div>
+<hr class="docutils" />
 <div class="section" id="inventory-dropitems">
 <h2>Inventory.DropItems<a class="headerlink" href="#inventory-dropitems" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="k">function</span> <span class="nc">TRSInventory</span><span class="o">.</span><span class="nf">DropItems</span><span class="p">(</span><span class="n">Slots</span><span class="o">:</span><span class="n">TIntegerArray</span> <span class="o">=</span> <span class="n">DROP_PATTERN_REGULAR</span><span class="p">)</span><span class="o">;</span>
@@ -366,6 +381,7 @@ jump randomly all over the inventory dropping items, you give it a ordered drop-
 </pre></div>
 </div>
 </div>
+<hr class="docutils" />
 <div class="section" id="inventory-dropitemsexcept">
 <h2>Inventory.DropItemsExcept<a class="headerlink" href="#inventory-dropitemsexcept" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="k">procedure</span> <span class="nc">TRSInventory</span><span class="o">.</span><span class="nf">DropItemsExcept</span><span class="p">(</span><span class="n">ignoreSlots</span><span class="o">:</span><span class="n">TIntegerArray</span><span class="o">;</span> <span class="n">Slots</span><span class="o">:</span><span class="n">TIntegerArray</span> <span class="o">=</span> <span class="n">DROP_PATTERN_REGULAR</span><span class="p">)</span><span class="o">;</span>
@@ -377,6 +393,7 @@ jump randomly all over the inventory dropping items, you give it a ordered drop-
 <p class="last">by slacky</p>
 </div>
 </div>
+<hr class="docutils" />
 <div class="section" id="inventory-finditem">
 <h2>Inventory.FindItem<a class="headerlink" href="#inventory-finditem" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="k">function</span> <span class="nc">TRSInventory</span><span class="o">.</span><span class="nf">FindItem</span><span class="p">(</span><span class="n">Mask</span><span class="o">:</span> <span class="n">TMask</span><span class="o">;</span> <span class="n">Tolerance</span><span class="o">:</span><span class="n">Int32</span> <span class="o">=</span> <span class="mi">30</span><span class="o">;</span> <span class="n">ContourTolerance</span><span class="o">:</span><span class="n">Int32</span> <span class="o">=</span> <span class="mi">30</span><span class="o">;</span> <span class="n">MaxToFind</span><span class="o">:</span><span class="kt">Byte</span> <span class="o">=</span> <span class="mi">28</span><span class="p">)</span><span class="o">:</span> <span class="n">TIntegerArray</span><span class="o">;</span>
@@ -396,6 +413,7 @@ jump randomly all over the inventory dropping items, you give it a ordered drop-
 </pre></div>
 </div>
 </div>
+<hr class="docutils" />
 <div class="section" id="id1">
 <h2>Inventory.Count<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="k">function</span> <span class="nc">TRSInventory</span><span class="o">.</span><span class="nf">Count</span><span class="p">(</span><span class="n">Mask</span><span class="o">:</span> <span class="n">TMask</span><span class="o">;</span> <span class="n">Tolerance</span><span class="o">,</span> <span class="n">ContourTolerance</span><span class="o">:</span><span class="n">Int32</span><span class="o">=</span><span class="mi">30</span><span class="p">)</span><span class="o">:</span> <span class="n">Int32</span><span class="o">;</span> <span class="n">overload</span><span class="o">;</span>
@@ -405,6 +423,7 @@ jump randomly all over the inventory dropping items, you give it a ordered drop-
 </div>
 <p>Counts the number of slots containing this item</p>
 </div>
+<hr class="docutils" />
 <div class="section" id="inventory-contains">
 <h2>Inventory.Contains<a class="headerlink" href="#inventory-contains" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="k">function</span> <span class="nc">TRSInventory</span><span class="o">.</span><span class="nf">Contains</span><span class="p">(</span><span class="n">Mask</span><span class="o">:</span> <span class="n">TMask</span><span class="o">;</span> <span class="n">Tolerance</span><span class="o">,</span> <span class="n">ContourTolerance</span><span class="o">:</span><span class="n">Int32</span><span class="o">=</span><span class="mi">30</span><span class="p">)</span><span class="o">:</span> <span class="kt">Boolean</span><span class="o">;</span>
@@ -414,6 +433,7 @@ jump randomly all over the inventory dropping items, you give it a ordered drop-
 </div>
 <p>Returns true if the inventory contains the given item</p>
 </div>
+<hr class="docutils" />
 <div class="section" id="inventory-getactiveslot">
 <h2>Inventory.GetActiveSlot<a class="headerlink" href="#inventory-getactiveslot" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="k">function</span> <span class="nc">TRSInventory</span><span class="o">.</span><span class="nf">GetActiveSlot</span><span class="p">()</span><span class="o">:</span> <span class="n">Int8</span><span class="o">;</span>
@@ -421,6 +441,7 @@ jump randomly all over the inventory dropping items, you give it a ordered drop-
 </div>
 <p>Returns the index to the current active slot, returns <code class="docutils literal notranslate"><span class="pre">-1</span></code> if none.</p>
 </div>
+<hr class="docutils" />
 <div class="section" id="inventory-use">
 <h2>Inventory.Use<a class="headerlink" href="#inventory-use" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="k">function</span> <span class="nc">TRSInventory</span><span class="o">.</span><span class="nf">Use</span><span class="p">(</span><span class="n">Slot</span><span class="o">:</span> <span class="n">Int32</span><span class="p">)</span><span class="o">:</span> <span class="kt">Boolean</span><span class="o">;</span>
@@ -428,6 +449,7 @@ jump randomly all over the inventory dropping items, you give it a ordered drop-
 </div>
 <p>RS correct alias for <code class="docutils literal notranslate"><span class="pre">Inventory.ActivateSlot</span></code>.</p>
 </div>
+<hr class="docutils" />
 <div class="section" id="inventory-activateslot">
 <h2>Inventory.ActivateSlot<a class="headerlink" href="#inventory-activateslot" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="k">function</span> <span class="nc">TRSInventory</span><span class="o">.</span><span class="nf">ActivateSlot</span><span class="p">(</span><span class="n">Slot</span><span class="o">:</span> <span class="n">Int32</span><span class="p">)</span><span class="o">:</span> <span class="kt">Boolean</span><span class="o">;</span>
@@ -435,6 +457,7 @@ jump randomly all over the inventory dropping items, you give it a ordered drop-
 </div>
 <p>Activates (Presses) the given slot, however if <code class="docutils literal notranslate"><span class="pre">Slot</span></code> is <code class="docutils literal notranslate"><span class="pre">-1</span></code> then it will disable the current active slot.</p>
 </div>
+<hr class="docutils" />
 <div class="section" id="inventory-waitcount">
 <h2>Inventory.WaitCount<a class="headerlink" href="#inventory-waitcount" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="k">function</span> <span class="nc">TRSInventory</span><span class="o">.</span><span class="nf">WaitCount</span><span class="p">(</span><span class="n">Amount</span><span class="o">:</span> <span class="n">Int32</span><span class="o">;</span> <span class="nb">Time</span><span class="o">:</span> <span class="n">Int32</span><span class="o">;</span> <span class="n">Compare</span><span class="o">:</span> <span class="n">TComparator</span> <span class="o">=</span> <span class="n">__EQ__</span><span class="p">)</span><span class="o">:</span> <span class="kt">Boolean</span><span class="o">;</span>
@@ -442,6 +465,7 @@ jump randomly all over the inventory dropping items, you give it a ordered drop-
 </div>
 <p>Waits for intentory amount to meet expected size. By default it waits till it’s equal
 to given Amount, but can wait till it’s not equal, less than or greater than.</p>
+<hr class="docutils" />
 </div>
 </div>
 

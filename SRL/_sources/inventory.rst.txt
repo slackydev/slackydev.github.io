@@ -4,18 +4,21 @@ Inventory
 The inventory file holds functions and procedures that are related to the runescape inventory
 
 
+------------
 
 type TRSInventory
 ~~~~~~~~~~~~~~~~~
 The type that holds functions and properties of the Runescape inventory gametab.
 
 
+------------
 
 var Inventory
 ~~~~~~~~~~~~~
 Variable that stores functions and properties of the Runescape inventory gametab.
 
 
+------------
 
 Drop patterns
 ~~~~~~~~~~~~~
@@ -34,6 +37,7 @@ By row, from to-left, down to bottom right, it's reverse starts in top-right dow
 ``DROP_PATTERN_TOPDOWN``, ``DROP_PATTERN_TOPDOWN_R``
 
 
+------------
 
 Inventory.ErrorPattern
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -50,6 +54,7 @@ Given a pattern and an upper limit of errors in percent, it will swap around som
    Inventory.DropItems(Inventory.ErrorPattern(DROP_PATTERN_REGULAR, 10));
 
 
+------------
 
 Inventory.Open
 ~~~~~~~~~~~~~~~~
@@ -60,6 +65,7 @@ Inventory.Open
 Opens the interface
 
 
+------------
 
 Inventory.IsOpen
 ~~~~~~~~~~~~~~~~~
@@ -70,6 +76,7 @@ Inventory.IsOpen
 Checks if the interface is already open.
 
 
+------------
 
 Inventory.IsSlotValid
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -82,6 +89,7 @@ Returns true if the given slot is within a valid range.
 .. note:: by slacky
 
 
+------------
 
 Inventory.PointToSlot
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -95,6 +103,7 @@ If it's not over a slot then -1 is returned
 .. note:: by slacky
 
 
+------------
 
 Inventory.MouseSlot
 ~~~~~~~~~~~~~~~~~~~~
@@ -107,6 +116,7 @@ Moves the moise over the given slot-index.
 .. note:: by slacky
 
 
+------------
 
 Inventory.IsFull
 ~~~~~~~~~~~~~~~~~
@@ -119,6 +129,7 @@ Returns ``True`` if the inventory can't hold anymore items
 .. note:: by slacky
 
 
+------------
 
 Inventory.GetSlotBox
 ~~~~~~~~~~~~~~~~~~~~~
@@ -131,6 +142,7 @@ Returns the bounding box covering the given slot-index.
 .. note:: by slacky
 
 
+------------
 
 Inventory.IsSlotUsed
 ~~~~~~~~~~~~~~~~~~~~~
@@ -143,6 +155,7 @@ Returns true if the given slot is occupied.
 .. note:: by slacky
 
 
+------------
 
 Inventory.GetUsedSlots
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -155,6 +168,7 @@ Returns all the occupied slot-indices.
 .. note:: by slacky
 
 
+------------
 
 Inventory.Count
 ~~~~~~~~~~~~~~~
@@ -165,6 +179,7 @@ Inventory.Count
 Returns the number of used slots
 
 
+------------
 
 Inventory.DropItems
 ~~~~~~~~~~~~~~~~~~~~
@@ -189,6 +204,7 @@ jump randomly all over the inventory dropping items, you give it a ordered drop-
     Inventory.DropItems([0..3]); // drops the four first items
 
 
+------------
 
 Inventory.DropItemsExcept
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -201,6 +217,7 @@ Drops all the given items ``Slots`` except for the items in ``IgnoreSolots``
 .. note:: by slacky
 
 
+------------
 
 Inventory.FindItem
 ~~~~~~~~~~~~~~~~~~~
@@ -223,6 +240,7 @@ Find the slots of the given item defined by a `TMask`, `DTM`, or `BMP`.
      WriteLn('Not found');
 
 
+------------
 
 Inventory.Count
 ~~~~~~~~~~~~~~~~~~~
@@ -235,6 +253,7 @@ Inventory.Count
 Counts the number of slots containing this item
 
 
+------------
 
 Inventory.Contains
 ~~~~~~~~~~~~~~~~~~~
@@ -247,6 +266,7 @@ Inventory.Contains
 Returns true if the inventory contains the given item
 
 
+------------
 
 Inventory.GetActiveSlot
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -257,6 +277,7 @@ Inventory.GetActiveSlot
 Returns the index to the current active slot, returns ``-1`` if none.
 
 
+------------
 
 Inventory.Use
 ~~~~~~~~~~~~~
@@ -267,6 +288,7 @@ Inventory.Use
 RS correct alias for ``Inventory.ActivateSlot``.
 
 
+------------
 
 Inventory.ActivateSlot
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -277,6 +299,7 @@ Inventory.ActivateSlot
 Activates (Presses) the given slot, however if ``Slot`` is ``-1`` then it will disable the current active slot.
 
 
+------------
 
 Inventory.WaitCount
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -288,3 +311,4 @@ Waits for intentory amount to meet expected size. By default it waits till it's 
 to given Amount, but can wait till it's not equal, less than or greater than.
 
 
+------------

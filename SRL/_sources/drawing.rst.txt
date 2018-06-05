@@ -7,6 +7,7 @@ The drawing file holds TMufasaBitmap drawing functions to aid drawing onto bitma
 The source for this file can be found `here <https://github.com/SRL/SRL-6/blob/master/lib/utilities/drawing.simba>`_.
 
 
+------------
 
 const __SHADOW_COLOR
 ~~~~~~~~~~~~~~~~~~~~
@@ -14,6 +15,7 @@ const __SHADOW_COLOR
 Integer constant that stores the shadow color for adding a shadow for text drawing.
 
 
+------------
 
 TMufasaBitmap.FromClient
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -24,6 +26,7 @@ TMufasaBitmap.FromClient
 Copy client to bitmap.
 
 
+------------
 
 TMufasaBitmap.Clear
 ~~~~~~~~~~~~~~~~~~~
@@ -46,6 +49,7 @@ Example:
 
 
 
+------------
 
 TMufasaBitmap.ClearArea
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -69,6 +73,7 @@ Example:
 
 
 
+------------
 
 TMufasaBitmap.ClearAllBut
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -79,6 +84,7 @@ TMufasaBitmap.ClearAllBut
 Will clear the image, except for the given area.
 
 
+------------
 
 TMufasaBitmap.AvgBrightness
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -89,6 +95,7 @@ TMufasaBitmap.AvgBrightness
 Returns a value between 0 and 100 that defines how bright the image is.
 
 
+------------
 
 TMufasaBitmap.PeakBrightness
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -99,6 +106,7 @@ TMufasaBitmap.PeakBrightness
 Returns the maximum brightness in the image in the range `0..100`.
 
 
+------------
 
 TMufasaBitmap.DrawBox
 ~~~~~~~~~~~~~~~~~~~~~
@@ -122,6 +130,7 @@ Example:
 
 
 
+------------
 
 TMufasaBitmap.DrawBox
 ~~~~~~~~~~~~~~~~~~~~~
@@ -133,6 +142,7 @@ TMufasaBitmap.DrawBox
 Draws a TBox onto the TMufasaBitmap
 
 
+------------
 
 TMufasaBitmap.DrawBox
 ~~~~~~~~~~~~~~~~~~~~~
@@ -157,6 +167,7 @@ Example:
 
 
 
+------------
 
 TMufasaBitmap.DrawBox; overload
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -180,6 +191,7 @@ Example:
     bmp.DrawBox(Box(50, 50, 345, 345));
 
 
+------------
 
 TMufasaBitmap.DrawClippedBox
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -203,6 +215,7 @@ Example:
     image.DrawClippedBox(Box(50, 50, 100, 100), true, clLime);
 
 
+------------
 
 TMufasaBitmap.DrawBoxes
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -227,6 +240,7 @@ Example:
 
 
 
+------------
 
 TMufasaBitmap.DrawBoxes; overload
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -251,6 +265,7 @@ Example:
 
 
 
+------------
 
 TMufasaBitmap.DrawRect
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -261,6 +276,7 @@ TMufasaBitmap.DrawRect
 Draws a TRectangle onto the TMufasaBitmap
 
 
+------------
 
 TMufasaBitmap.DrawPoly
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -271,6 +287,7 @@ TMufasaBitmap.DrawPoly
 Draws a polygon onto the TMufasaBitmap
 
 
+------------
 
 TMufasaBitmap.DrawBitmap
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -294,6 +311,7 @@ Example:
 
 
 
+------------
 
 TMufasaBitmap.DrawBitmap; overload
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -318,6 +336,7 @@ Example:
 
 
 
+------------
 
 TMufasaBitmap.DrawCross
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -341,6 +360,7 @@ Example:
 
 
 
+------------
 
 TMufasaBitmap.DrawEllipse
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -366,6 +386,7 @@ Example:
 
 
 
+------------
 
 TMufasaBitmap.DrawCircle
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -390,6 +411,7 @@ Example:
 
 
 
+------------
 
 TMufasaBitmap.DrawPolygon
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -414,6 +436,7 @@ Example:
 
 
 
+------------
 
 TMufasaBitmap.DrawClippedText
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -436,6 +459,7 @@ Example:
     image.DrawClippedText('hello world!', point(55, 55), 'StatChars', true, clLime);
 
 
+------------
 
 TMufasaBitmap.DrawTextArray
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -460,6 +484,7 @@ Example:
 
 
 
+------------
 
 TMufasaBitmap.DrawTextLines
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -483,6 +508,7 @@ Example:
 
 
 
+------------
 
 TMufasaBitmap.Debug
 ~~~~~~~~~~~~~~~~~~~
@@ -509,6 +535,7 @@ Example:
 
 
 
+------------
 
 TMufasaBitmap.UpdateDebugImage
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -519,6 +546,7 @@ TMufasaBitmap.UpdateDebugImage
 Will update Simba's debug image form with the current image. 
 
 
+------------
 
 TMufasaBitmap.DebugTPA
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -543,6 +571,7 @@ Example:
 
 
 
+------------
 
 TMufasaBitmap.DebugATPA
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -566,6 +595,7 @@ Example:
 
 
 
+------------
 
 TMufasaBitmap.DebugDTM
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -590,3 +620,4 @@ Example:
 
 
 
+------------

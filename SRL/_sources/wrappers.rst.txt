@@ -8,6 +8,7 @@ The source for this file can be found `here <https://github.com/Olly-/SRL/blob/m
 
 
 
+------------
 
 GetClientBounds
 ~~~~~~~~~~~~~~~
@@ -26,6 +27,7 @@ Example:
    b := GetClientBounds();
 
 
+------------
 
 GetColor; overload
 ~~~~~~~~~~~~~~~~~~
@@ -45,6 +47,7 @@ Example:
      WriteLn(GetColor(p));
 
 
+------------
 
 GetColors; overload
 ~~~~~~~~~~~~~~~~~~~
@@ -63,6 +66,7 @@ Example:
      Colors := GetColors(TPA, True);
 
 
+------------
 
 FindColor; overload
 ~~~~~~~~~~~~~~~~~~~
@@ -81,6 +85,7 @@ Example:
     FindColor(x, y, clRed, Box);
 
 
+------------
 
 findColorTolerance; overload
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -99,6 +104,7 @@ Example:
     FindColorTolerance(x, y, 255, Box, 10);
 
 
+------------
 
 FindColors; overload
 ~~~~~~~~~~~~~~~~~~~~
@@ -117,6 +123,7 @@ Example:
     WriteLn(FindColors(TPA, 255, Box));
 
 
+------------
 
 FindColorsTolerance; overload
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -135,6 +142,7 @@ Example:
     WriteLn(FindColorsTolerance(TPA, 255, Box, 10));
 
 
+------------
 
 FindColorSpiral; overload
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -153,6 +161,7 @@ Example:
     WriteLn(FindColorSpiral(x, y, 255, Box));
 
 
+------------
 
 FindColorSpiralTolerance; overload
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -171,6 +180,7 @@ Example:
     WriteLn(FindColorSpiralTolerance(x, y, 255, Box));
 
 
+------------
 
 FindColorsSpiralTolerance: overload;
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -190,6 +200,7 @@ Example:
 
 
 
+------------
 
 CountColor; overload
 ~~~~~~~~~~~~~~~~~~~~
@@ -208,6 +219,7 @@ Example:
     WriteLn(CountColor(clRed, Box));
 
 
+------------
 
 CountColorTolerance: overload;
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -226,6 +238,7 @@ Example:
     WriteLn(CountColorTolerance(clRed, 10, Box));
 
 
+------------
 
 FreeDTMs
 ~~~~~~~~
@@ -244,6 +257,7 @@ Example:
      FreeDTMs([dtm1, dtm2]);
 
 
+------------
 
 FreeBitmaps
 ~~~~~~~~~~~
@@ -262,6 +276,7 @@ Example:
      FreeBitmaps([bmp1, bmp2]);
 
 
+------------
 
 GetBitmapName
 ~~~~~~~~~~~~~
@@ -280,6 +295,7 @@ Example:
      WriteLn(GetBitmapName(BMP));
 
 
+------------
 
 GetDTMName
 ~~~~~~~~~~
@@ -298,6 +314,7 @@ Example:
      WriteLn(GetDTMName(DTM));
 
 
+------------
 
 BitmapFromClient; overload
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -316,6 +333,7 @@ Example:
     BMP := BitmapFromClient(Box);
 
 
+------------
 
 FindBitmapIn; overload
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -335,6 +353,7 @@ Example:
     Result := FindBitmap(bmp, x, y, Box);
 
 
+------------
 
 FindBitmapToleranceIn; overload
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -353,6 +372,7 @@ Example:
     Result := FindBitmapToleranceIn(BMP, x, y, Box, 20);
 
 
+------------
 
 FindBitmapTolerance
 ~~~~~~~~~~~~~~~~~~~
@@ -371,6 +391,7 @@ Example:
     WriteLn(FindBitmapTolerance(bmp, x, y, 50));
 
 
+------------
 
 FindBitmapMaskTolerance; overload
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -389,6 +410,7 @@ Example:
     Result := FindBitmapMaskTolerance(s, p, Box, 30, 30);
 
 
+------------
 
 FindDeformedBitmapToleranceIn; overload
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -408,6 +430,7 @@ Example:
       WriteLn('We found the bitmap at accuracy: ' floatToStr(acc));
 
 
+------------
 
 FindDTMRotatedSE; overload
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -427,6 +450,7 @@ Example:
       WriteLn('Found the dtm!');
 
 
+------------
 
 FindDTMRotatedAlternating: overload;
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -446,6 +470,7 @@ Example:
       WriteLn('Found the dtm!');
 
 
+------------
 
 FindDTMRotated
 ~~~~~~~~~~~~~~
@@ -465,6 +490,7 @@ Example:
       WriteLn('Found the dtm!');
 
 
+------------
 
 FindDTMRotated; overload
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -484,6 +510,7 @@ Example:
       WriteLn('found the dtm!');
 
 
+------------
 
 FindDTMs; overload
 ~~~~~~~~~~~~~~~~~~
@@ -503,6 +530,7 @@ Example:
     WriteLn('Matches' + toString(TPA));
 
 
+------------
 
 FindDTM; overload
 ~~~~~~~~~~~~~~~~~
@@ -521,6 +549,7 @@ Example:
     WriteLn(FindDTM(DTM, x, y, Box));
 
 
+------------
 
 TPAFromText; overload
 ~~~~~~~~~~~~~~~~~~~~~
@@ -540,6 +569,7 @@ Example:
 
 
 
+------------
 
 Replicate; overload
 ~~~~~~~~~~~~~~~~~~~
@@ -558,6 +588,7 @@ Example:
     WriteLn(Replicate('SRL', 10));
 
 
+------------
 
 InRange; overload
 ~~~~~~~~~~~~~~~~~
@@ -576,6 +607,7 @@ Example:
     WriteLn(InRange(15.0, 10.0, 20.0));
 
 
+------------
 
 Distance; overload
 ~~~~~~~~~~~~~~~~~~
@@ -594,3 +626,4 @@ Example:
     WriteLn(Distance(Point(100, 100), Point(200, 200)));
 
 
+------------

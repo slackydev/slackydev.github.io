@@ -205,6 +205,7 @@
   <div class="section" id="spells">
 <h1>Spells<a class="headerlink" href="#spells" title="Permalink to this headline">¶</a></h1>
 <p>The file holds functions and procedures that are related to the spells gametab</p>
+<hr class="docutils" />
 <div class="section" id="var-spells">
 <h2>var Spells<a class="headerlink" href="#var-spells" title="Permalink to this headline">¶</a></h2>
 <p>Variable that stores functions and properties of the Runescape magic/spells gametab.</p>
@@ -217,6 +218,7 @@
 </pre></div>
 </div>
 </div>
+<hr class="docutils" />
 <div class="section" id="spells-open">
 <h2>Spells.Open<a class="headerlink" href="#spells-open" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="k">function</span> <span class="nc">TRSSpells</span><span class="o">.</span><span class="nf">Open</span><span class="p">()</span><span class="o">:</span> <span class="kt">Boolean</span><span class="o">;</span>
@@ -224,6 +226,7 @@
 </div>
 <p>Opens the interface</p>
 </div>
+<hr class="docutils" />
 <div class="section" id="spells-isopen">
 <h2>Spells.IsOpen<a class="headerlink" href="#spells-isopen" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="k">function</span> <span class="nc">TRSSpells</span><span class="o">.</span><span class="nf">IsOpen</span><span class="p">(</span><span class="n">maxWait</span><span class="o">:</span><span class="n">Int32</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span><span class="o">:</span> <span class="kt">Boolean</span><span class="o">;</span>
@@ -231,6 +234,7 @@
 </div>
 <p>Checks if the interface is already open.</p>
 </div>
+<hr class="docutils" />
 <div class="section" id="spells-getspellbox">
 <h2>Spells.GetSpellBox<a class="headerlink" href="#spells-getspellbox" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="k">function</span> <span class="nc">TRSSpells</span><span class="o">.</span><span class="nf">GetSpellBox</span><span class="p">(</span><span class="n">Spell</span><span class="o">:</span> <span class="n">ESpellCast</span><span class="p">)</span><span class="o">:</span> <span class="n">TBox</span><span class="o">;</span>
@@ -242,6 +246,7 @@
 <p class="last">by slacky</p>
 </div>
 </div>
+<hr class="docutils" />
 <div class="section" id="spells-pointtoslot">
 <h2>Spells.PointToSlot<a class="headerlink" href="#spells-pointtoslot" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="k">function</span> <span class="nc">TRSSpells</span><span class="o">.</span><span class="nf">PointToSlot</span><span class="p">(</span><span class="n">PT</span><span class="o">:</span> <span class="n">TPoint</span><span class="p">)</span><span class="o">:</span> <span class="n">Int32</span><span class="o">;</span>
@@ -249,6 +254,7 @@
 </div>
 <p>Returns the index of the slot under <cite>PT</cite></p>
 </div>
+<hr class="docutils" />
 <div class="section" id="spells-mouseover">
 <h2>Spells.MouseOver<a class="headerlink" href="#spells-mouseover" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="k">function</span> <span class="nc">TRSSpells</span><span class="o">.</span><span class="nf">MouseOver</span><span class="p">(</span><span class="n">spell</span><span class="o">:</span><span class="n">ESpellCast</span><span class="p">)</span><span class="o">:</span> <span class="kt">Boolean</span><span class="o">;</span>
@@ -256,6 +262,7 @@
 </div>
 <p>Moves the mouse over the given spell.</p>
 </div>
+<hr class="docutils" />
 <div class="section" id="spells-canactivate">
 <h2>Spells.CanActivate<a class="headerlink" href="#spells-canactivate" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="k">function</span> <span class="nc">TRSSpells</span><span class="o">.</span><span class="nf">CanActivate</span><span class="p">(</span><span class="n">Spell</span><span class="o">:</span> <span class="n">ESpellCast</span><span class="p">)</span><span class="o">:</span> <span class="kt">Boolean</span><span class="o">;</span>
@@ -263,6 +270,7 @@
 </div>
 <p>Returns True if you can use the spell..</p>
 </div>
+<hr class="docutils" />
 <div class="section" id="spells-selected">
 <h2>Spells.Selected<a class="headerlink" href="#spells-selected" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="k">function</span> <span class="nc">TRSSpells</span><span class="o">.</span><span class="nf">Selected</span><span class="p">(</span><span class="n">Spell</span><span class="o">:</span> <span class="n">ESpellCast</span><span class="p">)</span><span class="o">:</span> <span class="kt">Boolean</span><span class="o">;</span>
@@ -270,12 +278,14 @@
 </div>
 <p>Returns True if the spell is currently selected</p>
 </div>
+<hr class="docutils" />
 <div class="section" id="spells-cast">
 <h2>Spells.Cast<a class="headerlink" href="#spells-cast" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="k">function</span> <span class="nc">TRSSpells</span><span class="o">.</span><span class="nf">Cast</span><span class="p">(</span><span class="n">Spell</span><span class="o">:</span> <span class="n">ESpellCast</span><span class="p">)</span><span class="o">:</span> <span class="kt">Boolean</span>
 </pre></div>
 </div>
 <p>Casts the spell</p>
+<hr class="docutils" />
 </div>
 </div>
 

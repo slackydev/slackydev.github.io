@@ -9,117 +9,169 @@ All methods here are called with the bankscreen ``BankScreen`` variable.
     Writeln(BankScreen.IsOpen());
 
 
+------------
 
 BankScreen.IsOpen
 ~~~~~~~~~~~~~~~~~~
 .. code-block:: pascal
 
-  function TRSBankScreen.IsOpen(): Boolean;
+ function TRSBankScreen.IsOpen(): Boolean;
 
 returns True if the bankscreen is open
 
 
+------------
 
 BankScreen.OpenAt
 ~~~~~~~~~~~~~~~~~~
 .. code-block:: pascal
 
-  function TRSBankScreen.OpenAt(P: TPoint): Boolean;
+ function TRSBankScreen.OpenAt(P: TPoint): Boolean;
 
-returns True if the bankscreen could be open'd at given location `P`
+Returns ``True`` if the bankscreen could be open'd at given location ``P``
 
 
+------------
 
 BankScreen._MagicalBankerFinder
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. code-block:: pascal
 
-  function TRSBankScreen._MagicalBankerFinder(BoothTopColor: TCTS2Color; BankerColor: EBankerColor; Offset: TPoint): Boolean;
+
+   function TRSBankScreen._MagicalBankerFinder(BoothTopColor: TCTS2Color; BankerColor: EBankerColor; Offset: TPoint): Boolean;
 
 Calculates and finds where a bank NPC should be based from the bank booth.
 
 
+------------
 
 BankScreen.Open
 ~~~~~~~~~~~~~~~~
 .. code-block:: pascal
 
-  function TRSBankScreen.Open(Loc: EBankLocation; Tries: Int32 = 3): Boolean;
+
+   function TRSBankScreen.Open(Loc: EBankLocation; Tries: Int32 = 3): Boolean;
 
 Opens the bankscreen at the selected bank location.
 
 
+------------
 
 BankScreen.Close
 ~~~~~~~~~~~~~~~~~
 .. code-block:: pascal
 
-  function TRSBankScreen.Close(): Boolean;
+ function TRSBankScreen.Close(): Boolean;
 
 Closes the bankscreen, returns True on success
 
 
+------------
 
 BankScreen.ClickButton
 ~~~~~~~~~~~~~~~~~~~~~~~
 .. code-block:: pascal
 
-  function TRSBankScreen.ClickButton(btn: EBankButton; clickType: Integer = mouse_Left): Boolean;
+
+   function TRSBankScreen.ClickButton(btn: EBankButton; clickType: Integer = mouse_Left): Boolean;
 
 Toggles the button
 
 
+------------
 
 BankScreen.IsToggled
 ~~~~~~~~~~~~~~~~~~~~~
 .. code-block:: pascal
 
-  function TRSBankScreen.IsToggled(btn: EBankButton; minMatch:Int32=50): Boolean;
+
+   function TRSBankScreen.IsToggled(btn: EBankButton; minMatch:Int32=50): Boolean;
 
 Checks if the given button is red/toggled
 
 
+------------
+
+Bankscreen.FixSlots
+~~~~~~~~~~~~~~~~~~~~~~
+.. code-block:: pascal
+
+ procedure TRSBankScreen.FixSlots();
+
+Scrolls up to the top of the bank, so slots are aligned.
+
+
+------------
+
+Bankscreen.GetSlotBox
+~~~~~~~~~~~~~~~~~~~~~~
+.. code-block:: pascal
+
+ function TRSBankScreen.GetSlotBox(Slot: UInt32): TBox;
+
+Returns the bounds of the given slot id.
+
+
+------------
 
 Bankscreen.PointToSlot
 ~~~~~~~~~~~~~~~~~~~~~~
 .. code-block:: pascal
 
-  function TRSBankScreen.PointToSlot(pt:TPoint): Int32;
+ function TRSBankScreen.PointToSlot(pt:TPoint): Int32;
 
 Returns the slot-index under the given TPoint.
 If it's not over a slot then -1 is returned
 
 
+------------
 
 BankScreen.ItemIn
 ~~~~~~~~~~~~~~~~~~
 .. code-block:: pascal
 
-  function TRSBankScreen.ItemIn(Slot: UInt32): Boolean;
-  function TRSBankScreen.IsSlotUsed(Slot: UInt32): Boolean;
+
+   function TRSBankScreen.ItemIn(Slot: UInt32): Boolean;
+   function TRSBankScreen.IsSlotUsed(Slot: UInt32): Boolean;
 
 Returns True if there's an item in the given slot.
 Alias `IsSlotUsed` exists for naming compatiblity with Inventory.
 
 
+------------
 
 BankScreen.DepositAll
 ~~~~~~~~~~~~~~~~~~~~~~
 .. code-block:: pascal
 
-  function TRSBankScreen.DepositAll(): Boolean;
+ function TRSBankScreen.DepositAll(): Boolean;
 
 Depositis your inventory by clicking the deposit inventory button
 
 
+------------
 
- Depeosit a single item, or all of it's kind from inventory.
+BankScreen.DepositItem
+~~~~~~~~~~~~~~~~~~~~~~
+.. code-block:: pascal
+
+ function TRSBankScreen.DepositItem(Slot:Int32; DepositAll:Boolean): Boolean;
+
+Depeosit a single item, or all of it's kind from inventory.
 
 
+------------
 
- Deposit all your items, retries two times.
+BankScreen.Deposit
+~~~~~~~~~~~~~~~~~~
+.. code-block:: pascal
+
+ function TRSBankScreen.Deposit(SlotArr: TIntegerArray): Boolean;
+
+Depeosits all the given items / slots
 
 
+------------
 
 BankScreen.RearrangeMode
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -130,6 +182,7 @@ BankScreen.RearrangeMode
 Changes the way items are moved around, valid options are ``bbSwap`` and ``bbInsert``.
 
 
+------------
 
 BankScreen.WithdrawAs
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -140,6 +193,7 @@ BankScreen.WithdrawAs
 Changes the way items are withdrawn. Valid options are ``bbItem`` and ``bbNote``
 
 
+------------
 
 BankScreen.Search
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -150,6 +204,7 @@ BankScreen.Search
 Search for an item using the search option in the bank.
 
 
+------------
 
 BankScreen.Withdraw
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -164,12 +219,10 @@ Extra vaild constants for ``amount`` are:
    - ``WITHDRAW_ALL = -1;``
    - ``WITHDRAW_ALL_BUT_ONE = -2;``
 
-
-.. note:: by slacky
-
-Example:
+**Example:**
 
 .. code-block:: pascal
+
 
     // withdraw 28 items from slot 1 if uptext matches
     bankscreen.Withdraw(1, 28, ['Iron']);
@@ -182,8 +235,11 @@ Example:
 
     // withdraw 28 items from slot 1 and will *ignore* uptext
     bankscreen.Withdraw(1, 28);
+    
+.. note:: by slacky
 
 
+------------
 
 PinScreen
 ==========
@@ -197,6 +253,8 @@ looking at the code this will be a bit troublesome now? - slacky
 
 .. code-block:: pascal
 
+
     WriteLn(PinScreen.EnterPin()); // returns True if we got to the bank
 
 
+------------

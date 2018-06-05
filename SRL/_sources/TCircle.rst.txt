@@ -6,6 +6,7 @@ TCircle related methods
 type definition is found in shared/globals.simba
 
 
+------------
 
 TCircle.ToTPA
 ~~~~~~~~~~~~~~
@@ -16,6 +17,7 @@ TCircle.ToTPA
 Returns a full TPA of the circles circumference
 
 
+------------
 
 TCircle.Bounds
 ~~~~~~~~~~~~~~
@@ -26,6 +28,7 @@ TCircle.Bounds
 Return a TBox covering the circle
 
 
+------------
 
 TCircle.Contains
 ~~~~~~~~~~~~~~~~~
@@ -36,6 +39,7 @@ TCircle.Contains
 Test if the point is within the circle
 
 
+------------
 
 TCircle.CircumferenceTPA
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -46,6 +50,7 @@ TCircle.CircumferenceTPA
 Alias of `.ToTPA`
 
 
+------------
 
 TCircle.Mean
 ~~~~~~~~~~~~
@@ -56,6 +61,7 @@ TCircle.Mean
 Middle of the circle, same as `Point(Circle.X, Circle.Y)`
 
 
+------------
 
 TCircle.Circumference
 ~~~~~~~~~~~~~~~~~~~~~
@@ -66,6 +72,7 @@ TCircle.Circumference
 Returns the distance around the outside of a circle.
 
 
+------------
 
 TCircle.Area
 ~~~~~~~~~~~~
@@ -76,6 +83,7 @@ TCircle.Area
 Returns the area the circle covers
 
 
+------------
 
 TCircle.Filter
 ~~~~~~~~~~~~~~~~~~~
@@ -86,6 +94,7 @@ TCircle.Filter
 Extract all the points from `TestSet` that fits within this circle.
 
 
+------------
 
 TCircle.Expand
 ~~~~~~~~~~~~~~~~~~
@@ -96,3 +105,4 @@ TCircle.Expand
 Increase or decrease the radius of the circle, same as `Circle.Radius + Incr`.
 
 
+------------

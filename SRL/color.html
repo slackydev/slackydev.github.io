@@ -206,6 +206,7 @@
   <div class="section" id="color">
 <h1>Color<a class="headerlink" href="#color" title="Permalink to this headline">¶</a></h1>
 <p>Color finding related methods</p>
+<hr class="docutils" />
 <div class="section" id="srl-waitcolorcount">
 <h2>srl.WaitColorCount<a class="headerlink" href="#srl-waitcolorcount" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="k">function</span> <span class="nc">TSRL</span><span class="o">.</span><span class="nf">WaitColorCount</span><span class="p">(</span><span class="n">Color</span><span class="o">:</span> <span class="n">TCTS1Color</span><span class="o">;</span> <span class="n">Area</span><span class="o">:</span> <span class="n">TBox</span><span class="o">;</span> <span class="n">CompareFunc</span><span class="o">:</span> <span class="n">TCompareFunc</span><span class="o">;</span> <span class="n">Count</span><span class="o">,</span> <span class="n">WaitTime</span><span class="o">:</span> <span class="kt">Integer</span><span class="p">)</span><span class="o">:</span> <span class="kt">Boolean</span><span class="o">;</span>
@@ -221,6 +222,7 @@
 </pre></div>
 </div>
 </div>
+<hr class="docutils" />
 <div class="section" id="srl-waitcolor">
 <h2>srl.WaitColor<a class="headerlink" href="#srl-waitcolor" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="k">function</span> <span class="nc">TSRL</span><span class="o">.</span><span class="nf">WaitColor</span><span class="p">(</span><span class="n">Color</span><span class="o">:</span> <span class="kt">Integer</span><span class="o">;</span> <span class="n">p</span><span class="o">:</span> <span class="n">TPoint</span><span class="o">;</span> <span class="n">WaitTime</span><span class="o">:</span> <span class="kt">Integer</span><span class="p">)</span><span class="o">:</span> <span class="kt">Boolean</span><span class="o">;</span>
@@ -233,10 +235,12 @@
 </pre></div>
 </div>
 </div>
+<hr class="docutils" />
 <div class="section" id="type-tcolorsettings">
 <h2>type TColorSettings<a class="headerlink" href="#type-tcolorsettings" title="Permalink to this headline">¶</a></h2>
 <p>A record that provides easy access to the Simba CTS settings.</p>
 </div>
+<hr class="docutils" />
 <div class="section" id="colorsetting">
 <h2>ColorSetting<a class="headerlink" href="#colorsetting" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="k">function</span> <span class="nf">ColorSetting</span><span class="p">(</span><span class="n">CTS</span><span class="o">:</span> <span class="kt">Byte</span><span class="o">;</span> <span class="n">Hue</span><span class="o">:</span> <span class="kt">Extended</span> <span class="o">=</span> <span class="mf">0.2</span><span class="o">;</span> <span class="n">Sat</span><span class="o">:</span> <span class="kt">Extended</span> <span class="o">=</span> <span class="mf">0.2</span><span class="p">)</span><span class="o">:</span> <span class="n">TColorSettings</span><span class="o">;</span>
@@ -251,6 +255,7 @@
 </pre></div>
 </div>
 </div>
+<hr class="docutils" />
 <div class="section" id="tcolorsettings-retrieve">
 <h2>TColorSettings.Retrieve<a class="headerlink" href="#tcolorsettings-retrieve" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="k">procedure</span> <span class="nc">TColorSettings</span><span class="o">.</span><span class="nf">Retrieve</span><span class="p">()</span><span class="o">;</span>
@@ -262,6 +267,7 @@
 </pre></div>
 </div>
 </div>
+<hr class="docutils" />
 <div class="section" id="tcolorsettings-apply">
 <h2>TColorSettings.Apply<a class="headerlink" href="#tcolorsettings-apply" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="k">procedure</span> <span class="nc">TColorSettings</span><span class="o">.</span><span class="nf">Apply</span><span class="p">()</span><span class="o">;</span>
@@ -273,6 +279,7 @@
 </pre></div>
 </div>
 </div>
+<hr class="docutils" />
 <div class="section" id="findcolorstolerance-overload">
 <h2>FindColorsTolerance; overload<a class="headerlink" href="#findcolorstolerance-overload" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="k">function</span> <span class="nf">FindColorsTolerance</span><span class="p">(</span><span class="k">var</span> <span class="n">TPA</span><span class="o">:</span> <span class="n">TPointArray</span><span class="o">;</span> <span class="n">Color</span><span class="o">:</span> <span class="kt">Integer</span><span class="o">;</span> <span class="n">SearchArea</span><span class="o">:</span> <span class="n">TBox</span><span class="o">;</span> <span class="n">Tolerance</span><span class="o">:</span> <span class="n">Int32</span><span class="o">;</span> <span class="n">cs</span><span class="o">:</span> <span class="n">TColorSettings</span><span class="p">)</span><span class="o">:</span> <span class="kt">Boolean</span><span class="o">;</span> <span class="n">overload</span><span class="o">;</span>
@@ -284,6 +291,7 @@
 </pre></div>
 </div>
 </div>
+<hr class="docutils" />
 <div class="section" id="findcolortolerance-overload">
 <h2>FindColorTolerance; overload<a class="headerlink" href="#findcolortolerance-overload" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="k">function</span> <span class="nf">FindColorTolerance</span><span class="p">(</span><span class="n">out</span> <span class="n">x</span><span class="o">,</span> <span class="n">y</span><span class="o">:</span> <span class="n">Int32</span><span class="o">;</span> <span class="n">Color</span><span class="o">:</span> <span class="kt">Integer</span><span class="o">;</span> <span class="n">SearchArea</span><span class="o">:</span> <span class="n">TBox</span><span class="o">;</span> <span class="n">Tolerance</span><span class="o">:</span> <span class="n">Int32</span><span class="o">;</span> <span class="n">cs</span><span class="o">:</span> <span class="n">TColorSettings</span><span class="p">)</span><span class="o">:</span> <span class="kt">Boolean</span><span class="o">;</span> <span class="n">overload</span><span class="o">;</span>
@@ -295,6 +303,7 @@
 </pre></div>
 </div>
 </div>
+<hr class="docutils" />
 <div class="section" id="countcolortolerance-overload">
 <h2>CountColorTolerance; overload<a class="headerlink" href="#countcolortolerance-overload" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="k">function</span> <span class="nf">CountColorTolerance</span><span class="p">(</span><span class="n">Color</span><span class="o">:</span> <span class="kt">Integer</span><span class="o">;</span> <span class="n">SearchArea</span><span class="o">:</span> <span class="n">TBox</span><span class="o">;</span> <span class="n">Tolerance</span><span class="o">:</span> <span class="n">Int32</span><span class="o">;</span> <span class="n">cs</span><span class="o">:</span> <span class="n">TColorSettings</span><span class="p">)</span><span class="o">:</span> <span class="kt">Integer</span><span class="o">;</span> <span class="n">overload</span><span class="o">;</span>
@@ -306,6 +315,7 @@
 </pre></div>
 </div>
 </div>
+<hr class="docutils" />
 <div class="section" id="type-tcolorex">
 <h2>type TColorEx<a class="headerlink" href="#type-tcolorex" title="Permalink to this headline">¶</a></h2>
 <p>A simple record that stores a color, tolerance and color settings.</p>
@@ -316,6 +326,7 @@
   <span class="n">CTS3_Color</span><span class="o">:</span> <span class="n">TColorEx</span> <span class="o">=</span> <span class="p">[</span><span class="n">clRed</span><span class="o">,</span> <span class="mi">20</span><span class="o">,</span> <span class="p">[</span><span class="mi">3</span><span class="o">,</span> <span class="mf">0.00</span><span class="o">,</span> <span class="mf">0.00</span><span class="o">,</span> <span class="mf">0.50</span><span class="p">]]</span><span class="o">;</span>
 </pre></div>
 </div>
+<hr class="docutils" />
 </div>
 </div>
 

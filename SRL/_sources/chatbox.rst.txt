@@ -5,24 +5,28 @@ The chatbox file holds functions and procedures that are used in the
 Runescape chat box.
 
 
+------------
 
 type TRSChatbox
 ~~~~~~~~~~~~~~~
 The type that holds functions and properties of the Runescape chat box interface.
 
 
+------------
 
 var Chatbox
 ~~~~~~~~~~~
 Variable that stores functions and properties of the Runescape chatbox interface.
 
 
+------------
 
 const CHATBOX_COLORS
 ~~~~~~~~~~~~~~~~~~~~
 constant that holds all the possible text-colors
 
 
+------------
 
 Chatbox.GetTextOnLine
 ~~~~~~~~~~~~~~~~~~~~~
@@ -41,6 +45,7 @@ Returns the text at the given line ``[0..8]``. ``8`` is the last line (the input
     chatbox.GetTextOnLine(6);
 
 
+------------
 
 Chatbox.FindTextOnLines
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -60,6 +65,7 @@ lines start with 0 being the bottom chat line.
    chatbox.FindTextOnLines(['Hello'], [0..3]);
 
 
+------------
 
 Chatbox.GetLastMessage
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -70,6 +76,7 @@ Chatbox.GetLastMessage
 Returns the text at the last line in the chatbox
 
 
+------------
 
 Chatbox.GetChatArea
 ~~~~~~~~~~~~~~~~~~~
@@ -80,6 +87,7 @@ Chatbox.GetChatArea
 Returns a TBox which only covers the chat-area, does not include the scrollbar and input-field.
 
 
+------------
 
 Chatbox.ClickContinue
 ~~~~~~~~~~~~~~~~~~~~~
@@ -91,6 +99,7 @@ Clicks the "Click here to continue"-text in the chatbox.
 Returns ``True`` if the text was found.
 
 
+------------
 
 Chatbox.GotLevelUp
 ~~~~~~~~~~~~~~~~~~~~~
@@ -101,6 +110,7 @@ Chatbox.GotLevelUp
 Returns ``True`` if text containing `Congratulations` was found
 
 
+------------
 
 Chatbox.HandleLevelUp
 ~~~~~~~~~~~~~~~~~~~~~
@@ -111,6 +121,7 @@ Chatbox.HandleLevelUp
 Clicks the "Click here to continue" if text containing `Congratulations` was found
 
 
+------------
 
 Chatbox.GetOptions
 ~~~~~~~~~~~~~~~~~~~
@@ -121,6 +132,7 @@ Chatbox.GetOptions
 Returns all the options found in teh chatbox area
 
 
+------------
 
 Chatbox.ClickOption
 ~~~~~~~~~~~~~~~~~~~
@@ -133,6 +145,7 @@ Chatbox.ClickOption
 Clicks the preferred option by text. If the option cant be found it will return with `False`.
 
 
+------------
 
 Chatbox.PleaseWait
 ~~~~~~~~~~~~~~~~~~~
@@ -143,6 +156,7 @@ Chatbox.PleaseWait
 Waits as long as the "Please wait" text exists.
 
 
+------------
 
 Chatbox.ChatToOption
 ~~~~~~~~~~~~~~~~~~~~~
@@ -154,6 +168,7 @@ I have no clue wtf this is. Therefor it's either a stupid or an awesome function
 Seems to be a function that should have been named something like `ContinueToOption` (as in click continue until it no longer can)
 
 
+------------
 
 Chatbox.GetDisplayName
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -164,6 +179,7 @@ Chatbox.GetDisplayName
 Returns your username / display name
 
 
+------------
 
 Chatbox.ClickTab
 ~~~~~~~~~~~~~~~~~
@@ -174,6 +190,7 @@ Chatbox.ClickTab
 A tab would be the filters for the chatbox. So you click one of them..
 
 
+------------
 
 Chatbox.GetQuery
 ~~~~~~~~~~~~~~~~~
@@ -185,6 +202,7 @@ Returns the question-text, like "Enter amount:" when doing "Withdraw X" from a b
 If `answer` is `True` it returns the value you have filled in.
 
 
+------------
 
 Chatbox.WaitQuery
 ~~~~~~~~~~~~~~~~~
@@ -195,6 +213,7 @@ Chatbox.WaitQuery
 Wait till the query shows up. If it doesn't show up within `WaitTime` it returns `False`.
 
 
+------------
 
 Chatbox.AnswerQuery
 ~~~~~~~~~~~~~~~~~~~
@@ -205,6 +224,7 @@ Chatbox.AnswerQuery
 Answer the query, first it will wait for the quary `Query` to show up, then it fills in the given `Response`.
 
 
+------------
 
 Chatbox.GetButtonQuery
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -215,6 +235,7 @@ Chatbox.GetButtonQuery
 Returns the question-text, like "What would you like to smelt"
 
 
+------------
 
 Chatbox.WaitButtonQuery
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -225,6 +246,7 @@ Chatbox.WaitButtonQuery
 Wait till the query shows up. If it doesn't show up within `WaitTime` it returns `False`.
 
 
+------------
 
 Chatbox.ClickButtonId
 ~~~~~~~~~~~~~~~~~~~~~
@@ -236,6 +258,7 @@ Clicks the button `Id`, checks uptext to verify that the corrrect button was cli
 If the given button id doesn't match the UpText it will sift through the other buttons looking for it.
 
 
+------------
 
 Chatbox.ClickButtonColor
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -247,6 +270,7 @@ Clicks the button matching both color and uptext, starting with the one that had
 initial match, and then sifting down to less good matches.
 
 
+------------
 
 Chatbox.GetTitle
 ~~~~~~~~~~~~~~~~
@@ -257,6 +281,7 @@ Chatbox.GetTitle
 Returns the title of a chatbox interaction such as the NPC name.
 
 
+------------
 
 Chatbox.GetNotification
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -267,3 +292,4 @@ Chatbox.GetNotification
 Returns the title of a chatbox notification such as the "inventory is too full".
 
 
+------------
