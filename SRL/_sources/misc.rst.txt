@@ -1,0 +1,86 @@
+
+Misc
+=====
+The ``osr/misc.simba`` file contains various RS related funcions that doesn't fit elsewhere
+
+
+------------
+
+type ERSClickType
+~~~~~~~~~~~~~~~~~~~~
+.. code-block:: pascal
+
+ type ERSClickType = (ctNone, ctRed, ctYellow);
+
+
+------------
+
+Mouse.Click
+~~~~~~~~~~~~
+.. code-block:: pascal
+
+ function TMouse.Click(ClickType: ERSClickType): Boolean; overload;
+
+Leftclicks the mouse returns ``True`` if the click passed through as expected.
+Useful when expecting a red or yellow X after a click.
+
+
+------------
+
+SRL.GetXPAtLevel
+~~~~~~~~~~~~~~~~
+.. code-block:: pascal
+
+ function TSRL.GetXPAtLevel(level:Int32): Int32;
+
+Given a level it returns the minimum XP needed for it.
+
+
+------------
+
+SRL.GetLevelAtXP
+~~~~~~~~~~~~~~~~
+.. code-block:: pascal
+
+ function TSRL.GetLevelAtXP(XP:UInt32): Int32;
+
+Given some XP, it returns what level that is.
+
+
+------------
+
+SRL.GetItemAmount
+~~~~~~~~~~~~~~~~~~
+.. code-block:: pascal
+
+ function TSRL.GetItemAmount(Area: TBox): Int32;
+
+For use with items in like bankscreen, inventory, shops and so on to
+get the number of stacked items there are.
+
+
+------------
+
+SRL.AvgBrightness
+~~~~~~~~~~~~~~~~~~
+.. code-block:: pascal
+
+ function TSRL.AvgBrightness(B: TBox): Int32;
+
+Returns the average brightness of a area on the screen. 
+Returns a value between ``0`` and ``100``, ``0`` being black.
+
+
+------------
+
+SRL.PeakBrightness
+~~~~~~~~~~~~~~~~~~
+.. code-block:: pascal
+
+ function TSRL.PeakBrightness(B: TBox): Int32;
+
+Returns the peak brightness of a area on the screen. 
+Returns a value between ``0`` and ``100``, ``0`` being black.
+
+
+------------
