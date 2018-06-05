@@ -10,6 +10,7 @@ Welcome to SRLs documentation!
    misc
    MM2MS
    players
+   text
    worldswitcher
    xpbar
 
@@ -50,7 +51,7 @@ Welcome to SRLs documentation!
    math
    mouse
    random
-   text
+   text(shared)
    time
    wrappers
 
