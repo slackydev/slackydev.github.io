@@ -3,6 +3,8 @@ Color
 ======
 Color finding related methods
 
+
+
 srl.WaitColorCount
 ~~~~~~~~~~~~~~~~~~
 
@@ -22,6 +24,8 @@ Example:
   // Waits 500ms for the color count in area to equal 20
   srl.WaitColorCount([255, 10], Area, @Equals, 20, 5000);
 
+
+
 srl.WaitColor
 ~~~~~~~~~~~~~
 
@@ -38,10 +42,14 @@ Example:
     if (srl.WaitColor(clRed, Point(100, 100), 1000)) then
       Writeln('clRed has been found at point(100, 100) within 1 second');
 
+
+
 type TColorSettings
 ~~~~~~~~~~~~~~~~~~~
 
 A record that provides easy access to the Simba CTS settings.
+
+
 
 ColorSetting
 ~~~~~~~~~~~~
@@ -61,6 +69,8 @@ Example:
     // CTS 1
     Writeln(ColorSetting(1));
 
+
+
 TColorSettings.Retrieve
 ~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -75,6 +85,8 @@ Example:
 .. code-block:: pascal
 
     cs.Retrieve();
+
+
 
 TColorSettings.Apply
 ~~~~~~~~~~~~~~~~~~~~
@@ -91,6 +103,8 @@ Example:
 
     cs.Apply();
 
+
+
 FindColorsTolerance; overload
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -105,6 +119,8 @@ Example:
 .. code-block:: pascal
 
     FindColorsTolerance(TPA, clRed, Area, 10, ColorSetting(2, 0.55, 1.10));
+
+
 
 FindColorTolerance; overload
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -121,6 +137,8 @@ Example:
 
     FindColorsTolerance(x, y, clRed, Area, 10, ColorSetting(2, 0.55, 1.10));
 
+
+
 CountColorTolerance; overload
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -136,6 +154,8 @@ Example:
 
     Writeln(CountColorTolerance(clRed, Area, 10, ColorSetting(2, 0.50, 1.00)));
 
+
+
 type TColorEx
 ~~~~~~~~~~~~~
 
@@ -149,3 +169,5 @@ Example:
     CTS1_Color: TColorEx = [clRed, 20, [1]];
     CTS2_Color: TColorEx = [clRed, 20, [2, 0.50, 1.00]];
     CTS3_Color: TColorEx = [clRed, 20, [3, 0.00, 0.00, 0.50]];
+
+

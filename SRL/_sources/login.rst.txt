@@ -3,6 +3,8 @@ Loginscreen
 ===========
 Loginscreen related methods
 
+
+
 TRSLoginScreen.OpenWorldSwitcher
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -23,6 +25,8 @@ Example:
 
   LoginScreen.OpenWorldSwitcher();
 
+
+
 TRSLoginScreen.GetResponse
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -37,6 +41,8 @@ Example:
 .. code-block:: pascal
 
   Writeln(LoginScreen.GetResponse);
+
+
 
 TRSLoginScreen.WaitResponse
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -53,3 +59,5 @@ Example:
 .. code-block:: pascal
 
   LoginScreen.OpenWorldSwitcher();
+
+

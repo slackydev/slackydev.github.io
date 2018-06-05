@@ -4,13 +4,19 @@ ChooseOption
 The ChooseOption file holds functions and procedures that are related to the
 ingame context menu.
 
+
+
 type TRSChooseOption
 ~~~~~~~~~~~~~~~~~~~~
 The type that holds functions and properties of the context menu.
 
+
+
 var ChooseOption
 ~~~~~~~~~~~~~~~~
 Variable that stores functions and properties of the context menu.
+
+
 
 ChooseOption.Open
 ~~~~~~~~~~~~~~~~~~
@@ -22,6 +28,8 @@ Opens the optionbox, returns true if it worked.
 
 .. note:: by slacky
 
+
+
 ChooseOption.Open
 ~~~~~~~~~~~~~~~~~~
 .. code-block:: pascal
@@ -31,6 +39,8 @@ ChooseOption.Open
 Opens the menu and stores it's bounds, returns true if it worked.
 
 .. note:: by slacky
+
+
 
 ChooseOption.IsOpen
 ~~~~~~~~~~~~~~~~~~~~
@@ -42,6 +52,8 @@ Checks if the menu is open, it repeats the check for a +/-2 sec if it's ``False`
 
 .. note:: by slacky
 
+
+
 ChooseOption.IsClosed
 ~~~~~~~~~~~~~~~~~~~~~~
 .. code-block:: pascal
@@ -51,6 +63,8 @@ ChooseOption.IsClosed
 Checks if the menu is closed, it repeats the check for a +/-650ms if it's ``True`` (expecting it to close).
 
 .. note:: by slacky
+
+
 
 ChooseOption.Find
 ~~~~~~~~~~~~~~~~~~
@@ -63,6 +77,8 @@ Returns True if it's found.
 
 .. note:: by slacky
 
+
+
 ChooseOption.GetOptions
 ~~~~~~~~~~~~~~~~~~~~~~~~
 .. code-block:: pascal
@@ -72,6 +88,8 @@ ChooseOption.GetOptions
 Returns each option in the menu.
 
 .. note:: by slacky
+
+
 
 ChooseOption.SelectID
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -86,6 +104,8 @@ Slows down the mouse movement for more realistic sliding through the lines of te
 
 .. note:: by slacky
 
+
+
 ChooseOption.Select
 ~~~~~~~~~~~~~~~~~~~~
 .. code-block:: pascal
@@ -94,6 +114,8 @@ ChooseOption.Select
   function TRSChooseOption.Select(Option: String; MouseAction:Int32=mouse_left; AClose:Boolean=True; CaseSensitive:Boolean=True): Boolean;
   
 Same as SelectID, except that this will look for the option by it's text, rather than by id.
+
+
 
 ChooseOption.MissSelect
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -105,6 +127,8 @@ ChooseOption.MissSelect
 For example, click Inspect when you meant to click Drop. By default there's a 5% chance of misclick,
 it will automatically click the right one after a missclick.
 
+
+
 ChooseOption.Close
 ~~~~~~~~~~~~~~~~~~~
 .. code-block:: pascal
@@ -115,3 +139,5 @@ Closes the option menu by dragging the mouse away from it, if that
 failed it clicks the "Close"-option.
 
 .. note:: by slacky
+
+

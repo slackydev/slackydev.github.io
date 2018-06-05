@@ -3,6 +3,8 @@ TBox
 =========
 TBox related methods
 
+
+
 TBox.NearestEdge
 ~~~~~~~~~~~~~~~~
 .. code-block:: pascal
@@ -12,3 +14,5 @@ TBox.NearestEdge
 Returns the closest edge point to the TPoint `P`.
 
 .. note:: by slacky
+
+

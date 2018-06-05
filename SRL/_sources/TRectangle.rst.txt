@@ -5,6 +5,8 @@ TRectangle related methods
 
 Type definition is found in shared/globals.simba
 
+
+
 TRectangle.ToTPA
 ~~~~~~~~~~~~~~~~~
 .. code-block:: pascal
@@ -12,6 +14,8 @@ TRectangle.ToTPA
     function TRectangle.ToTPA(): TPointArray; constref;
 
 TPA from the rectangle.
+
+
 
 TRectangle.Bounds
 ~~~~~~~~~~~~~~~~~
@@ -21,6 +25,8 @@ TRectangle.Bounds
 
 Returns the minimum bounding box covering the rectangle
 
+
+
 TRectangle.Radius
 ~~~~~~~~~~~~~~~~~
 .. code-block:: pascal
@@ -29,6 +35,8 @@ TRectangle.Radius
 
 Returns the radius of the shortest side, for the maximum see MaxRadius
 
+
+
 TRectangle.MaxRadius
 ~~~~~~~~~~~~~~~~~~~~
 .. code-block:: pascal
@@ -36,6 +44,8 @@ TRectangle.MaxRadius
     function TRectangle.MaxRadius(): Double; constref;
 
 Returns the radius of the longest side, for minimum see Radius
+
+
 
 TRectangle.Mean
 ~~~~~~~~~~~~~~~~
@@ -47,6 +57,8 @@ Middle of the rectangle
 
 .. note:: by slacky
 
+
+
 TRectangle.Rotate
 ~~~~~~~~~~~~~~~~~~~~
 .. code-block:: pascal
@@ -54,6 +66,8 @@ TRectangle.Rotate
     function TRectangle.Rotate(Angle: Double): TRectangle; constref;
     
 Returns a rotated copy of the rectangle
+
+
 
 TRectangle.Contains
 ~~~~~~~~~~~~~~~~~~~~
@@ -63,6 +77,8 @@ TRectangle.Contains
   
 Returns true if the point `Pt` is inside the rectangle.
 .. note:: by slacky
+
+
 
 TRectangle.DirByLen
 ~~~~~~~~~~~~~~~~~~~~
@@ -74,6 +90,8 @@ Returns the direction which is the longest or shortest.
 
 .. note:: by slacky
 
+
+
 TRectangle.Partition
 ~~~~~~~~~~~~~~~~~~~~~
 .. code-block:: pascal
@@ -84,6 +102,8 @@ Break the rectangle into smaller rectangles. Goes well along with `DirByLen`
 
 .. note:: by slacky
 
+
+
 TRectangle.OffsetFunc
 ~~~~~~~~~~~~~~~~~~~~~~~
 .. code-block:: pascal
@@ -91,6 +111,8 @@ TRectangle.OffsetFunc
     function TRectangle.OffsetFunc(pt: TPoint): TRectangle; constref;
 
 Offset the rectangle
+
+
 
 TRectangle.Filter
 ~~~~~~~~~~~~~~~~~~~
@@ -102,6 +124,8 @@ Extract all the points from `TestSet` that fits within this rectangle.
 
 .. note:: by slacky
 
+
+
 TRectangle.Expand
 ~~~~~~~~~~~~~~~~~~
 .. code-block:: pascal
@@ -112,6 +136,8 @@ Increase or decrease the dimensions of the rectangle.
 
 .. note:: by slacky
 
+
+
 TRectangle.NearestEdge
 ~~~~~~~~~~~~~~~~~~~~~~
 .. code-block:: pascal
@@ -121,3 +147,5 @@ TRectangle.NearestEdge
 Returns the closest edge point (think Rect.ToTPA.Connect) to the TPoint `P`.
 
 .. note:: by slacky
+
+

@@ -3,17 +3,25 @@ Logout
 =======
 The file holds functions and procedures that are in the logout-tab.
 
+
+
 type TRSLogoutWS
 ~~~~~~~~~~~~~~~~
 Type that holds the methods for the in-game worldswitcher located on the logout tab
+
+
 
 type TRSLogout
 ~~~~~~~~~~~~~~~
 The type that holds functions and properties of the Runescape logout-tab.
 
+
+
 var Logout
 ~~~~~~~~~~
 Variable that stores functions and properties of the Runescape logout interface.
+
+
 
 Logout.Open
 ~~~~~~~~~~~
@@ -23,6 +31,8 @@ Logout.Open
 
 Opens the interface
 
+
+
 Logout.IsOpen
 ~~~~~~~~~~~~~
 .. code-block:: pascal
@@ -30,6 +40,8 @@ Logout.IsOpen
   function TRSLogout.IsOpen(Tab:ELogoutSubtab=lsTabNone; maxWait:Int32=0): Boolean;
 
 Checks if the interface is already open. Can also be used to check if a specific "subtab" is open.
+
+
 
 Logout.ClickLogout
 ~~~~~~~~~~~~~~~~~~
@@ -39,6 +51,8 @@ Logout.ClickLogout
 
 Clicks the logout button, by default retires 3 times over 20 seconds.
 
+
+
 Logout.SwitchToWorld
 ~~~~~~~~~~~~~~~~~~~~
 .. code-block:: pascal
@@ -46,6 +60,8 @@ Logout.SwitchToWorld
   function TRSLogout.SwitchToWorld(World: Integer): Boolean;
 
 Jumps to the given world.
+
+
 
 Logout.WorldSwitcher.isOpen
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -55,6 +71,8 @@ Logout.WorldSwitcher.isOpen
 
 Returns if the in-game worldswitcher is open
 
+
+
 Logout.WorldSwitcher.Open
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 .. code-block:: pascal
@@ -62,6 +80,8 @@ Logout.WorldSwitcher.Open
   function TRSLogoutWS.Open: Boolean;
 
 Opens the in-game worldswitcher
+
+
 
 Logout.WorldSwitcher.Close
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -71,6 +91,8 @@ Logout.WorldSwitcher.Close
 
 Closes the worldswitcher (returns back to the logout button)
 
+
+
 Logout.WorldSwitcher.VisibleWorlds
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. code-block:: pascal
@@ -78,6 +100,8 @@ Logout.WorldSwitcher.VisibleWorlds
   function TRSLogoutWS.VisibleWorlds(out Worlds: TIntegerArray; out Boxes: TBoxArray): Boolean;
 
 Returns the VisibleWorlds and their bounds
+
+
 
 Logout.WorldSwitcher.CurrentWorld
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -87,6 +111,8 @@ Logout.WorldSwitcher.CurrentWorld
 
 Returns the world we are currently in
 
+
+
 Logout.WorldSwitcher.SwitchTo
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. code-block:: pascal
@@ -94,3 +120,5 @@ Logout.WorldSwitcher.SwitchTo
   function TRSLogoutWS.SwitchTo(World: Integer): Boolean;
 
 Hops to the given world
+
+

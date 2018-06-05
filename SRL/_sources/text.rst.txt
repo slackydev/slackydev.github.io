@@ -3,6 +3,8 @@ Text
 =======
 Text related methods
 
+
+
 type TRSChooseOption
 ~~~~~~~~~~~~~~~~~~~~
 .. code-block:: pascal
@@ -15,3 +17,5 @@ Two modes are defined, one for RS and one using the SI prefix.
 * abbrSI: '', 'K', 'M', 'G', 'T', 'P', 'E', 'Z', 'Y'
 
 The RS prefix is default, since SRL mainly focuses on RS.
+
+

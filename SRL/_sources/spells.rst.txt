@@ -3,9 +3,24 @@ Spells
 =======
 The file holds functions and procedures that are related to the spells gametab
 
+
+
 var Spells
 ~~~~~~~~~~~
 Variable that stores functions and properties of the Runescape magic/spells gametab.
+
+Spells follow the same name as they do ingame, only prefixed with ``CAST_``
+
+**Example names**
+
+.. code-block:: pascal
+
+    CAST_LUMBRIDGE_HOME_TELEPORT
+    CAST_WIND_STRIKE
+    CAST_CONFUSE
+    CAST_ENCHANT_CROSSBOW_BOLT
+
+
 
 Spells.Open
 ~~~~~~~~~~~
@@ -15,6 +30,8 @@ Spells.Open
 
 Opens the interface
 
+
+
 Spells.IsOpen
 ~~~~~~~~~~~~~
 .. code-block:: pascal
@@ -22,6 +39,8 @@ Spells.IsOpen
   function TRSSpells.IsOpen(maxWait:Int32=0): Boolean;
 
 Checks if the interface is already open.
+
+
 
 Spells.GetSpellBox
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -33,6 +52,8 @@ Returns the bounding box covering the given spell.
 
 .. note:: by slacky
 
+
+
 Spells.PointToSlot
 ~~~~~~~~~~~~~~~~~~
 .. code-block:: pascal
@@ -41,6 +62,8 @@ Spells.PointToSlot
 
 Returns the index of the slot under `PT`
 
+
+
 Spells.MouseOver
 ~~~~~~~~~~~~~~~~
 .. code-block:: pascal
@@ -48,7 +71,8 @@ Spells.MouseOver
   function TRSSpells.MouseOver(spell:ESpellCast): Boolean;
 
 Moves the mouse over the given spell.
-.. note:: by slacky
+
+
 
 Spells.CanActivate
 ~~~~~~~~~~~~~~~~~~~
@@ -57,7 +81,8 @@ Spells.CanActivate
   function TRSSpells.CanActivate(Spell: ESpellCast): Boolean;
 
 Returns True if you can use the spell..
-.. note:: by slacky
+
+
 
 Spells.Selected
 ~~~~~~~~~~~~~~~
@@ -66,7 +91,8 @@ Spells.Selected
   function TRSSpells.Selected(Spell: ESpellCast): Boolean;
 
 Returns True if the spell is currently selected
-.. note:: by Olly
+
+
 
 Spells.Cast
 ~~~~~~~~~~~
@@ -75,4 +101,5 @@ Spells.Cast
   function TRSSpells.Cast(Spell: ESpellCast): Boolean
 
 Casts the spell
-.. note:: by Olly
+
+

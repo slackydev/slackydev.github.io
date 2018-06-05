@@ -7,6 +7,8 @@ The wrappers include contains wrapper functions used throughout SRL, some of the
 The source for this file can be found `here <https://github.com/Olly-/SRL/blob/master/lib/utilities/wrappers.simba>`_.
 
 
+
+
 GetClientBounds
 ~~~~~~~~~~~~~~~
 .. code-block:: pascal
@@ -22,6 +24,8 @@ Example:
 .. code-block:: pascal
 
    b := GetClientBounds();
+
+
 
 GetColor; overload
 ~~~~~~~~~~~~~~~~~~
@@ -40,6 +44,8 @@ Example:
      p := Point(350, 200);
      WriteLn(GetColor(p));
 
+
+
 GetColors; overload
 ~~~~~~~~~~~~~~~~~~~
 .. code-block:: pascal
@@ -55,6 +61,8 @@ Example:
 .. code-block:: pascal
 
      Colors := GetColors(TPA, True);
+
+
 
 FindColor; overload
 ~~~~~~~~~~~~~~~~~~~
@@ -72,6 +80,8 @@ Example:
 
     FindColor(x, y, clRed, Box);
 
+
+
 findColorTolerance; overload
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. code-block:: pascal
@@ -87,6 +97,8 @@ Example:
 .. code-block:: pascal
 
     FindColorTolerance(x, y, 255, Box, 10);
+
+
 
 FindColors; overload
 ~~~~~~~~~~~~~~~~~~~~
@@ -104,6 +116,8 @@ Example:
 
     WriteLn(FindColors(TPA, 255, Box));
 
+
+
 FindColorsTolerance; overload
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. code-block:: pascal
@@ -119,6 +133,8 @@ Example:
 .. code-block:: pascal
 
     WriteLn(FindColorsTolerance(TPA, 255, Box, 10));
+
+
 
 FindColorSpiral; overload
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -136,6 +152,8 @@ Example:
 
     WriteLn(FindColorSpiral(x, y, 255, Box));
 
+
+
 FindColorSpiralTolerance; overload
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. code-block:: pascal
@@ -151,6 +169,8 @@ Example:
 .. code-block:: pascal
 
     WriteLn(FindColorSpiralTolerance(x, y, 255, Box));
+
+
 
 FindColorsSpiralTolerance: overload;
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -169,6 +189,8 @@ Example:
     FindColorsSpiralTolerance(x, y, TPA, clWhite, mainScreen.GetBounds, 10);
 
 
+
+
 CountColor; overload
 ~~~~~~~~~~~~~~~~~~~~
 .. code-block:: pascal
@@ -184,6 +206,8 @@ Example:
 .. code-block:: pascal
 
     WriteLn(CountColor(clRed, Box));
+
+
 
 CountColorTolerance: overload;
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -201,6 +225,8 @@ Example:
 
     WriteLn(CountColorTolerance(clRed, 10, Box));
 
+
+
 FreeDTMs
 ~~~~~~~~
 .. code-block:: pascal
@@ -216,6 +242,8 @@ Example:
 .. code-block:: pascal
 
      FreeDTMs([dtm1, dtm2]);
+
+
 
 FreeBitmaps
 ~~~~~~~~~~~
@@ -233,6 +261,8 @@ Example:
 
      FreeBitmaps([bmp1, bmp2]);
 
+
+
 GetBitmapName
 ~~~~~~~~~~~~~
 .. code-block:: pascal
@@ -248,6 +278,8 @@ Example:
 .. code-block:: pascal
 
      WriteLn(GetBitmapName(BMP));
+
+
 
 GetDTMName
 ~~~~~~~~~~
@@ -265,6 +297,8 @@ Example:
 
      WriteLn(GetDTMName(DTM));
 
+
+
 BitmapFromClient; overload
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. code-block:: pascal
@@ -280,6 +314,8 @@ Example:
 .. code-block:: pascal
 
     BMP := BitmapFromClient(Box);
+
+
 
 FindBitmapIn; overload
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -298,6 +334,8 @@ Example:
 
     Result := FindBitmap(bmp, x, y, Box);
 
+
+
 FindBitmapToleranceIn; overload
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. code-block:: pascal
@@ -313,6 +351,8 @@ Example:
 .. code-block:: pascal
 
     Result := FindBitmapToleranceIn(BMP, x, y, Box, 20);
+
+
 
 FindBitmapTolerance
 ~~~~~~~~~~~~~~~~~~~
@@ -330,6 +370,8 @@ Example:
 
     WriteLn(FindBitmapTolerance(bmp, x, y, 50));
 
+
+
 FindBitmapMaskTolerance; overload
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. code-block:: pascal
@@ -345,6 +387,8 @@ Example:
 .. code-block:: pascal
 
     Result := FindBitmapMaskTolerance(s, p, Box, 30, 30);
+
+
 
 FindDeformedBitmapToleranceIn; overload
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -363,6 +407,8 @@ Example:
     if (FindDeformedBitmapToleranceIn(BMP, x, y, Box, 10, 0, true, acc)) then
       WriteLn('We found the bitmap at accuracy: ' floatToStr(acc));
 
+
+
 FindDTMRotatedSE; overload
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. code-block:: pascal
@@ -379,6 +425,8 @@ Example:
 
     if (FindDTMRotatedSE(aDTM, x, y, Box, -Pi/4, Pi/4, Pi/60, aFound)) then
       WriteLn('Found the dtm!');
+
+
 
 FindDTMRotatedAlternating: overload;
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -397,6 +445,8 @@ Example:
     if (FindDTMRotatedAlternating(DTM, x, y, Box, -Pi/4, Pi/4, Pi/60, aFound)) then
       WriteLn('Found the dtm!');
 
+
+
 FindDTMRotated
 ~~~~~~~~~~~~~~
 .. code-block:: pascal
@@ -413,6 +463,8 @@ Example:
 
     if (FindDTMRotated(DTM, x, y, 100, 100, 400, 400, -Pi/4, Pi/4, Pi/60, aFound)) then
       WriteLn('Found the dtm!');
+
+
 
 FindDTMRotated; overload
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -431,6 +483,8 @@ Example:
     if (FindDTMRotated(aDTM, x, y, Box, -Pi/4, Pi/4, Pi/60, aFound)) then
       WriteLn('found the dtm!');
 
+
+
 FindDTMs; overload
 ~~~~~~~~~~~~~~~~~~
 .. code-block:: pascal
@@ -448,6 +502,8 @@ Example:
     FindDTMs(DTM, TPA, Box);
     WriteLn('Matches' + toString(TPA));
 
+
+
 FindDTM; overload
 ~~~~~~~~~~~~~~~~~
 .. code-block:: pascal
@@ -463,6 +519,8 @@ Example:
 .. code-block:: pascal
 
     WriteLn(FindDTM(DTM, x, y, Box));
+
+
 
 TPAFromText; overload
 ~~~~~~~~~~~~~~~~~~~~~
@@ -481,6 +539,8 @@ Example:
   TPA := TPAFromText('Hello world', StatChars);
 
 
+
+
 Replicate; overload
 ~~~~~~~~~~~~~~~~~~~
 .. code-block:: pascal
@@ -496,6 +556,8 @@ Example:
 .. code-block:: pascal
 
     WriteLn(Replicate('SRL', 10));
+
+
 
 InRange; overload
 ~~~~~~~~~~~~~~~~~
@@ -513,6 +575,8 @@ Example:
 
     WriteLn(InRange(15.0, 10.0, 20.0));
 
+
+
 Distance; overload
 ~~~~~~~~~~~~~~~~~~
 .. code-block:: pascal
@@ -528,3 +592,5 @@ Example:
 .. code-block:: pascal
 
     WriteLn(Distance(Point(100, 100), Point(200, 200)));
+
+

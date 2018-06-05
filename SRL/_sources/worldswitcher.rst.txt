@@ -3,6 +3,8 @@ WorldSwitcher
 =============
 Methods that relates to swithing world.
 
+
+
 WorldSwitcher.GetWorld
 ~~~~~~~~~~~~~~~~~~~~~~
 
@@ -15,3 +17,5 @@ Example:
 
   // Returns a random world that isn't world 302 and isn't a free world.
   World := WorldSwitcher.GetWorld([[WORLD_FREE], [302]]);
+
+

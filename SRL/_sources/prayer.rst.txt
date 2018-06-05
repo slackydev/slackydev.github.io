@@ -3,9 +3,15 @@ Prayer
 =======
 The file holds functions and procedures that are related to the prayer gametab
 
+
+
 var Prayer
 ~~~~~~~~~~~
 Variable that stores functions and properties of the Runescape prayer gametab.
+
+Prayers follow the same name as ingame,`only prefixed with ``PRAY_`` so for example: ``PRAY_THICK_SKIN`` or ``PRAY_ULTIMATE_STRENGTH``
+
+
 
 Prayer.Open
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -15,6 +21,8 @@ Prayer.Open
 
 Opens the interface
 
+
+
 Prayer.IsOpen
 ~~~~~~~~~~~~~~~~~~~~~~~~
 .. code-block:: pascal
@@ -22,6 +30,8 @@ Prayer.IsOpen
   function TRSPrayer.IsOpen(maxWait:Int32=0): Boolean;
 
 Checks if the interface is already open.
+
+
 
 Prayer.GetPrayerBox
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -31,7 +41,7 @@ Prayer.GetPrayerBox
 
 Returns the bounding box covering the given prayer.
 
-.. note:: by slacky
+
 
 Prayer.CanActivate
 ~~~~~~~~~~~~~~~~~~~
@@ -41,7 +51,7 @@ Prayer.CanActivate
 
 Returns True if you can activete the prayer..
 
-.. note:: by slacky
+
 
 Prayer.IsActivated
 ~~~~~~~~~~~~~~~~~~~
@@ -51,7 +61,7 @@ Prayer.IsActivated
 
 Returns True if the spell is activated
 
-.. note:: by slacky
+
 
 Prayer.MouseOver
 ~~~~~~~~~~~~~~~~~
@@ -61,7 +71,7 @@ Prayer.MouseOver
 
 Moves the mouse over the given prayer.
 
-.. note:: by slacky
+
 
 Prayer.Toggle
 ~~~~~~~~~~~~~~
@@ -71,4 +81,4 @@ Prayer.Toggle
 
 Click's it if it can be activated.
 
-.. note:: by slacky
+

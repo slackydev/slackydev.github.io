@@ -3,6 +3,8 @@ Random
 =======
 Random related methods
 
+
+
 srl.GaussRand
 ~~~~~~~~~~~~~~~
 .. code-block:: pascal
@@ -10,6 +12,8 @@ srl.GaussRand
   function TSRL.GaussRand(mean, dev: Double): Double;
 
 Generates a random gaussian/normal number.
+
+
 
 srl.TruncatedGauss
 ~~~~~~~~~~~~~~~~~~
@@ -20,6 +24,8 @@ srl.TruncatedGauss
 Generates a random gaussian/normal number which is truncated and mapped within then 
 given range ``[left..right]`` weighted towards ``left``
 
+
+
 srl.SkewedRand
 ~~~~~~~~~~~~~~~
 .. code-block:: pascal
@@ -29,6 +35,8 @@ srl.SkewedRand
 Random skewed distribution generation. `Mode` is a number between `Lo` and `Hi` which is 
 where the most of the generated numbers will land.
 
+
+
 srl.NormalRange
 ~~~~~~~~~~~~~~~
 .. code-block:: pascal
@@ -37,6 +45,8 @@ srl.NormalRange
 
 Generates a random integer in the given range, weighted towards the mean.
 
+
+
 srl.NormalRange
 ~~~~~~~~~~~~~~~
 .. code-block:: pascal
@@ -44,6 +54,8 @@ srl.NormalRange
   function TSRL.NormalRange(min, max: Double): Double;
 
 Generates a random float in the given range, weighted towards the mean.
+
+
 
 srl.RandomPoint
 ~~~~~~~~~~~~~~~
@@ -54,6 +66,8 @@ srl.RandomPoint
 Generates a random TPoint which weights around ``mean``, with a max distance 
 from mean defined by ``maxRad``.
 
+
+
 srl.RandomPoint (overload)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. code-block:: pascal
@@ -62,6 +76,8 @@ srl.RandomPoint (overload)
 
 Generates a random TPoint in the bounds of the given box `bounds`, 
 the point weights towards the middle of the box.
+
+
 
 srl.RandomPoint (overload)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -72,6 +88,8 @@ srl.RandomPoint (overload)
 Generates a random TPoint in the given rectangle `rect`,
 The point weights towards the middle of the rectangle.
 
+
+
 srl.RandonPointEx
 ~~~~~~~~~~~~~~~~~~
 .. code-block:: pascal
@@ -81,9 +99,11 @@ srl.RandonPointEx
 Generates a random point within the bounds of the given box `B`, the point generated is skewed towards towards the `From`-point.
 The last parameter `Force` defines how much the generated point is to be skewed towards or away from `From` - Expects value in the range 0..2
 
-  Force = 0: Result weighs heavily towrads the edge closest to `From`
-  Force = 1: Result in the middle of box is most common
-  Force = 2: Result weighs heavily towrads the edge furthest away from `From`
+* Force = 0: Result weighs heavily towrads the edge closest to `From`
+* Force = 1: Result in the middle of box is most common
+* Force = 2: Result weighs heavily towrads the edge furthest away from `From`
+
+
 
 Wait (overload)
 ~~~~~~~~~~~~~~~~~
@@ -93,6 +113,8 @@ Wait (overload)
 
 Waits ... Weighted towards the mean of `min` and `max`
 
+
+
 WaitEx
 ~~~~~~~
 .. code-block:: pascal
@@ -100,6 +122,8 @@ WaitEx
   procedure WaitEx(mean, dev:Double);
 
 Waits ... Regular gauss random
+
+
 
 srl.rowp
 ~~~~~~~~~
@@ -113,3 +137,5 @@ a rough formula that Olly came up with for weighting points towards "From" point
 Final implementation and math done by slacky.
 
 Force ranges from -1 (close to) to 1 (away from), where 0 is mean, but with a bit of a skewiness...
+
+

@@ -10,6 +10,8 @@ This file holds functions and procedures that are used for the mainscreen.
 
     srl.Writeln(MainScreen.GetUpText());
 
+
+
 MainScreen.GetUpText
 ~~~~~~~~~~~~~~~~~~~~
 
@@ -24,6 +26,8 @@ Example:
 .. code-block:: pascal
 
     srl.Writeln(MainScreen.GetUpText());
+
+
 
 MainScreen.IsUpText
 ~~~~~~~~~~~~~~~~~~~
@@ -42,6 +46,8 @@ Example:
     if (MainScreen.IsUpText(['Attack Chicken', 'ack Chicken'])) then
       Mouse.Click(mouse_Left);
 
+
+
 MainScreen.IsUpText; overload
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -59,6 +65,8 @@ Example:
     if (MainScreen.IsUpText('Attack Chicken')) then
       Mouse.Click(mouse_Left);
 
+
+
 MainScreen.GetPlayerBox
 ~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -74,6 +82,8 @@ Example:
 
     Writeln(MainScreen.GetPlayerBox());
 
+
+
 MainScreen.FilterPlayerBox
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -88,6 +98,8 @@ Example:
 .. code-block:: pascal
 
     MainScreen.FilterPlayerBox(TPA);
+
+
 
 MainScreen.FindHPBars
 ~~~~~~~~~~~~~~~~~~~~~
@@ -105,3 +117,5 @@ Example:
 .. code-block:: pascal
 
     Bars := MainScreen.FindHPBars(MainScreen.GetBounds());
+
+

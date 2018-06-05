@@ -6,3 +6,5 @@ This file stores all methods that are used for simpler interfaces like SmithingS
 .. code-block:: pascal
 
     Writeln(SmithingScreen.IsOpen());
+
+

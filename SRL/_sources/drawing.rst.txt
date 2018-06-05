@@ -6,13 +6,24 @@ The drawing file holds TMufasaBitmap drawing functions to aid drawing onto bitma
 
 The source for this file can be found `here <https://github.com/SRL/SRL-6/blob/master/lib/utilities/drawing.simba>`_.
 
+
+
+const __SHADOW_COLOR
+~~~~~~~~~~~~~~~~~~~~
+
+Integer constant that stores the shadow color for adding a shadow for text drawing.
+
+
+
 TMufasaBitmap.FromClient
-~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~
 .. code-block:: pascal
 
     procedure TMufasaBitmap.FromClient(Area: TBox);
 
 Copy client to bitmap.
+
+
 
 TMufasaBitmap.Clear
 ~~~~~~~~~~~~~~~~~~~
@@ -32,6 +43,8 @@ Example:
 .. code-block:: pascal
 
     image.Clear();
+
+
 
 
 TMufasaBitmap.ClearArea
@@ -55,6 +68,8 @@ Example:
     image.ClearArea(intToBox(5, 5, 10, 10));
 
 
+
+
 TMufasaBitmap.ClearAllBut
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 .. code-block:: pascal
@@ -62,6 +77,8 @@ TMufasaBitmap.ClearAllBut
     procedure TMufasaBitmap.ClearAllBut(Area: TBox);
 
 Will clear the image, except for the given area.
+
+
 
 TMufasaBitmap.AvgBrightness
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -71,6 +88,8 @@ TMufasaBitmap.AvgBrightness
 
 Returns a value between 0 and 100 that defines how bright the image is.
 
+
+
 TMufasaBitmap.PeakBrightness
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. code-block:: pascal
@@ -78,6 +97,8 @@ TMufasaBitmap.PeakBrightness
     procedure TMufasaBitmap.PeakBrightness();
 
 Returns the maximum brightness in the image in the range `0..100`.
+
+
 
 TMufasaBitmap.DrawBox
 ~~~~~~~~~~~~~~~~~~~~~
@@ -100,6 +121,8 @@ Example:
     image.DrawBox(intToBox(50, 50, 345, 345), false, clLime);
 
 
+
+
 TMufasaBitmap.DrawBox
 ~~~~~~~~~~~~~~~~~~~~~
 
@@ -108,6 +131,8 @@ TMufasaBitmap.DrawBox
     procedure TMufasaBitmap.DrawBox(pt:TPoint; Radius:UInt32; Fill: Boolean; color: TColor);
 
 Draws a TBox onto the TMufasaBitmap
+
+
 
 TMufasaBitmap.DrawBox
 ~~~~~~~~~~~~~~~~~~~~~
@@ -131,6 +156,8 @@ Example:
     bmp.DrawBox(IntToBox(50, 50, 345, 345));
 
 
+
+
 TMufasaBitmap.DrawBox; overload
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -151,6 +178,8 @@ Example:
 .. code-block:: pascal
 
     bmp.DrawBox(Box(50, 50, 345, 345));
+
+
 
 TMufasaBitmap.DrawClippedBox
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -173,6 +202,8 @@ Example:
 
     image.DrawClippedBox(Box(50, 50, 100, 100), true, clLime);
 
+
+
 TMufasaBitmap.DrawBoxes
 ~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -193,6 +224,8 @@ Example:
 
     image.DrawBoxes([Box(10, 10, 20, 20), Box(50, 50, 250, 250),
                      Box(440, 440, 600, 600)], true, clRed);
+
+
 
 
 TMufasaBitmap.DrawBoxes; overload
@@ -217,6 +250,8 @@ Example:
                      Box(440, 440, 600, 600)], true, [clRed, clLime, clOrange]);
 
 
+
+
 TMufasaBitmap.DrawRect
 ~~~~~~~~~~~~~~~~~~~~~~
 .. code-block:: pascal
@@ -225,6 +260,8 @@ TMufasaBitmap.DrawRect
 
 Draws a TRectangle onto the TMufasaBitmap
 
+
+
 TMufasaBitmap.DrawPoly
 ~~~~~~~~~~~~~~~~~~~~~~
 .. code-block:: pascal
@@ -232,6 +269,8 @@ TMufasaBitmap.DrawPoly
     procedure TMufasaBitmap.DrawPoly(Poly: TPointArray; color: TColor);
 
 Draws a polygon onto the TMufasaBitmap
+
+
 
 TMufasaBitmap.DrawBitmap
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -252,6 +291,8 @@ Example:
 .. code-block:: pascal
 
     image.DrawBitmap(bmp, point(50, 50));
+
+
 
 
 TMufasaBitmap.DrawBitmap; overload
@@ -276,6 +317,8 @@ Example:
     image.DrawBitmap('simba/scripts/foo.png', point(11, 11));
 
 
+
+
 TMufasaBitmap.DrawCross
 ~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -295,6 +338,8 @@ Example:
 .. code-block:: pascal
 
     image.DrawCross(Point(200, 200), 4, clLime);
+
+
 
 
 TMufasaBitmap.DrawEllipse
@@ -320,6 +365,8 @@ Example:
     image.DrawEllipse(point(500, 500), 20, 50, true, clLime);
 
 
+
+
 TMufasaBitmap.DrawCircle
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -340,6 +387,8 @@ Example:
 .. code-block:: pascal
 
     image.DrawCircle(point(500, 500), 50, false, clLime);
+
+
 
 
 TMufasaBitmap.DrawPolygon
@@ -364,6 +413,8 @@ Example:
     image.DrawPolygon([point(10, 10), point(100, 100), point(500, 500), point(230, 555)], clLime);
 
 
+
+
 TMufasaBitmap.DrawClippedText
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -383,6 +434,8 @@ Example:
 .. code-block:: pascal
 
     image.DrawClippedText('hello world!', point(55, 55), 'StatChars', true, clLime);
+
+
 
 TMufasaBitmap.DrawTextArray
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -406,6 +459,8 @@ Example:
     image.drawTextArray(['hello', 'world'], [point(50, 50), point(100, 111)], bigchars, false, clBlue);
 
 
+
+
 TMufasaBitmap.DrawTextLines
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -425,6 +480,8 @@ Example:
 .. code-block:: pascal
 
     image.drawTextLines(['olly', 'is', 'the', 'best', ':D'], point(2, 2), statChars, false, clRed);
+
+
 
 
 TMufasaBitmap.Debug
@@ -451,6 +508,8 @@ Example:
     GetMufasaBitmap(bitmap).Debug();
 
 
+
+
 TMufasaBitmap.UpdateDebugImage
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. code-block:: pascal
@@ -458,6 +517,8 @@ TMufasaBitmap.UpdateDebugImage
     procedure TMufasaBitmap.UpdateDebugImage();
 
 Will update Simba's debug image form with the current image. 
+
+
 
 TMufasaBitmap.DebugTPA
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -481,6 +542,8 @@ Example:
     image.DebugTPA(tpa);
 
 
+
+
 TMufasaBitmap.DebugATPA
 ~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -500,6 +563,8 @@ Example:
 .. code-block:: pascal
 
     image.DebugATPA(ATPA);
+
+
 
 
 TMufasaBitmap.DebugDTM
@@ -522,4 +587,6 @@ Example:
 .. code-block:: pascal
 
     image.DebugDTM(myDTM, mainScreen.getBounds(), clRed);
+
+
 

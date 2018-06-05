@@ -5,6 +5,8 @@ TCircle related methods
 
 type definition is found in shared/globals.simba
 
+
+
 TCircle.ToTPA
 ~~~~~~~~~~~~~~
 .. code-block:: pascal
@@ -12,6 +14,8 @@ TCircle.ToTPA
     function TCircle.ToTPA(): TPointArray; constref;
 
 Returns a full TPA of the circles circumference
+
+
 
 TCircle.Bounds
 ~~~~~~~~~~~~~~
@@ -21,6 +25,8 @@ TCircle.Bounds
 
 Return a TBox covering the circle
 
+
+
 TCircle.Contains
 ~~~~~~~~~~~~~~~~~
 .. code-block:: pascal
@@ -28,6 +34,8 @@ TCircle.Contains
     function TCircle.Contains(p: TPoint): Boolean; constref;
 
 Test if the point is within the circle
+
+
 
 TCircle.CircumferenceTPA
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -37,6 +45,8 @@ TCircle.CircumferenceTPA
 
 Alias of `.ToTPA`
 
+
+
 TCircle.Mean
 ~~~~~~~~~~~~
 .. code-block:: pascal
@@ -44,6 +54,8 @@ TCircle.Mean
     function TCircle.Mean(): TPoint; constref;
 
 Middle of the circle, same as `Point(Circle.X, Circle.Y)`
+
+
 
 TCircle.Circumference
 ~~~~~~~~~~~~~~~~~~~~~
@@ -53,6 +65,8 @@ TCircle.Circumference
 
 Returns the distance around the outside of a circle.
 
+
+
 TCircle.Area
 ~~~~~~~~~~~~
 .. code-block:: pascal
@@ -60,6 +74,8 @@ TCircle.Area
     function TCircle.Area(): Double; constref;
 
 Returns the area the circle covers
+
+
 
 TCircle.Filter
 ~~~~~~~~~~~~~~~~~~~
@@ -69,6 +85,8 @@ TCircle.Filter
 
 Extract all the points from `TestSet` that fits within this circle.
 
+
+
 TCircle.Expand
 ~~~~~~~~~~~~~~~~~~
 .. code-block:: pascal
@@ -76,3 +94,5 @@ TCircle.Expand
     function TCircle.Expand(Inc: Int32): TCircle; constref;
 
 Increase or decrease the radius of the circle, same as `Circle.Radius + Incr`.
+
+

@@ -1,24 +1,65 @@
 
 Inventory
-=======
-The inventory file holds functions and procedures that are related 
-to the runescape inventory
+=========
+The inventory file holds functions and procedures that are related to the runescape inventory
+
+
 
 type TRSInventory
-~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~
 The type that holds functions and properties of the Runescape inventory gametab.
 
-var inventory
-~~~~~~~~~~~
+
+
+var Inventory
+~~~~~~~~~~~~~
 Variable that stores functions and properties of the Runescape inventory gametab.
 
+
+
+Drop patterns
+~~~~~~~~~~~~~
+Column wise  and "reversed" column wise (S-style):
+
+``DROP_PATTERN_REGULAR``, ``DROP_PATTERN_REGULAR_R``
+
+
+Column wise snake-style patterns and "reversed" version:
+
+``DROP_PATTERN_SNAKE``, ``DROP_PATTERN_SNAKE_R``
+
+
+By row, from to-left, down to bottom right, it's reverse starts in top-right down to bottom right.
+
+``DROP_PATTERN_TOPDOWN``, ``DROP_PATTERN_TOPDOWN_R``
+
+
+
+Inventory.ErrorPattern
+~~~~~~~~~~~~~~~~~~~~~~
+.. code-block:: pascal
+
+  function TRSInventory.ErrorPattern(Pattern: TIntArray=DROP_PATTERN_REGULAR; ErrorChance:Int32=5): TIntegerArray;
+
+Given a pattern and an upper limit of errors in percent, it will swap around some values and return a "errorized" drop-pattern
+
+**Example:**
+
+.. code-block:: pascal
+
+   Inventory.DropItems(Inventory.ErrorPattern(DROP_PATTERN_REGULAR, 10));
+
+
+
 Inventory.Open
-~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~
 .. code-block:: pascal
 
   function TRSInventory.Open(): Boolean;
 
 Opens the interface
+
+
 
 Inventory.IsOpen
 ~~~~~~~~~~~~~~~~~
@@ -27,6 +68,8 @@ Inventory.IsOpen
   function TRSInventory.IsOpen(maxWait:Int32=0): Boolean;
 
 Checks if the interface is already open.
+
+
 
 Inventory.IsSlotValid
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -37,6 +80,8 @@ Inventory.IsSlotValid
 Returns true if the given slot is within a valid range.
 
 .. note:: by slacky
+
+
 
 Inventory.PointToSlot
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -49,6 +94,8 @@ If it's not over a slot then -1 is returned
 
 .. note:: by slacky
 
+
+
 Inventory.MouseSlot
 ~~~~~~~~~~~~~~~~~~~~
 .. code-block:: pascal
@@ -59,15 +106,19 @@ Moves the moise over the given slot-index.
 
 .. note:: by slacky
 
+
+
 Inventory.IsFull
 ~~~~~~~~~~~~~~~~~
 .. code-block:: pascal
 
   function TRSInventory.IsFull(): Boolean;
 
-Returns True if the inventory can't hold anymore items
+Returns ``True`` if the inventory can't hold anymore items
 
 .. note:: by slacky
+
+
 
 Inventory.GetSlotBox
 ~~~~~~~~~~~~~~~~~~~~~
@@ -79,6 +130,8 @@ Returns the bounding box covering the given slot-index.
 
 .. note:: by slacky
 
+
+
 Inventory.IsSlotUsed
 ~~~~~~~~~~~~~~~~~~~~~
 .. code-block:: pascal
@@ -88,6 +141,8 @@ Inventory.IsSlotUsed
 Returns true if the given slot is occupied.
 
 .. note:: by slacky
+
+
 
 Inventory.GetUsedSlots
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -99,6 +154,8 @@ Returns all the occupied slot-indices.
 
 .. note:: by slacky
 
+
+
 Inventory.Count
 ~~~~~~~~~~~~~~~
 .. code-block:: pascal
@@ -106,6 +163,8 @@ Inventory.Count
   function TRSInventory.Count: Int32;
 
 Returns the number of used slots
+
+
 
 Inventory.DropItems
 ~~~~~~~~~~~~~~~~~~~~
@@ -118,7 +177,8 @@ jump randomly all over the inventory dropping items, you give it a ordered drop-
 
 .. note:: by slacky
 
-Examples:
+**Examples:**
+
 .. code-block:: pascal
 
     // drops all items in a "snake order" / "Z"-order
@@ -127,6 +187,8 @@ Examples:
 .. code-block:: pascal
 
     Inventory.DropItems([0..3]); // drops the four first items
+
+
 
 Inventory.DropItemsExcept
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -138,6 +200,8 @@ Drops all the given items ``Slots`` except for the items in ``IgnoreSolots``
 
 .. note:: by slacky
 
+
+
 Inventory.FindItem
 ~~~~~~~~~~~~~~~~~~~
 .. code-block:: pascal
@@ -148,14 +212,17 @@ Inventory.FindItem
 
 Find the slots of the given item defined by a `TMask`, `DTM`, or `BMP`.
 
-_Note: Last parameter is not defaulted in the last overload `FindItem(BMP..)` for technical reasons._
+.. note:: Last parameter is not defaulted in the last overload `FindItem(BMP..)` for technical reasons._
 
-Example:
+**Example:**
+
 .. code-block:: pascal
 
-    itemArr := Inventory.FindItem(myMask);
-    if itemArr = [] then
-      WriteLn('Not found');
+   itemArr := Inventory.FindItem(myMask);
+   if itemArr = [] then
+     WriteLn('Not found');
+
+
 
 Inventory.Count
 ~~~~~~~~~~~~~~~~~~~
@@ -167,6 +234,8 @@ Inventory.Count
 
 Counts the number of slots containing this item
 
+
+
 Inventory.Contains
 ~~~~~~~~~~~~~~~~~~~
 .. code-block:: pascal
@@ -177,13 +246,17 @@ Inventory.Contains
 
 Returns true if the inventory contains the given item
 
+
+
 Inventory.GetActiveSlot
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. code-block:: pascal
 
   function TRSInventory.GetActiveSlot(): Int8;
 
-Returns the index to the current active slot, returns `-1` if none.
+Returns the index to the current active slot, returns ``-1`` if none.
+
+
 
 Inventory.Use
 ~~~~~~~~~~~~~
@@ -191,7 +264,9 @@ Inventory.Use
 
   function TRSInventory.Use(Slot: Int32): Boolean;
 
-RS correct alias for Inventory.ActivateSlot.
+RS correct alias for ``Inventory.ActivateSlot``.
+
+
 
 Inventory.ActivateSlot
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -199,7 +274,9 @@ Inventory.ActivateSlot
 
   function TRSInventory.ActivateSlot(Slot: Int32): Boolean;
 
-Activates (Presses) the given slot, however if `Slot` is `-1` then it will disable the current active slot.
+Activates (Presses) the given slot, however if ``Slot`` is ``-1`` then it will disable the current active slot.
+
+
 
 Inventory.WaitCount
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -209,3 +286,5 @@ Inventory.WaitCount
 
 Waits for intentory amount to meet expected size. By default it waits till it's equal
 to given Amount, but can wait till it's not equal, less than or greater than.
+
+
