@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>&lt;no title&gt; &mdash; SRL  documentation</title>
+  <title>Pixelshift &mdash; SRL  documentation</title>
   
 
   
@@ -28,7 +28,9 @@
     <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" /> 
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Random" href="random.html" />
+    <link rel="prev" title="Mouse" href="mouse.html" /> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -83,7 +85,7 @@
 <li class="toctree-l1"><a class="reference internal" href="chooseoption.html">ChooseOption</a></li>
 <li class="toctree-l1"><a class="reference internal" href="login.html">Loginscreen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="misc.html">Misc</a></li>
-<li class="toctree-l1"><a class="reference internal" href="MM2MS.html">MM2MS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="MM2MS.html">Minimap to Mainscreen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="players.html">Players</a></li>
 <li class="toctree-l1"><a class="reference internal" href="text.html">Text</a></li>
 <li class="toctree-l1"><a class="reference internal" href="worldswitcher.html">WorldSwitcher</a></li>
@@ -112,11 +114,17 @@
 <li class="toctree-l1"><a class="reference internal" href="stats.html">Stats</a></li>
 </ul>
 <p class="caption"><span class="caption-text">SHARED</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="color.html">Color</a></li>
 <li class="toctree-l1"><a class="reference internal" href="drawing.html">Drawing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="math.html">Math</a></li>
 <li class="toctree-l1"><a class="reference internal" href="mouse.html">Mouse</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Pixelshift</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#srl-getpixelshift">SRL.GetPixelShift</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#srl-getpixelshifttpa">SRL.GetPixelShiftTPA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#srl-isanimating">SRL.IsAnimating</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="random.html">Random</a></li>
 <li class="toctree-l1"><a class="reference internal" href="text(shared).html">Text (shared)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="time.html">Time</a></li>
@@ -184,7 +192,7 @@
     
       <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>&lt;no title&gt;</li>
+      <li>Pixelshift</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -203,12 +211,60 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  
+  <div class="section" id="pixelshift">
+<h1>Pixelshift<a class="headerlink" href="#pixelshift" title="Permalink to this headline">¶</a></h1>
+<p>Stuff that relate to checking the “pixelshift”, ie how many pixels changed in an area</p>
+<hr class="docutils" />
+<div class="section" id="srl-getpixelshift">
+<h2>SRL.GetPixelShift<a class="headerlink" href="#srl-getpixelshift" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="k">function</span> <span class="nc">TSRL</span><span class="o">.</span><span class="nf">GetPixelShift</span><span class="p">(</span><span class="n">Area</span><span class="o">:</span> <span class="n">TBox</span><span class="o">;</span> <span class="n">WaitTime</span><span class="o">:</span> <span class="n">UInt32</span><span class="p">)</span><span class="o">:</span> <span class="n">Int32</span><span class="o">;</span>
+</pre></div>
+</div>
+<p>Returns how many pixels changed in the given area <code class="docutils literal notranslate"><span class="pre">Area</span></code> after <code class="docutils literal notranslate"><span class="pre">WaitTime</span></code> has passed.</p>
+</div>
+<hr class="docutils" />
+<div class="section" id="srl-getpixelshifttpa">
+<h2>SRL.GetPixelShiftTPA<a class="headerlink" href="#srl-getpixelshifttpa" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="k">function</span> <span class="nc">TSRL</span><span class="o">.</span><span class="nf">GetPixelShiftTPA</span><span class="p">(</span><span class="n">Area</span><span class="o">:</span> <span class="n">TBox</span><span class="o">;</span> <span class="n">WaitTime</span><span class="o">:</span> <span class="n">UInt32</span><span class="o">;</span> <span class="n">Count</span><span class="o">:</span> <span class="n">Int32</span><span class="o">=</span><span class="mi">1</span><span class="o">;</span> <span class="n">AcceptLength</span><span class="o">:</span><span class="n">Int32</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span><span class="o">:</span> <span class="n">TPointArray</span><span class="o">;</span>
+</pre></div>
+</div>
+<p>Returns a TPA containing all the pixels that changed during the <code class="docutils literal notranslate"><span class="pre">WaitTime</span></code> period.</p>
+<p>The function can repeat the period <code class="docutils literal notranslate"><span class="pre">WaitTime</span></code> and continue building the result <code class="docutils literal notranslate"><span class="pre">Count</span></code> times.</p>
+<p>if <code class="docutils literal notranslate"><span class="pre">AcceptLength</span></code> is none-zero, it will return when / if this many pixels has changed.</p>
+</div>
+<hr class="docutils" />
+<div class="section" id="srl-isanimating">
+<h2>SRL.IsAnimating<a class="headerlink" href="#srl-isanimating" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="k">function</span> <span class="nc">TSRL</span><span class="o">.</span><span class="nf">IsAnimating</span><span class="p">(</span><span class="n">Area</span><span class="o">:</span><span class="n">TBox</span><span class="o">;</span> <span class="n">Shift</span><span class="o">,</span> <span class="n">WaitTime</span><span class="o">:</span><span class="n">UInt32</span><span class="o">;</span> <span class="n">Iter</span><span class="o">:</span><span class="n">UInt32</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">:</span> <span class="kt">Boolean</span><span class="o">;</span>
+</pre></div>
+</div>
+<p>Counts the pixels that changed in the period <code class="docutils literal notranslate"><span class="pre">WaitTime</span></code> and checks if <code class="docutils literal notranslate"><span class="pre">Shift</span></code> value was met if it was
+the it will return <code class="docutils literal notranslate"><span class="pre">True</span></code>. The check itself can be repeated several times <code class="docutils literal notranslate"><span class="pre">Iter</span></code></p>
+<p><strong>Example</strong></p>
+<div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">srl</span><span class="o">.</span><span class="n">IsAnimating</span><span class="p">(</span><span class="n">Box</span><span class="p">(</span><span class="mi">10</span><span class="o">,</span><span class="mi">10</span><span class="o">,</span> <span class="mi">100</span><span class="o">,</span><span class="mi">100</span><span class="p">)</span><span class="o">,</span> <span class="mi">350</span><span class="o">,</span> <span class="mi">500</span><span class="o">,</span> <span class="mi">3</span><span class="p">)</span> <span class="k">then</span>
+  <span class="nb">WriteLn</span><span class="p">(</span><span class="s">&#39;Shit changed&#39;</span><span class="p">)</span><span class="o">;</span>
+</pre></div>
+</div>
+<p>In the example we supply a random area, and checks if 350 pixels changed within 500ms, we repeat
+that test 3 times, or until the condition <code class="docutils literal notranslate"><span class="pre">350</span> <span class="pre">pixels</span></code> was met.</p>
+<hr class="docutils" />
+</div>
+</div>
+
 
            </div>
            
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="random.html" class="btn btn-neutral float-right" title="Random" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="mouse.html" class="btn btn-neutral" title="Mouse" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>

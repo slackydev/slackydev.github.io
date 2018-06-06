@@ -84,7 +84,7 @@
 <li class="toctree-l1"><a class="reference internal" href="chooseoption.html">ChooseOption</a></li>
 <li class="toctree-l1"><a class="reference internal" href="login.html">Loginscreen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="misc.html">Misc</a></li>
-<li class="toctree-l1"><a class="reference internal" href="MM2MS.html">MM2MS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="MM2MS.html">Minimap to Mainscreen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="players.html">Players</a></li>
 <li class="toctree-l1"><a class="reference internal" href="text.html">Text</a></li>
 <li class="toctree-l1"><a class="reference internal" href="worldswitcher.html">WorldSwitcher</a></li>
@@ -118,6 +118,7 @@
 <li class="toctree-l1"><a class="reference internal" href="drawing.html">Drawing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="math.html">Math</a></li>
 <li class="toctree-l1"><a class="reference internal" href="mouse.html">Mouse</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pixelshift.html">Pixelshift</a></li>
 <li class="toctree-l1"><a class="reference internal" href="random.html">Random</a></li>
 <li class="toctree-l1"><a class="reference internal" href="text(shared).html">Text (shared)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="time.html">Time</a></li>
@@ -241,7 +242,35 @@
 <li class="toctree-l2"><a class="reference internal" href="misc.html#srl-peakbrightness">SRL.PeakBrightness</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="MM2MS.html">MM2MS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="MM2MS.html">Minimap to Mainscreen</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="MM2MS.html#mm2ms">MM2MS</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="MM2MS.html#type-tminimaptoms">type TMinimapToMS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="MM2MS.html#var-mm2ms">var MM2MS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="MM2MS.html#mm2ms-init">MM2MS.Init</a></li>
+<li class="toctree-l3"><a class="reference internal" href="MM2MS.html#mm2ms-transform">MM2MS.Transform</a></li>
+<li class="toctree-l3"><a class="reference internal" href="MM2MS.html#mm2ms-project">MM2MS.Project</a></li>
+<li class="toctree-l3"><a class="reference internal" href="MM2MS.html#mm2ms-run">MM2MS.Run</a></li>
+<li class="toctree-l3"><a class="reference internal" href="MM2MS.html#mm2ms-setzoom">MM2MS.SetZoom</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="MM2MS.html#minimap">Minimap</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="MM2MS.html#minimap-arrtoms">Minimap.ArrToMs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="MM2MS.html#minimap-vectoms">Minimap.VecToMs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="MM2MS.html#minimap-pointtoms">Minimap.PointToMs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="MM2MS.html#minimap-vectomsrect">Minimap.VecToMsRect</a></li>
+<li class="toctree-l3"><a class="reference internal" href="MM2MS.html#minimap-pointtomsrect">Minimap.PointToMsRect</a></li>
+<li class="toctree-l3"><a class="reference internal" href="MM2MS.html#minimap-vectomsbox">Minimap.VecToMsBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="MM2MS.html#id1">Minimap.VecToMsBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="MM2MS.html#minimap-statictomsrect">Minimap.StaticToMsRect</a></li>
+<li class="toctree-l3"><a class="reference internal" href="MM2MS.html#minimap-statictoms">Minimap.StaticToMs</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="MM2MS.html#mainscreen">Mainscreen</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="MM2MS.html#mainscreen-pointtomm">Mainscreen.PointToMM</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="players.html">Players</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="players.html#tplayerarray-setcount">TPlayerArray.SetCount</a></li>
 <li class="toctree-l2"><a class="reference internal" href="players.html#tplayerarray-getcount">TPlayerArray.GetCount</a></li>
@@ -567,6 +596,12 @@
 <li class="toctree-l2"><a class="reference internal" href="mouse.html#clicking-the-mouse">Clicking the mouse</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="pixelshift.html">Pixelshift</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pixelshift.html#srl-getpixelshift">SRL.GetPixelShift</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pixelshift.html#srl-getpixelshifttpa">SRL.GetPixelShiftTPA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pixelshift.html#srl-isanimating">SRL.IsAnimating</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="random.html">Random</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="random.html#srl-gaussrand">srl.GaussRand</a></li>
 <li class="toctree-l2"><a class="reference internal" href="random.html#srl-truncatedgauss">srl.TruncatedGauss</a></li>
@@ -638,7 +673,33 @@
 <p class="caption"><span class="caption-text">SHARED -&gt; TYPES</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="Other.html">Other datatypes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="String.html">String</a></li>
+<li class="toctree-l1"><a class="reference internal" href="String.html">String</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="String.html#ansistring-len">AnsiString.Len</a></li>
+<li class="toctree-l2"><a class="reference internal" href="String.html#ansistring-pos">AnsiString.Pos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="String.html#ansistring-posr">AnsiString.PosR</a></li>
+<li class="toctree-l2"><a class="reference internal" href="String.html#ansistring-posex">AnsiString.PosEx</a></li>
+<li class="toctree-l2"><a class="reference internal" href="String.html#ansistring-startswith">AnsiString.Startswith</a></li>
+<li class="toctree-l2"><a class="reference internal" href="String.html#ansistring-endswith">AnsiString.Endswith</a></li>
+<li class="toctree-l2"><a class="reference internal" href="String.html#ansistring-capitalize">AnsiString.Capitalize</a></li>
+<li class="toctree-l2"><a class="reference internal" href="String.html#ansistring-upper">AnsiString.Upper</a></li>
+<li class="toctree-l2"><a class="reference internal" href="String.html#ansistring-lower">AnsiString.Lower</a></li>
+<li class="toctree-l2"><a class="reference internal" href="String.html#ansistring-after">AnsiString.After</a></li>
+<li class="toctree-l2"><a class="reference internal" href="String.html#ansistring-before">AnsiString.Before</a></li>
+<li class="toctree-l2"><a class="reference internal" href="String.html#ansistring-count">AnsiString.Count</a></li>
+<li class="toctree-l2"><a class="reference internal" href="String.html#ansistring-replace">AnsiString.Replace</a></li>
+<li class="toctree-l2"><a class="reference internal" href="String.html#ansistring-explode">AnsiString.Explode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="String.html#ansistring-isalphanum">AnsiString.IsAlphaNum</a></li>
+<li class="toctree-l2"><a class="reference internal" href="String.html#ansistring-isdigit">AnsiString.IsDigit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="String.html#ansistring-isfloat">AnsiString.IsFloat</a></li>
+<li class="toctree-l2"><a class="reference internal" href="String.html#ansistring-isalpha">AnsiString.IsAlpha</a></li>
+<li class="toctree-l2"><a class="reference internal" href="String.html#ansistring-extractnumbers">AnsiString.ExtractNumbers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="String.html#ansistring-extractnumbersex">AnsiString.ExtractNumbersEx</a></li>
+<li class="toctree-l2"><a class="reference internal" href="String.html#ansistring-fileext">AnsiString.FileExt</a></li>
+<li class="toctree-l2"><a class="reference internal" href="String.html#ansistring-filename">AnsiString.FileName</a></li>
+<li class="toctree-l2"><a class="reference internal" href="String.html#string-int32">string * int32</a></li>
+<li class="toctree-l2"><a class="reference internal" href="String.html#string-in-string">string in string</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="T2DExtArray.html">T2DExtendedArray</a></li>
 <li class="toctree-l1"><a class="reference internal" href="T2DIntArray.html">T2DIntArray</a></li>
 <li class="toctree-l1"><a class="reference internal" href="T2DPointArray.html">T2DPointArray</a></li>

@@ -50,6 +50,7 @@ Welcome to SRLs documentation!
    drawing
    math
    mouse
+   pixelshift
    random
    text(shared)
    time
