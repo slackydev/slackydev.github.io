@@ -49,7 +49,7 @@ DepositBox.Debug
 ~~~~~~~~~~~~~~~~~~~~~~
 .. code-block:: pascal
 
- procedure TRSDepositBox.Debug(); override;
+ function TRSDepositBox.Debug(RetImage: Boolean = False): TMufasaBitmap; override;
 
 Debugs the bounds of the depositbox, mainly used when maintenance is needed.
 
@@ -112,7 +112,7 @@ DepositBox.Close
 
  function TRSDepositBox.Close(): Boolean;
 
-Closes the depositbox intreface.
+Closes the interface.
 
 
 ------------
