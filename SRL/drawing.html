@@ -87,6 +87,7 @@
 <li class="toctree-l1"><a class="reference internal" href="misc.html">Misc</a></li>
 <li class="toctree-l1"><a class="reference internal" href="MM2MS.html">Minimap to Mainscreen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="players.html">Players</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rsInterfaceBase.html">RSInterfaceBase</a></li>
 <li class="toctree-l1"><a class="reference internal" href="text.html">Text</a></li>
 <li class="toctree-l1"><a class="reference internal" href="worldswitcher.html">WorldSwitcher</a></li>
 <li class="toctree-l1"><a class="reference internal" href="xpbar.html">XPBar</a></li>
@@ -96,6 +97,7 @@
 <li class="toctree-l1"><a class="reference internal" href="bankscreen.html">BankScreen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="bankscreen.html#pinscreen">PinScreen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chatbox.html">Chatbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="depositbox.html">DepositBox</a></li>
 <li class="toctree-l1"><a class="reference internal" href="gametabs.html">Gametabs</a></li>
 <li class="toctree-l1"><a class="reference internal" href="grandexch.html">GrandExchange</a></li>
 <li class="toctree-l1"><a class="reference internal" href="mainscreen.html">MainScreen</a></li>
@@ -143,6 +145,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#tmufasabitmap-drawtextarray">TMufasaBitmap.DrawTextArray</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#tmufasabitmap-drawtextlines">TMufasaBitmap.DrawTextLines</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#tmufasabitmap-debug">TMufasaBitmap.Debug</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tmufasabitmap-debugex">TMufasaBitmap.DebugEx</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#tmufasabitmap-updatedebugimage">TMufasaBitmap.UpdateDebugImage</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#tmufasabitmap-debugtpa">TMufasaBitmap.DebugTPA</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#tmufasabitmap-debugatpa">TMufasaBitmap.DebugATPA</a></li>
@@ -632,7 +635,7 @@ be drawn at the same point in the pnt array.</p>
 <li>Last Updated: 19 July 2013 by Ollybest</li>
 </ul>
 </div>
-<p>Example:</p>
+<p><strong>Example:</strong></p>
 <div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="n">image</span><span class="o">.</span><span class="n">drawTextLines</span><span class="p">([</span><span class="s">&#39;olly&#39;</span><span class="o">,</span> <span class="s">&#39;is&#39;</span><span class="o">,</span> <span class="s">&#39;the&#39;</span><span class="o">,</span> <span class="s">&#39;best&#39;</span><span class="o">,</span> <span class="s">&#39;:D&#39;</span><span class="p">]</span><span class="o">,</span> <span class="n">point</span><span class="p">(</span><span class="mi">2</span><span class="o">,</span> <span class="mi">2</span><span class="p">)</span><span class="o">,</span> <span class="n">statChars</span><span class="o">,</span> <span class="k">false</span><span class="o">,</span> <span class="n">clRed</span><span class="p">)</span><span class="o">;</span>
 </pre></div>
 </div>
@@ -652,12 +655,29 @@ work if the bitmap is managed by Simba</p>
 <li>Last Updated: 19 July 2013 by Ollybest</li>
 </ul>
 </div>
-<p>Example:</p>
-<div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="n">image</span><span class="o">.</span><span class="n">Debug</span><span class="p">()</span><span class="o">;</span>
+<p><strong>Example:</strong></p>
+<div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="n">Image</span><span class="o">.</span><span class="n">Debug</span><span class="p">()</span><span class="o">;</span>
 <span class="c1">// or for a non TMufasaBitmap</span>
 <span class="n">GetMufasaBitmap</span><span class="p">(</span><span class="n">bitmap</span><span class="p">)</span><span class="o">.</span><span class="n">Debug</span><span class="p">()</span><span class="o">;</span>
 </pre></div>
 </div>
+</div>
+<hr class="docutils" />
+<div class="section" id="tmufasabitmap-debugex">
+<h2>TMufasaBitmap.DebugEx<a class="headerlink" href="#tmufasabitmap-debugex" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-pascal notranslate"><div class="highlight"><pre><span></span><span class="k">procedure</span> <span class="nc">TMufasaBitmap</span><span class="o">.</span><span class="nf">DebugEx</span><span class="p">(</span><span class="n">SetManaged</span><span class="o">:</span> <span class="kt">Boolean</span><span class="o">=</span><span class="k">True</span><span class="o">;</span> <span class="n">MinSize</span><span class="o">:</span> <span class="n">Int32</span><span class="o">=</span><span class="mi">128</span><span class="p">)</span><span class="o">;</span> <span class="n">constref</span><span class="o">;</span>
+</pre></div>
+</div>
+<p>Will display the TMufasaBitmap in Simba’s debug image form. Note that if the
+bitmap isn’t managed by Simba it will be added if <code class="docutils literal notranslate"><span class="pre">SetManaged</span></code> is <code class="docutils literal notranslate"><span class="pre">True</span></code>.
+Alterantive parameter <code class="docutils literal notranslate"><span class="pre">MinSize</span></code> is used to better display small images.</p>
+<p><strong>Example:</strong></p>
+<dl class="docutils">
+<dt>pascal::</dt>
+<dd>Image.DebugEx();
+// or for a non TMufasaBitmap
+GetMufasaBitmap(bitmap).DebugEx();</dd>
+</dl>
 </div>
 <hr class="docutils" />
 <div class="section" id="tmufasabitmap-updatedebugimage">

@@ -10,6 +10,7 @@ Welcome to SRLs documentation!
    misc
    MM2MS
    players
+   rsInterfaceBase
    text
    worldswitcher
    xpbar
@@ -21,6 +22,7 @@ Welcome to SRLs documentation!
 
    bankscreen
    chatbox
+   depositbox
    gametabs
    grandexch
    mainscreen

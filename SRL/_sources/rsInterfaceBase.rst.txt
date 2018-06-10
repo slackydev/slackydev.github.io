@@ -1,0 +1,8 @@
+
+RSInterfaceBase
+================
+Specializes the generic TInterfaceBase towards Oldschool runescape.
+Used to find interfaces on the go, versus the static coordinates based ones.
+
+
+------------

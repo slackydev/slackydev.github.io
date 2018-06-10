@@ -10,7 +10,6 @@ The source for this file can be found `here <https://github.com/SRL/SRL/blob/mas
 
 const __SHADOW_COLOR
 ~~~~~~~~~~~~~~~~~~~~
-
 Integer constant that stores the shadow color for adding a shadow for text drawing.
 
 
@@ -52,7 +51,6 @@ Example:
 
 TMufasaBitmap.ClearArea
 ~~~~~~~~~~~~~~~~~~~~~~~
-
 .. code-block:: pascal
 
     procedure TMufasaBitmap.ClearArea(area: TBox);
@@ -109,7 +107,6 @@ Returns the maximum brightness in the image in the range `0..100`.
 
 TMufasaBitmap.DrawBox
 ~~~~~~~~~~~~~~~~~~~~~
-
 .. code-block:: pascal
 
     procedure TMufasaBitmap.DrawBox(box: TBox; fill: boolean; color: TColor);
@@ -133,7 +130,6 @@ Example:
 
 TMufasaBitmap.DrawBox
 ~~~~~~~~~~~~~~~~~~~~~
-
 .. code-block:: pascal
 
     procedure TMufasaBitmap.DrawBox(pt:TPoint; Radius:UInt32; Fill: Boolean; color: TColor);
@@ -145,7 +141,6 @@ Draws a TBox onto the TMufasaBitmap
 
 TMufasaBitmap.DrawBox
 ~~~~~~~~~~~~~~~~~~~~~
-
 .. code-block:: pascal
 
     procedure TMufasaBitmap.DrawBox(box:TBox; color:TColor = clRed); overload;
@@ -170,7 +165,6 @@ Example:
 
 TMufasaBitmap.DrawBox; overload
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 .. code-block:: pascal
 
     procedure TMufasaBitmap.DrawBox(x1,y1,x2,y2:Integer; fill:Boolean; color:TColor); overload;
@@ -194,7 +188,6 @@ Example:
 
 TMufasaBitmap.DrawClippedBox
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 .. code-block:: pascal
 
     procedure TMufasaBitmap.DrawClippedBox(box: TBox; fill: boolean; color: TColor); overload;
@@ -218,7 +211,6 @@ Example:
 
 TMufasaBitmap.DrawBoxes
 ~~~~~~~~~~~~~~~~~~~~~~~
-
 .. code-block:: pascal
 
     procedure TMufasaBitmap.DrawBoxes(boxArr: TBoxArray; fill: boolean; color: TColor);
@@ -243,7 +235,6 @@ Example:
 
 TMufasaBitmap.DrawBoxes; overload
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 .. code-block:: pascal
 
     procedure TMufasaBitmap.DrawBoxes(boxArr: TBoxArray; fill: boolean; colors: TColorArray); overload;
@@ -290,7 +281,6 @@ Draws a polygon onto the TMufasaBitmap
 
 TMufasaBitmap.DrawBitmap
 ~~~~~~~~~~~~~~~~~~~~~~~~
-
 .. code-block:: pascal
 
     procedure TMufasaBitmap.DrawBitmap(bmp: Integer; pnt: TPoint);
@@ -314,7 +304,6 @@ Example:
 
 TMufasaBitmap.DrawBitmap; overload
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 .. code-block:: pascal
 
     function TMufasaBitmap.DrawBitmap(path: string; pt: TPoint): boolean; overload;
@@ -339,7 +328,6 @@ Example:
 
 TMufasaBitmap.DrawCross
 ~~~~~~~~~~~~~~~~~~~~~~~
-
 .. code-block:: pascal
 
     procedure TMufasaBitmap.DrawCross(pt: TPoint; size: Integer; color: TColor);
@@ -363,7 +351,6 @@ Example:
 
 TMufasaBitmap.DrawEllipse
 ~~~~~~~~~~~~~~~~~~~~~~~~~
-
 .. code-block:: pascal
 
     procedure TMufasaBitmap.DrawEllipse(const pnt: TPoint; const xRadius, yRadius: Integer; const fill: boolean; const color: TColor);
@@ -389,7 +376,6 @@ Example:
 
 TMufasaBitmap.DrawCircle
 ~~~~~~~~~~~~~~~~~~~~~~~~
-
 .. code-block:: pascal
 
     procedure TMufasaBitmap.DrawCircle(pnt: TPoint; radius: Integer; fill: boolean; color: TColor);
@@ -414,7 +400,6 @@ Example:
 
 TMufasaBitmap.DrawPolygon
 ~~~~~~~~~~~~~~~~~~~~~~~~~
-
 .. code-block:: pascal
 
     procedure TMufasaBitmap.DrawPolygon(polygonPnts: TPointArray; color: TColor);
@@ -439,7 +424,6 @@ Example:
 
 TMufasaBitmap.DrawClippedText
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 .. code-block:: pascal
 
     procedure TMufasaBitmap.DrawClippedText(txt: string; pt: TPoint; font: string; shadow: boolean; color: TColor);
@@ -462,7 +446,6 @@ Example:
 
 TMufasaBitmap.DrawTextArray
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 .. code-block:: pascal
 
     procedure TMufasaBitmap.DrawTextArray(txtArr: TStringArray; pts: TPointArray; font: string; shadow: boolean; color: TColor);
@@ -487,7 +470,6 @@ Example:
 
 TMufasaBitmap.DrawTextLines
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 .. code-block:: pascal
 
     procedure TMufasaBitmap.DrawTextLines(txtArr: TStringArray; pnt: TPoint; font: string; shadow: boolean; color: TColor);
@@ -499,7 +481,7 @@ Draws text onto the TMufasaBitmap, each index in the txtArr is put on a differen
     - by Ollybest
     - Last Updated: 19 July 2013 by Ollybest
 
-Example:
+**Example:**
 
 .. code-block:: pascal
 
@@ -511,7 +493,6 @@ Example:
 
 TMufasaBitmap.Debug
 ~~~~~~~~~~~~~~~~~~~
-
 .. code-block:: pascal
 
     procedure TMufasaBitmap.Debug();
@@ -524,14 +505,33 @@ work if the bitmap is managed by Simba
     - by Ollybest
     - Last Updated: 19 July 2013 by Ollybest
 
-Example:
+**Example:**
 
 .. code-block:: pascal
 
-    image.Debug();
+    Image.Debug();
     // or for a non TMufasaBitmap
     GetMufasaBitmap(bitmap).Debug();
 
+
+------------
+
+TMufasaBitmap.DebugEx
+~~~~~~~~~~~~~~~~~~~~~
+.. code-block:: pascal
+
+ procedure TMufasaBitmap.DebugEx(SetManaged: Boolean=True; MinSize: Int32=128); constref;
+
+Will display the TMufasaBitmap in Simba's debug image form. Note that if the
+bitmap isn't managed by Simba it will be added if ``SetManaged`` is ``True``.
+Alterantive parameter ``MinSize`` is used to better display small images.
+
+**Example:**
+
+pascal::
+    Image.DebugEx();
+    // or for a non TMufasaBitmap
+    GetMufasaBitmap(bitmap).DebugEx();
 
 
 ------------
@@ -549,7 +549,6 @@ Will update Simba's debug image form with the current image.
 
 TMufasaBitmap.DebugTPA
 ~~~~~~~~~~~~~~~~~~~~~~
-
 .. code-block:: pascal
 
     procedure TMufasaBitmap.DebugTPA(tpa: TPointArray; drawPoints: boolean = true);
@@ -569,12 +568,10 @@ Example:
     image.DebugTPA(tpa);
 
 
-
 ------------
 
 TMufasaBitmap.DebugATPA
 ~~~~~~~~~~~~~~~~~~~~~~~
-
 .. code-block:: pascal
 
     procedure TMufasaBitmap.DebugATPA(const ATPA: T2DPointArray);
@@ -593,12 +590,10 @@ Example:
     image.DebugATPA(ATPA);
 
 
-
 ------------
 
 TMufasaBitmap.DebugDTM
 ~~~~~~~~~~~~~~~~~~~~~~
-
 .. code-block:: pascal
 
     procedure TMufasaBitmap.DebugDTM(dtm: Integer; area: TBox; color: TColor);
@@ -616,7 +611,6 @@ Example:
 .. code-block:: pascal
 
     image.DebugDTM(myDTM, mainScreen.getBounds(), clRed);
-
 
 
 ------------

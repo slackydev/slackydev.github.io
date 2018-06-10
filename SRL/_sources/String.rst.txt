@@ -256,7 +256,7 @@ string * int32
 
  operator * (left:AnsiString; Right:Int32): String;
 
-Replicates the string the given amount of times. So `'ho!' * 3` would generate ``ho!ho!ho!``
+Replicates the string the given amount of times. So ``'ho!' * 3`` would generate ``ho!ho!ho!``
 
 
 ------------
