@@ -7,7 +7,11 @@ Let's just jump straight into the solving the problem.
 We can use the compass' south dot as our vector `q` to compare against vector `p` which is the middle of the compass (the point the compass rotates around) in order to find `ø`.
 
 ![p and q vectors](https://slacky.one/images/compass.png)
-![It's tiny](https://slacky.one/images/tiny-compass.png) 
+
+![It's tiny](https://slacky.one/images/tiny-compass.png)
+
+
+
 As the compass is quite small our solve wont be very accurate, the radius from center to any dial is about 15px, theoretically this gives a radius of `2*π*15` or `94` distinct points that the southern dial will rotate through. In terms of accuracy this gives us `360/94` degrees error, or about `±3.8` degrees off. 
 
 Now let's look at the code, and the math needed. So angles can be solved fairly simply in programming using **ArcTan2** function often available in most programming languages, sometimes called **atan2**.
@@ -25,7 +29,7 @@ However this will be problematic whenever X in `p` and `q` vectors are equal, as
 ```pascal
 t := ArcTan2(q.y-p.y, q.x-p.x)
 ```
-`t` which is short for **theta**, the Greek symbol **θ** used in mathematics to define angles is now returned in radians, as angles are usually measured in radians, but as we mainly want to work we degrees we have to follow up with converting to degrees, luckily Simba has a function called `RadToDeg` for us to use.
+**t** which is short for **theta**, the Greek symbol **θ** used in mathematics to define angles is now returned in radians, as angles are usually measured in radians, but as we mainly want to work we degrees we have to follow up with converting to degrees, luckily Simba has a function called `RadToDeg` for us to use.
 
 ----
 
