@@ -3,15 +3,15 @@
     "title": "Solving compass angle in Simba 2.0",
     "date": "2024-12-16",
     "file": "solving-compass.md",
-    "summary": "A fun walkthrough for solving for a relative angle between two vectors using the game Runescape as our  test-suit.",
+    "summary": "A fun walkthrough for solving for a relative angle between two vectors using the game Runescape as our test-suit.",
     "tags": "dev, simba, rs, trig",
     "category": "tutorial"
   },
   {
-    "title": "Amazing content",
-    "date": "2024-10-26",
-    "file": "post.md",
-    "summary": "You have never seen anything like this",
+    "title": "Solving doors by Anchor in RS",
+    "date": "2024-03-01",
+    "file": "solving-doors.md",
+    "summary": "A walkthrough of using my code published on my gist for handling doors in various places around the game RuneScape - Code we are refering to: https://gist.github.com/slackydev/9da5b818db0ecd89aa846af999db5314",
     "tags": "dev, simba, rs",
     "category": "tutorial"
   },
