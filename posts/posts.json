@@ -16,11 +16,11 @@
     "category": "tutorial"
   },
   {
-    "title": "Holy shit",
-    "date": "2024-09-27",
-    "file": "post.md",
-    "summary": "This post is completely different.",
-    "tags": "dev, simba, web",
+    "title": "Various algorithms",
+    "date": "2024-01-01",
+    "file": "slacky-algorithms.md",
+    "summary": "A small snapshot of the various algorithms I've made over the years focusing on computational geometry",
+    "tags": "dev, simba, python, pascal, trig, geometry",
     "category": "snippets"
   }
 ]
