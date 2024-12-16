@@ -76,18 +76,17 @@ north := N.ExtractDist(middle, 0,20).Mean();
 ```   
 
 3) Using **north**-point we can remove all points that are not far enough away from it, thereby filtering out **west** and **east** points which are both closer to the **N** than the south dial. Again we will be using [TPointArray.ExtractDist](https://villavu.github.io/Simba/api/TPointArray.html#tpointarray-extractdist) to achieve this. 
-
 ```pascal
 // the points that are further away than 20px from the N, this is South
 southtpa := dials.ExtractDist(north, 20,9999);
 ```
 
 4) We now have the **south** dial, but it's still an array of up to 3 pixels, stored in the **southtpa** variable - Next we want the single furthest pixel in **southtpa** from **north**. This is where we can use a function in Simba called [TPointArray.FurthestPoints](https://villavu.github.io/Simba/api/TPointArray.html#tpointarray-furthestpoints). This function returns the two points furthest away from eachother in an array, however just running this on **southtpa** makes no sense, but if we combine **southtpa** with our **north**-point it should always return the north point, and the furthest most south point from that **north**-point.
-
 ```pascal
 // combine southtpa and north, and extract the two furthest points
 TPointArray(southtpa+north).FurthestPoints(north, south);
 ```
+
 ----
 
 #### finally we can compute the angle
@@ -103,7 +102,10 @@ degrees := RadToDeg(ArcTan2(south.y-middle.y, south.x-middle.x) + PI/2)
 Result := Modulo(degrees, 360);
 ```
 
+
 ------
+------
+
 
 ## Final code
 ```pascal
