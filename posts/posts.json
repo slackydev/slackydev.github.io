@@ -1,7 +1,7 @@
 [
   {
     "title": "Solving compass angle in Simba 2.0",
-    "date": "2024-16-12",
+    "date": "2024-12-16",
     "file": "solving-compass.md",
     "summary": "A fun walkthrough for solving for a relative angle between two vectors using the game Runescape as our  test-suit.",
     "tags": "dev, simba, rs, trig",
