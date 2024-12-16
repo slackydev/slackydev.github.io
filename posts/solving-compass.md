@@ -53,6 +53,9 @@ We also know we need a TPoint to hold the northern coordinate, a TPoint to hold 
   N, dials, southtpa: TPointArray;  
 ```
 
+&nbsp;
+&nbsp;
+
 The idea is minimalistic, ignoring basic error handling, we create pure functional code to keep this easier to follow. Let's do this in a step by step:
 
 
