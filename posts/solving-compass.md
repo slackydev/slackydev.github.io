@@ -84,10 +84,10 @@ north := N.ExtractDist(middle, 0,20).Mean();
 southtpa := dials.ExtractDist(north, 20,9999);
 ```
 
-4) We now have the **south** dial, but it's still an array of up to 3 pixels, stored in the **southtpa** variable - Next we want the single furthest pixel in **southtpa** from **north**. This is where we can use a function in Simba called [TPointArray.FurthestPoints](https://villavu.github.io/Simba/api/TPointArray.html#tpointarray-furthestpoints). This function returns the two points furthest away from eachother in an array, however just running this on **southtpa** makes no sense, but if we combine **southtpa** with our **north**-point it should always return the north point, and the furthest most south point from that **north**-point.
+4) We now have the **south** dial, but it's still an array of up to 3 pixels, stored in the **southtpa** variable - Next we want the single furthest pixel in **southtpa** from **middle**. This is where we can use a function in Simba called [TPointArray.FurthestPoint](https://villavu.github.io/Simba/api/TPointArray.html#tpointarray-furthestpoint). This function returns the point furthest away from.
 ```pascal
-// combine southtpa and north, and extract the two furthest points
-TPointArray(southtpa+north).FurthestPoints(north, south);
+// extract the two furthest point in the south group
+south    := southtpa.FurthestPoint(middle);
 ```
 
 ----
@@ -122,10 +122,10 @@ begin
   dials := Target.FindColor(920735,  1, bounds);
   N     := Target.FindColor(1911089, 1, bounds);
   north := N.ExtractDist(middle, 0,20).Mean();
-  
-  southtpa := dials.ExtractDist(north, 20,9999);
-  TPointArray(southtpa+north).FurthestPoints(north, south);
 
-  Result := Modulo(RadToDeg(ArcTan2(south.y-middle.y, south.x-middle.x)+PI/2), 360);
+  southtpa := dials.ExtractDist(north, 20,9999);
+  south    := southtpa.FurthestPoint(middle);
+
+  Result := Modulo(RadToDeg(ArcTan2(south.y-middle.y, south.x-middle.x)-PI/2), 360);
 end; 
 ```
