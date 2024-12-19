@@ -2,7 +2,7 @@
 
 A fun walkthrough for solving for a relative angle between two vectors using the game Runescape as our  test-suit.
 
-Let's just jump straight into the solving the problem. 
+Let's just jump straight into the solving the problem. Note that a more accurate but complicated version exists here: https://pastebin.com/Dr42Cq1w
 
 We can use the compass' south dot as our vector `q` to compare against vector `p` which is the middle of the compass (the point the compass rotates around) in order to find `ø`.
 
