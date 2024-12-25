@@ -52,6 +52,9 @@ To start we need to be able to parse the [MNIST](https://yann.lecun.com/exdb/mni
 
 While the dataset itself can be found many places, here is one set (top google result): https://www.kaggle.com/datasets/hojjatk/mnist-dataset
 
+![MNIST example](https://github.com/user-attachments/assets/47474ea4-36ea-4e40-a4a9-ebfc1a724517)
+
+
 ```pascal
 var
   Images,TrainImages: array of TSingleMatrix;
