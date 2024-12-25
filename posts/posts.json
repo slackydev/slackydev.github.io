@@ -1,5 +1,13 @@
 [
   {
+    "title": "Simba 2.0: A Leap into Machine Learning with 94% Accuracy on MNIST",
+    "date": "2024-12-25",
+    "file": "kNN-with-simba.md",
+    "summary": "This article showcases a significant milestone for Simba 2.0: The successful implementation of the k-Nearest Neighbors (kNN) algorithm. By integrating the powerful KDTree data structure and the kNearestClassify method, Simba 2.0 now enters the realm of machine learning.",
+    "tags": "dev, simba, kNN, ML, AI",
+    "category": "Machine Learning"
+  },
+  {
     "title": "Solving compass angle in Simba 2.0",
     "date": "2024-12-16",
     "file": "solving-compass.md",
