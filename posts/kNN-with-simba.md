@@ -43,7 +43,7 @@ Red points represent apples, and green points represent cucumbers. In this graph
 
 &nbsp;
 
-#  kNN with Simba 2.0
+# kNN with Simba 2.0
 Now that you hopefully understands the base principles of kNN we can look at how we solve something like [MNIST](https://yann.lecun.com/exdb/mnist/)  dataset.
 
 To start we need to be able to parse the [MNIST](https://yann.lecun.com/exdb/mnist/) dataset, for this I have written a couple functions that can be viewed here: https://pastebin.com/H3eEMa0G
