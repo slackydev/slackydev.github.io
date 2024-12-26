@@ -29,13 +29,18 @@ Red points represent apples, and green points represent cucumbers. In this graph
 
 **Querying the Classifier:**
 
--   If we query a point like [15, 6] (high height, low width), the kNN classifier will find mostly cucumbers as its nearest neighbors due to their similar heights.
--   Even if we reverse the order to [6, 15], the closest neighbors might still be cucumbers because kNN considers both height and width, accounting for the rotation thanks to our training data including both orientations.
--   On the other hand, a query point like [7, 7] (similar height and width) would likely have apples as its nearest neighbors, classifying the new fruit as an apple.
+- If we query a point like [15, 6] (high height, low width), the kNN classifier will find mostly cucumbers as its nearest neighbors due to their similar heights.
+- Even if we reverse the order to [6, 15], the closest neighbors might still be cucumbers because kNN considers both height and width, accounting for the rotation thanks to our training data including both orientations.
+- On the other hand, a query point like [7, 7] (similar height and width) would likely have apples as its nearest neighbors, classifying the new fruit as an apple.
 
 **Limitations:**
 
--   kNN doesn't predict "unknown." If a query point like [0, 0] is far from all data points, kNN will still classify it based on the nearest neighbors, even if they aren't very close.
+- kNN doesn't predict "unknown". If a query point like [0, 0] is far from all data points, kNN will still classify it based on the nearest neighbors, even if they aren't very close.
+- No model training takes place; all computation occurs during prediction.
+- Curse of Dimensionality, the performance of kNN degrades as the number of dimensions increases.
+- Requires manual preprocessing like careful feature scaling and selection, while NN can learn features in training
+- kNN lacks the ability to generalize well from the training data
+- kNN is relatively sensitive to noisy or mislabeled data
 
 **Note**
 
