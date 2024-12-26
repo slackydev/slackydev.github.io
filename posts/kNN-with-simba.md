@@ -7,7 +7,7 @@ This versatile technique finds applications across various domains. From having 
 
 **Fun fact**
 - When HP created Tesseract OCR, it used k-NN as its primary method for character recognition. This technique remained part of the engine until version 3.0, when Google introduced a more sophisticated neural network-based approach. 
-- Google Image Search originally employed k-NN to find and rank visually similar images based on content analysis.
+- Google Image Search was claimed to originally use k-NN to find and rank visually similar images [unsure if this is true].
 - A number of image related services have or uses to this day kNN in a similar way as to what google did, but day by day more sophisticated take over.
 
 # Exploring kNN
