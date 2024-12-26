@@ -76,7 +76,7 @@ All the letters in the images are grayscale, 0..255, and 24x24 in size, we store
 
 We get two sets, one is 50K images and Labels (0..9) and the second one is for us to test on with 10K images and labels that have not been trained on.
 
-My approach to extracting features is very simplistic, I divide the image into 4x4 quadrants, then I count the number of pixels in each quadrant. This gives us 16 features to use, or 16 dimensions. 
+My approach to extracting features is very simplistic, I divide the image into 6x6 quadrants, then I count the number of pixels in each quadrant. This gives us 16 features to use, or 16 dimensions. 
 
 ```pascal
 (*
