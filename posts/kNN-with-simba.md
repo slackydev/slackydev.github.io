@@ -3,7 +3,12 @@ Simba 2.0 has traditionally relied on classical methods for object detection. Ho
 
 #### The Versatility of kNN 
 The k-Nearest Neighbors (kNN) algorithm, a core concept in Machine Learning, has a long history starting in the 1950s. It operates by classifying new data points based on the labels of their closest neighbors in a dataset. 
-This versatile technique finds applications across various domains. From powering recommendation systems on platforms like Netflix and Amazon to assisting in medical image analysis and even driving financial forecasting, kNN demonstrates the power of Machine Learning to uncover hidden patterns and make intelligent predictions. 
+This versatile technique finds applications across various domains. From having powered recommendation systems on platforms like Netflix and Amazon, assisting in medical image analysis, character recognition to even driving financial forecasting, kNN demonstrates the power of Machine Learning to recognize hidden patterns and make intelligent predictions. 
+
+** Fun fact **
+- When HP created Tesseract OCR, it used k-NN as its primary method for character recognition. This technique remained part of the engine until version 3.0, when Google introduced a more sophisticated neural network-based approach. 
+- Google Image Search originally employed k-NN to find and rank visually similar images based on content analysis.
+- A number of image related services have or uses to this day kNN in a similar way as to what google did, but day by day more sophisticated take over.
 
 # Exploring kNN
 In this article, we delve into the practical application of kNN within the Simba 2.0 environment by exploring its implementation in classifying handwritten digits from the renowned MNIST dataset. I'll guide you through the algorithm's inner workings, analyze its performance, and discuss the challenges and considerations. This exploration will provide valuable insights into the power and versatility of this machine learning algorithm.
