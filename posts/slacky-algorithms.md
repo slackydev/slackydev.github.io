@@ -31,11 +31,11 @@ https://gist.github.com/slackydev/1e4c6131ae78f7a50cab9ecd745c2030
 
 [MinAreaCircle](https://en.wikipedia.org/wiki/Smallest-circle_problem)
 ----------------------------------------------------------------------
-Efficiently solving the problem of generating a minimum circumference circle covering any set of points.
+Solving the problem of generating a minimum circumference circle covering any set of points in O(n log n) time while being a simple algorithm to implement.
 
 ![image](https://github.com/user-attachments/assets/d8e7a103-fd1a-4d5d-9687-db3f8c677734)
 
-https://github.com/Villavu/Simba/blob/3276def9ba9c306360001400d796c6c2d7998ea9/Source/simba.vartype_pointarray.pas#L2573-L2594
+https://github.com/Villavu/Simba/blob/aadb12f627fff4cbc0564be5ff3f199a271eb4ec/Source/simba.vartype_pointarray.pas#L2614-L2693
 
 
 [ConcaveHull](https://en.wikipedia.org/wiki/Alpha_shape)
